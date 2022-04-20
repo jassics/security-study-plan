@@ -57,6 +57,7 @@ However, If you are familiar with a lot of topics already it will definitely tak
 Everything below is like an outline, and you can tick out the items that you have already cocvered or know in order from top to bottom.
 
 I'm using [GitHub's special markdown flavor](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown), including tasks lists to track progress.
+As a Cybersecurity professional, I would [recommend you to learn git](https://www.udemy.com/course/git-basics-for-everyone) and clone this repo for your personal learning purpose.
 
 ## Update your resume
 Before updating or creating a resume for job, please check:
@@ -113,5 +114,5 @@ You can start preparing for the job interview once you have solid knowledge as p
 
 You can check [some common answers from here](https://ayedot.com/119/MiniBlog/General-Interview-Questions-and-their-Answers-for-Tech-Jobs)
 
-## Let's contribute and gro this repo together
+## Let's contribute and grow this repo together
 **Want to contribute? Please [fork the repo](https://github.com/jassics/security-study-plan/fork) and [send PR for review](https://github.com/jassics/security-study-plan/pulls)**
