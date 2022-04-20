@@ -58,5 +58,60 @@ Everything below is like an outline, and you can tick out the items that you hav
 
 I'm using [GitHub's special markdown flavor](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown), including tasks lists to track progress.
 
+## Update your resume
+Before updating or creating a resume for job, please check:
+1. for what job title you are trying for?
+2. Do you fall in that experience range?
+3. Check what skills it is looking for?
+4. Check for job location or is it remote(work from home/anywhere)?
+
+Now, prepare the resume based on above info and your skill sets. Try to be honest here.
+See, if you can finish your resume in 1-2 pages. Check 1 page resume from below links:
+1. [One page resume template from zety.com](https://zety.com/blog/one-page-resume-templates)
+2. [Easy Resume](https://www.easyresume.io/)
+3. [Various Security Resume sample from qwikresume.com](https://www.qwikresume.com/resume-samples/security-engineer/)
+4. [How To Write a Security Engineer Resume (With Example)](How To Write a Security Engineer Resume (With Example))
+5. [Network Security Engineer Sample](https://enhancv.com/resume-examples/network-security-engineer/)
+6. [Cloud Security Engineer Resume](https://www.hireitpeople.com/resume-database/68-network-and-systems-administrators-resumes/138883-cloud-security-engineer-resume)
+7. [AWS Security Engineer Resume](https://www.livecareer.com/resume-search/r/aws-solutions-architect-cloud-security-engineer-dfe9b3bd87d04311bcb32119da547271)
+8. [Lead DevSecOps Resume Example](https://www.livecareer.com/resume-search/r/lead-devsecops-engineer-53a226a3bebc4987af0dea7ce0c6740b)
+9. [Sr. DevSecOps Engineer Resume Example](https://www.livecareer.com/resume-search/r/sr-devsecops-engineer-81ad059140cf43fda69e77d614d65685)
+10. [Penetration Tester Consultant Resume Sample](https://www.livecareer.com/resume-search/r/penetration-tester-consultant-25926a15cbac482883f8d00d26da0d86)
+
+## Finding the right job
+You might see hundreds of job openings, some may be from your dream company. But, once you closely look it doesn't match with your skills. It seems job title was little misleading and more of a generic. Like security researched or security analyst are just few examples.
+So, finetune and narrow down the job search with below websites but not limited to:
+1. Which job title you are targeting?
+2. What skills you have vs what skills JD requires?
+3. Years of experience (range) is matching?
+
+Now search or subscribe to below job portal:
+1. Linkedin. Yes, now a days it's job alert setting does a better job in finding the right job for you.
+2. Naukri.com (Mostly in Asian countries)
+3. indeed.com
+4. monster.com
+5. instahyre.com
+6. cutshort.io
+7. [Null Jobs Community](https://jobs.null.community/)
+8. [Cybersecurity Jobs](https://www.cybersecurityjobs.com/)
+9. [Interactive way to find jobs, skills, salary etc.](https://www.cyberseek.org/pathway.html)
+
+## Interview Preparation
+You can start preparing for the job interview once you have solid knowledge as per the checklist for given role(s). There are few common security questions which you should have a look at it:
+1. [Cybersecurity Interview Questions and Answers - Youtube](https://www.youtube.com/watch?v=q5pQ_YtJWpA)
+2. [Cybersecurity Questions and Answers by Springboard](https://www.springboard.com/blog/cybersecurity/25-cybersecurity-job-interview-questions-and-answers/)
+3. [Cybersecurity Questions and Answers form indeed](https://in.indeed.com/career-advice/interviewing/cyber-security-interview-questions)
+4. [100+ Q&A for Cybersecurity domain from guru99](https://www.guru99.com/cyber-security-interview-questions.html)
+
+### Common Interview Questions
+* How you keep updated yourself in the security domain?
+* What would you do typically at the first day of your job? 
+* What personal achievement are you most proud of?
+* What was your last tough vulnerability that you found?
+* What should we hire you?
+* What did you learn in last 6 months and how was it relevant to your career/project?
+
+You can check [some common answers from here](https://ayedot.com/119/MiniBlog/General-Interview-Questions-and-their-Answers-for-Tech-Jobs)
+
 ## Let's contribute and gro this repo together
 **Want to contribute? Please [fork the repo](https://github.com/jassics/security-study-plan/fork) and [send PR for review](https://github.com/jassics/security-study-plan/pulls)**
