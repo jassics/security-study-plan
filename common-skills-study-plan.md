@@ -125,7 +125,113 @@ What to learn and what are interview questions related to this are already menti
 2. [Bits and Bytes of Computer Networking by Google on Coursera](https://www.coursera.org/learn/computer-networking)
 
 ## Programming Skills
+Recently, it has become a mandatory skills for any tech security job roles to have a decent knowledge of at least one programming languages.
+Common Programming languages that attracts security folks are:
+
+1. Python (recommended)
+2. Go (gaining popularity)
+3. Ruby
+
+What actually you should try when you are learning any of these programming languages:
+
+1. Learn basic concepts
+2. Try few basic projects like 
+   1. connecting to db and get some data
+   2. extracting data from a webpage
+   3. display some info from cloud like AWS Instance details region wise
+   4. automate few security stuffs like docker monitor, get public IPs, server details etc
+   5. See if you can find any task related to csv, json
+   6. Learn the use of crypto modules
+   7. simulate few linux or other commands to be comfortable with the language like small nmap simulation
+3. Understand OOP concept and at least you should understand others code comfortably
+4. Try to review source code form security perspective
+5. [Read Python Security Best Practices](https://snyk.io/blog/python-security-best-practices-cheat-sheet/)
+
+### Books
+1. [Learn Python 3 the Hard Way](https://www.amazon.in/Learn-Python-Hard-Way-Introduction/dp/0134692888/) - Recommended
+2. [Violent Python](https://www.amazon.in/Violent-Python-Cookbook-Penetration-Engineers/dp/1597499579)
+3. [Black Hat Python](https://www.amazon.in/Black-Hat-Python-2nd-Programming/dp/1718501129/) - Must Read
+4. [Full Stack Python Security](https://www.manning.com/books/full-stack-python-security) - Must for AppSec Professionals
+5. [Masterting Python for Networking and Security](https://www.oreilly.com/library/view/mastering-python-for/9781788992510/)
+
+### Videos
+1. [Python Security Best Practices](https://www.youtube.com/watch?v=ZDzDpapddPg)
+2. [Security Checks for Python Code](https://www.youtube.com/watch?v=zVIfH89oWno)
+3. [Intro to Python for Security Professionals](https://www.youtube.com/watch?v=pFMzgPGfl4w)
+
+### Courses
+1. [Python for Cybersecurity Specialization](https://www.coursera.org/specializations/pythonforcybersecurity)
+2. [SEC573: Automating Information Security with Python](https://www.sans.org/cyber-security-courses/automating-information-security-with-python/)
+3. [Python for Pentesters](https://www.pentesteracademy.com/course?id=1)
 
 ## Cloud Computing 
+Cloud Computing is everywhere these days be it Industrial, Pharma, Finance, IT etc. 
+Sooner or later, it will be a mandatory skills to have for any cybersecurity job roles.
+
+Learn any of the famous CSPs like AWS, Azure or GCP and 
+
+1. try to understand the use of it to solve various traditional challenges and 
+2. then try to understand what are the new security challenges added because of Cloud concepts. 
+3. Understand various service and deployment models
+4. Shared Security Responsibility
+5. Microservices
+6. IAM functionalities (Must understand very well)
+7. Data Encryption
+8. Cloud Networking concept is very important to succeed in Cloud Security
+
+There are separate plans for Cloud Security Study Plan as listed below:
+
+1. [AWS Security Study Plan](aws-security-study-plan.md)
+2. [Azure Security Study Plan](azure-security-study-plan.md)
+3. [GCP Security Study Plan](gcp-security-study-plan.md)
+
+### Books
+1. Cloud Computing for Dummies
+2. [AWS in Action](https://www.manning.com/books/amazon-web-services-in-action)
+
+### Videos
+1. [Cloud Computing Playlist by Fkexmind](https://www.youtube.com/playlist?list=PLRTsCutScZnyfH0NLaOJxDEn2ZWZuBlup)
+2. [What is Cloud Computing by AWS](https://www.youtube.com/watch?v=mxT233EdY5c)
+3. [Inside a Cloud Data Center](https://www.youtube.com/watch?v=XZmGGAbHqa0)
+
+### Courses
+1. [Introduction to Cloud Computing by IBM on Coursera](https://www.coursera.org/learn/introduction-to-cloud)
+2. [Micro Masters Program in Cloud Computing](https://www.edx.org/micromasters/usmx-umgc-cloud-computing)
+
 
 ## git commands
+You must understand any of the Version Control Software and git is one of the famous one at present.
+Don't go for gui version like sourcetree rather try to learn and understand common git commands at terminal level.
+
+### Most basic git commands to understand are:
+1. git clone
+2. git add
+3. git commit
+4. git branch
+5. git pull
+6. git fetch
+7. git merge
+8. git push
+9. git config
+10. git log
+
+There are many job roles/titles which make it as a mandatory skill, such as:
+1. AppSec
+2. Pentest
+3. DevSecOps
+4. API Security
+
+### Books
+1. [Pro Git by Appress](https://git-scm.com/book/en/v2) - Highly recommended
+2. [Beginning git and github by Apress](https://techviewleo.com/best-books-to-learn-git-version-control/)
+3. [github cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+### Videos
+1. [git and github for beginners - crash course by freecodecamp](https://www.youtube.com/watch?v=RGOj5yH7evk)
+2. [git fundamentals for beginners - full course for free by Flexmind](https://www.youtube.com/watch?v=zyB-6U7DRKI)
+
+### Courses
+1. [Git Fundamentals for everyone on Udemy](https://www.udemy.com/course/git-basics-for-everyone/)
+2. [Version Control with Git by Atlassian on Coursera](https://www.coursera.org/learn/version-control-with-git)
+3. [Learn git and github by codecademy](https://www.codecademy.com/learn/learn-git)
+
