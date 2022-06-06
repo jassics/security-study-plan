@@ -11,7 +11,7 @@ A Practical Study Plan to become a successful cybersecurity engineer based on ro
 5. [DevSecOps Study Plan](devsecops-study-plan.md)
 6. [Docker Security Study Plan](docker-security-study-plan.md)
 7. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
-8. [Penetration Testing Study Plan](pentest-study-plan.md)
+8. [Web Penetration Testing Study Plan](web-pentest-study-plan.md)
 9. [Application Security Testing Plan](application-security-study-plan.md)
 10. [API Security Study Plan](api-security-study-plan.md)
 11. [Network Security Study Plan](network-security-study-plan.md)
@@ -111,6 +111,19 @@ You can start preparing for the job interview once you have solid knowledge as p
 * What was your last tough vulnerability that you found?
 * What should we hire you?
 * What did you learn in last 6 months and how was it relevant to your career/project?
+
+## ToDo Updates
+- [x] Common Security Skills for Cybersecurity study plan
+- [x] AWS Security Study Plan
+- [ ] Web Penetration Testing Study Plan - *In Progress*
+- [ ] Application Security Study Plan
+- [ ] API Security Study Plan
+- [ ] GCP Security Study Plan
+- [ ] DevSecOps Study Plan
+- [ ] Network Security Study Plan
+- [ ] Docker Security Study Plan
+- [ ] Kubernetes Security Study Plan
+- [ ] Azure Security Study Plan
 
 You can check [some common answers from here](https://ayedot.com/119/MiniBlog/General-Interview-Questions-and-their-Answers-for-Tech-Jobs)
 
