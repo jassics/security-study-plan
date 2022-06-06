@@ -21,6 +21,8 @@ Bug bounty hunters, Penetration testers and almost all tech focused security pro
 But for that you would need to know the basic working of Linux and commands.
 
 ### Some common commands I can think of are:
+
+- pwd,
 - ls, 
 - cd, 
 - cp, 
@@ -36,7 +38,8 @@ But for that you would need to know the basic working of Linux and commands.
 - df, 
 - mount, 
 - mkdir, 
-- who, 
+- whois,
+- whatis, 
 - locate, 
 - chmod, 
 - chown, 
@@ -49,7 +52,9 @@ But for that you would need to know the basic working of Linux and commands.
 - awk, 
 - ps, 
 - zip, 
-- tar, 
+- tar,
+- touch
+- man 
 - service/systemctl
 
 What else you can think of as common linux commands for everyone?
