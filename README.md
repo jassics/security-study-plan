@@ -115,8 +115,8 @@ You can start preparing for the job interview once you have solid knowledge as p
 ## ToDo Updates
 - [x] Common Security Skills for Cybersecurity study plan
 - [x] AWS Security Study Plan
-- [ ] Web Penetration Testing Study Plan - *In Progress*
-- [ ] Application Security Study Plan
+- [x] Web Penetration Testing Study Plan
+- [ ] Application Security Study Plan - *In Progress...*
 - [ ] API Security Study Plan
 - [ ] GCP Security Study Plan
 - [ ] DevSecOps Study Plan
