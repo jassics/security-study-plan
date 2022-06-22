@@ -109,15 +109,16 @@ You can start preparing for the job interview once you have solid knowledge as p
 * What would you do typically at the first day of your job? 
 * What personal achievement are you most proud of?
 * What was your last tough vulnerability that you found?
-* What should we hire you?
+* Why should we hire you?
 * What did you learn in last 6 months and how was it relevant to your career/project?
+* Where do you see after 5 years working with this organization?
 
 ## ToDo Updates
 - [x] Common Security Skills for Cybersecurity study plan
 - [x] AWS Security Study Plan
 - [x] Web Penetration Testing Study Plan
-- [ ] Application Security Study Plan - *In Progress...*
-- [ ] API Security Study Plan
+- [x] Application Security Study Plan 
+- [ ] API Security Study Plan - *<span style="color:orange;">In Progress...</span>*
 - [ ] GCP Security Study Plan
 - [ ] DevSecOps Study Plan
 - [ ] Network Security Study Plan
