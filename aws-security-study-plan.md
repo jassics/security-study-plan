@@ -128,7 +128,7 @@ And don't forget to **bookmark AWS Security bulletin** for new vulnerabilities n
 Check [**Awesome AWS Security**](https://github.com/jassics/awesome-aws-security) repo for more details on book, videos, courses etc.
 
 ## AWS Security Interview Questions
-I have a [separate repo for skills roadmap and interview questions](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/interview-questions/aws-security-interview-questions.md). I will keep it updated time to time. You can star it or [fork it](https://github.com/jassics/cybersecurity-skills-career-roadmap/fork). 
+I have a [separate repo for skills roadmap and interview questions](https://github.com/jassics/cybersecurity-interview-questions/blob/main/aws-security-interview-questions.md). I will keep it updated time to time. You can star it or [fork it](https://github.com/jassics/cybersecurity-skills-career-roadmap/fork). 
 
 ## People to follow on twitter
 1. [Abhay Bhargav](https://twitter.com/abhaybhargav)
