@@ -92,7 +92,8 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 2. [Application Security Program Handbook](https://www.manning.com/books/application-security-program-handbook)
 3. [Writing Secure Code](https://www.amazon.in/Writing-Secure-Code-David-Leblanc/dp/0735617228/)
 4. [The Tangled Web: A Guide to Securing Modern Web Applications](https://www.amazon.in/Tangled-Web-Securing-Modern-Applications/dp/1593273886)
-5. [Alice and Bob Learn Application Security](https://www.amazon.in/Alice-Bob-Learn-Application-Security/dp/1119687357)
+5. [Alice and Bob Learn Application Security](https://www.amazon.in/Alice-Bob-Learn-Application-Security/dp/1119687357)  
+6. [OWASP Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf)
 
 ## Videos
 
