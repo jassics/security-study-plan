@@ -63,3 +63,17 @@ After the threat mitigation strategies have been implemented, it is important to
 
 6. Review and update the threat model: 
 Threat models should be reviewed and updated on a regular basis to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
+
+## Threat Modelling
+Threat modelling is a structured approach for analysing the security of an application and enables to identify, quantify, and address the security risks associated with an application.
+From details about threats and likely attacks against each application, the organization operates more effectively through better decisions about prioritization of initiatives for security. Additionally, decisions for risk acceptance are more informed, therefore better aligned to the business.
+### The objective to conduct threat modelling is to investigate following:
+1. The trust boundaries to and within the application
+2. The actors that interact within and outside of the trust boundaries
+3. Information flows within and to and from the trust boundaries
+4. Information persistence within and out of trust boundaries
+5. Threats to transgression of trust boundaries by actors and for information flow and persistence
+6. Vulnerabilities at trust boundaries as accessed by actors and for information flow and persistence
+7. Threat agents that can exploit the vulnerabilities
+8. Impact of exploitation of vulnerability by a threat agent
+9. Decision tree to treat the risk
