@@ -123,7 +123,7 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 
 
 ## Interview Questions
-[Possible Application Security interview questions](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/interview-questions/application-security-interview-questions.md) is shared at different github repo to keep it aligned with [career roadmap guide](https://github.com/jassics/cybersecurity-skills-career-roadmap).
+[Possible Application Security interview questions](https://github.com/jassics/security-interview-questions/blob/main/application-security-interview-questions.md) is shared at different github repo to keep it aligned with [career roadmap guide](https://github.com/jassics/security-skills-career-roadmap).
 
 ## AppSec Tools
 1. Checkmarx for SAST or HCL AppSCan (Previously it was IBM AppScan)
