@@ -87,6 +87,18 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 15. [Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
 16. [CSP: Content Security Policy](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 
+## Threat Modeling
+Read [Threat Modeling Study Plan](threat-modeling-study-plan.md)
+
+## Secure Code Review
+Read [Secure Code Review](secure-code-review-study-plan.md)
+
+## Cryptography
+Read [Cryptography](cryptography-study-plan.md)
+
+## Security Development Lifecycle (SDL)
+Read [Security Development Lifecycle](security-development-lifecycle.md)
+
 ## Books
 1. [Agile Application Security](https://www.amazon.in/Agile-Application-Security-Enabling-Continuous/dp/9352136292/)
 2. [Application Security Program Handbook](https://www.manning.com/books/application-security-program-handbook)
@@ -109,17 +121,6 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 2. [CASE: Certified Application Security Engineer](https://www.eccouncil.org/programs/application-security-training/) for Java and .NET professionals
 3. [GWEB: GIAC Certified Web Application Defender](https://www.giac.org/certifications/certified-web-application-defender-gweb/)
 
-## Threat Modeling
-Read [Threat Modeling Study Plan](threat-modeling-study-plan.md)
-
-## Secure Code Review
-Read [Secure Code Review](secure-code-review-study-plan.md)
-
-## Cryptography
-Read [Cryptography](cryptography-study-plan.md)
-
-## Security Development Lifecycle (SDL)
-Read [Security Development Lifecycle](security-development-lifecycle.md)
 
 ## Interview Questions
 [Possible Application Security interview questions](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/interview-questions/application-security-interview-questions.md) is shared at different github repo to keep it aligned with [career roadmap guide](https://github.com/jassics/cybersecurity-skills-career-roadmap).
