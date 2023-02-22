@@ -1,10 +1,10 @@
 # Application Security Study Plan
 
 This study plan is based on milestones. So, check how much you can cover within the timeline. The more you cover the topics, the better candidate you are for the job role.
-Also, I assume you have already checked and comfortable with [Common Security Skills study plan](common-skills-study-plan.md).
+Also, I assume you have already checked and are comfortable with [Common Security Skills study plan](common-skills-study-plan.md).
 
-Just to make sure that everyone understands what you need to learn to be an Application Security Engineer. 
-Application Security is different from Web Security or commonly people think it as offensive security or pentesting. Though it needs some concepts aligned with pentester but it's altogether a totally different skill sets.
+Just to make sure that everyone understands what you need to learn to be an Application Security Engineer.
+Application Security is different from Web Security or commonly people think it as offensive security or pentesting. Though it needs some concepts aligned with pentester, it's altogether a totally different skill set.
 
 It is more towards shift left security including Threat Modeling, Secure Code Review, Secure Code Design, Training Developers, taking care of overall SDL process, and of course OWASP Top 10 web and API security. I have another page specifically for ["API Security Study Plan"](api-security-study-plan.md) because that skill also needs good time to learn.
 
@@ -12,10 +12,10 @@ It is more towards shift left security including Threat Modeling, Secure Code Re
 
 1. AppSec is not Pentesting (Penetration Testing) or Web Security (people use it generically).
 2. Think more of a combination of developer and attacker
-3. Talking to developers, giving training to them or go through the code should not scare you.
+3. Talking to developers, giving training to them or going through the code should not scare you.
 4. Tougher than Pentesting (Topic of debate for another day)
 5. Can write code for PoC, Exploit or demo with comfort
-6. API security should be your areas of interest.
+6. API security should be your area of interest.
 
 Usually it will take you 6-12 months to be good at the Application Security fundamentals to get a job at entry level.
 
@@ -29,7 +29,7 @@ Usually it will take you 6-12 months to be good at the Application Security fund
 7. [Videos](#videos)
 8. [Courses](#courses) - Try to complete at least 1-2 courses (1-2 months)
 9. [Certifications](#certifications) - on your bandwidth and wish
-10. [Interview Quesitons](#interview-questions)
+10. [Interview Questions](#interview-questions)
 11. [Networking Matters](#networking-matters)
 12. [Whom to follow on Twitter](#whom-to-follow-on-twitter)
 
@@ -40,11 +40,11 @@ Go with your pace, but make sure you understand the basic web security concepts 
 ### Basics
 1. Understanding of [various HTTP methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), PUT vs POST, UPDATE vs PATCH, leverage OPTIONS method
 2. Ability to [understand response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
-   1. what if you got 200, when you tried something malicious
-   2. what can we do if we get 403
-   3. let's try to get 500 status code, and why so? What will it reveal.
-   4. Try to understand each status code which as a pentester you would love to see.
-3. Understand [HTTP headers very well](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers), specially response headers. You would need it more often while doing pentest.
+  1. what if you got 200, when you tried something malicious
+  2. what can we do if we get 403
+  3. let's try to get 500 status code, and why so? What will it reveal?
+  4. Try to understand each status code which as a pentester you would love to see.
+3. Understand [HTTP headers very well](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers), especially response headers. You would need it more often while doing pentest.
 4. TCP 3 way handshake
 5. How SSL works
 6. [Basics of security terminologies](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/cybersecurity-terminologies.md)
@@ -70,11 +70,11 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 14. SAST vs SCA
 
 ### Advance Level of application security skill sets
-1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/raw/master/2019/en/dist/owasp-api-security-top-10.pdf) 
-2. Go through [OWASP Secure Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf), understand what to verify and how using this guide.
+1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/raw/master/2019/en/dist/owasp-api-security-top-10.pdf)
+2. Go through [OWASP Secure Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf), understand what to verify and how to use this guide.
 3. Very good at [OWASP ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_4.0-en.pdf) (Application Security Verification Standard), it's your job to make every developer aware about it and must use while development.
 4. Go through [OWASP Software Assurance maturity Model](https://owaspsamm.org/model/) (OSAMM), if you aim for a security architect role.
-5. Understand what causes [BOLA](https://www.traceable.ai/blog-post/a-deep-dive-on-the-most-critical-api-vulnerability-bola-broken-object-level-authorization) and [BFLA](https://securityboulevard.com/2021/07/api-security-101-broken-function-level-authorization/) and try to be good at testing these vulnerabilities. 
+5. Understand what causes [BOLA](https://www.traceable.ai/blog-post/a-deep-dive-on-the-most-critical-api-vulnerability-bola-broken-object-level-authorization) and [BFLA](https://securityboulevard.com/2021/07/api-security-101-broken-function-level-authorization/) and try to be good at testing these vulnerabilities.
 6. Various weak cipher suites, how to test, how to make developers aware about it
 7. [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) and [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 8. Advanced SQL Injection
@@ -104,7 +104,7 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 2. [Application Security Program Handbook](https://www.manning.com/books/application-security-program-handbook)
 3. [Writing Secure Code](https://www.amazon.in/Writing-Secure-Code-David-Leblanc/dp/0735617228/)
 4. [The Tangled Web: A Guide to Securing Modern Web Applications](https://www.amazon.in/Tangled-Web-Securing-Modern-Applications/dp/1593273886)
-5. [Alice and Bob Learn Application Security](https://www.amazon.in/Alice-Bob-Learn-Application-Security/dp/1119687357)  
+5. [Alice and Bob Learn Application Security](https://www.amazon.in/Alice-Bob-Learn-Application-Security/dp/1119687357) 
 6. [OWASP Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf)
 
 ## Videos
@@ -149,17 +149,17 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 
 ## Networking matters
 Once you are on track and now understands the heat, it's time to:
-1. Make some good LinkedIn contacts from application security domain.
+1. Make some good LinkedIn contacts from the application security domain.
 2. Find a mentor or follow someone who shares blogs, tutorials, talks on these topics.
 3. Make connections through various security conference online/offline
 4. Publish some good appsec articles, may be basic concepts, but you must publish. Choose medium.com or something of your choice.
 5. Join webinars, conferences, newsletters.
 6. Help someone who is still a beginner or struggling to understand appsec concepts. You will even learn better while guiding/helping others.
 
-By the time you cover all these checklists, you will be already on a way to have a good start in web security job role. All the best!
+By the time you cover all these checklists, you will be already on a way to have a good start in a web security job role. All the best!
 
 ## Whom to follow on twitter
-Why twitter? Because you will see lots of security professionals very active here and sharing cool stuffs often.
+Why twitter? Because you will see lots of security professionals very active here and sharing cool stuff often.
 1. [Jim Manico](https://twitter.com/manicode)
 2. [Gyan Chawdhary](https://twitter.com/gunnu)
 3. [Abhay Bhargav)](https://twitter.com/abhaybhargav)
@@ -170,4 +170,3 @@ Why twitter? Because you will see lots of security professionals very active her
 8. [Defcon](https://twitter.com/defcon)
 9. [Nullcon](https://twitter.com/nullcon)
 10. [OWASP](https://twitter.com/owasp)
-
