@@ -6,11 +6,11 @@ Also, I assume you have already checked and comfortable with [Common Security Sk
 Just to make sure that everyone understands what you need to learn to be an Application Security Engineer. 
 Application Security is different from Web Security or commonly people think it as offensive security or pentesting. Though it needs some concepts aligned with pentester but it's altogether a totally different skill sets.
 
-It is more towards shift left security including Threat Modeling, Secure Code Review, Secure Code Design, of course OWASP Top 10 web and API security. I have another page specifically for ["API Security Study Plan"](api-security-study-plan.md) because that skill also needs good time to learn.
+It is more towards shift left security including Threat Modeling, Secure Code Review, Secure Code Design, Training Developers, taking care of overall SDL process, and of course OWASP Top 10 web and API security. I have another page specifically for ["API Security Study Plan"](api-security-study-plan.md) because that skill also needs good time to learn.
 
-**In short:**
+## In short:
 
-1. AppSec is not Pentesting or Web Security (people use it generically).
+1. AppSec is not Pentesting (Penetration Testing) or Web Security (people use it generically).
 2. Think more of a combination of developer and attacker
 3. Talking to developers, giving training to them or go through the code should not scare you.
 4. Tougher than Pentesting (Topic of debate for another day)
@@ -51,9 +51,9 @@ Go with your pace, but make sure you understand the basic web security concepts 
 7. [Essentials Security Concepts](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/security-concepts.md)
 
 ### Security Concepts
-You can find majority of the security concepts at [OWASP Cheatsheet](https://cheatsheetseries.owasp.org/index.html)
+You can find the majority of the security concepts at [OWASP Cheatsheet](https://cheatsheetseries.owasp.org/index.html)
 
-Understand the fundamental concepts on what it is, how it can be vulnerable and how you can eitehr epxloit it or mitigate it.
+Understand the fundamental concepts on what it is, how it can be vulnerable and how you can either exploit it or mitigate it.
 1. Understanding how proper implementation of AuthN and AuthZ contribute to robust security. What can an attacker do to exploit it and how to mitigate/defend it
 2. How session and cookies work and how it can be vulnerable, bypassed or even exploited
 3. Understand how [session management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html) can be more secured
@@ -70,11 +70,11 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 14. SAST vs SCA
 
 ### Advance Level of application security skill sets
-1. Very good at OWASP Top 10 for Web and API 
-2. Go through OWASP Secure Code Review Guide, understand what to verify and how using this guide.
-3. Very good at OWASP ASVS (Application Security Verification Standard), it's your job to make every developer aware about it and must use while development.
-4. Go through OWASP Software Assurance maturity Model (OSAMM), if you aim for a security architect role.
-5. Understand what causes BOLA and BFLA and try to be good at testing these vulnerabilities. 
+1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/raw/master/2019/en/dist/owasp-api-security-top-10.pdf) 
+2. Go through [OWASP Secure Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf), understand what to verify and how using this guide.
+3. Very good at [OWASP ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_4.0-en.pdf) (Application Security Verification Standard), it's your job to make every developer aware about it and must use while development.
+4. Go through [OWASP Software Assurance maturity Model](https://owaspsamm.org/model/) (OSAMM), if you aim for a security architect role.
+5. Understand what causes [BOLA](https://www.traceable.ai/blog-post/a-deep-dive-on-the-most-critical-api-vulnerability-bola-broken-object-level-authorization) and [BFLA](https://securityboulevard.com/2021/07/api-security-101-broken-function-level-authorization/) and try to be good at testing these vulnerabilities. 
 6. Various weak cipher suites, how to test, how to make developers aware about it
 7. [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) and [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 8. Advanced SQL Injection
@@ -83,7 +83,7 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 11. NoSQL Injection
 12. [GraphQL Injection](https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html)
 13. [XXE Attacks](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
-14. Template Injection
+14. [Server-side Template Injection](https://portswigger.net/web-security/server-side-template-injection)
 15. [Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
 16. [CSP: Content Security Policy](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)
 
@@ -108,13 +108,20 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 6. [OWASP Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf)
 
 ## Videos
-
+1. [Introduction to Application Security](https://www.youtube.com/watch?v=4shFba3eRAc)
+2. [Scaling your AppSec Program with semgrep](https://www.youtube.com/watch?v=rAwxFw25x3E)
+3. [Building an AppSec Program from the ground up by Snyk](https://www.youtube.com/watch?v=hYcMynC0f_M)
+4. [Application Security - Understanding, Exploiting and Defending against Top Web Vulnerabilities by Cerner](https://www.youtube.com/watch?v=sY7pUJU8a7U)
+5. [Securing Web Application](https://www.youtube.com/watch?v=WlmKwIe9z1Q)
+6. [Web Application Security: 10 things developers need to know](https://www.youtube.com/watch?v=qjrkV4RjgIU)
+7. [Application Security from SANS Institute](https://www.youtube.com/watch?v=T_nyN24QjEY)
 
 ## Courses
 1. [Software Security on Coursera](https://www.coursera.org/learn/software-security)
 2. [Cloud Application Security](https://www.coursera.org/learn/cloud-application-security)
 3. [Application Security Guide - Udemy](https://www.udemy.com/course/application-security-the-complete-guide/)
 4. [Sec522: Application Security: Securing Web Apps, APIs, and Microservices from SANS](https://www.sans.org/cyber-security-courses/application-security-securing-web-apps-api-microservices/) Really nice one but costly.
+5. [Free OWASP Top 10 practice from Kontra Security](https://application.security/free/owasp-top-10)
 
 ## Certifications
 1. [CSSLP: Certified Secure Software Lifecycle Professional](https://www.isc2.org/Certifications/CSSLP) Recommended
@@ -128,21 +135,21 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 ## AppSec Tools
 1. Checkmarx for SAST or HCL AppSCan (Previously it was IBM AppScan)
 2. Snyk Code for SAST and Snyk Open Source for SCA
-3. git-secrets or gitleaks or trufflehog to find out secrets
-4. Inspec
-5. OWASP Dependency Check is for SCA
-6. Bandit for python code
-7. Sonarqube for SAST with few plugins like findsecbugs
-8. RetireJS for JS libraries
-9. Contrast for IAST solution
-10. Coverity from Snyopsys
-11. You must not ignore **Burp Suite Pro**
-12. Veracode
-13. InSight from Rapid7
+3. [git-secrets](https://git-secret.io/) or [gitleaks](https://github.com/zricethezav/gitleaks) or [trufflehog](https://github.com/trufflesecurity/trufflehog) to find out secrets
+4. [Chef Inspec](https://docs.chef.io/inspec/)
+5. [OWASP Dependency Check](https://github.com/jeremylong/DependencyCheck) is for SCA
+6. [Bandit for python code](https://bandit.readthedocs.io/en/latest/)
+7. [Sonarqube for SAST](https://www.sonarsource.com/products/sonarqube/) with few plugins like [findsecbugs](https://github.com/find-sec-bugs/find-sec-bugs)
+8. [RetireJS for JS libraries](https://retirejs.github.io/retire.js/)
+9. [Contrast for IAST solution](https://www.contrastsecurity.com/contrast-assess)
+10. [Coverity from Snyopsys](https://scan.coverity.com/)
+11. You must not ignore **[Burp Suite Pro](https://portswigger.net/burp/pro)**
+12. [Veracode](https://www.veracode.com/)
+13. [InSight from Rapid7](https://www.rapid7.com/products/insight-platform/)
 
 ## Networking matters
 Once you are on track and now understands the heat, it's time to:
-1. Make some good LinkedIn contacts from application security domain
+1. Make some good LinkedIn contacts from application security domain.
 2. Find a mentor or follow someone who shares blogs, tutorials, talks on these topics.
 3. Make connections through various security conference online/offline
 4. Publish some good appsec articles, may be basic concepts, but you must publish. Choose medium.com or something of your choice.
