@@ -112,11 +112,12 @@ And don't forget to **bookmark AWS Security bulletin** for new vulnerabilities n
 
 ### Check your AWS Pentesting Skills
 1. Did you use [pacu](https://github.com/RhinoSecurityLabs/pacu)? if not, start using it
-2. Try AWS CTF from [flaws.cloud](http://flaws.cloud/). Here is [solution on YouTube](https://www.youtube.com/playlist?list=PLRTsCutScZnzo3uV_79Dur73kqskfaTMS) as well
-3. Next level is at [flaws2.cloud](http://flaws2.cloud/)
-4. Try [Well Architected Framework: Security](https://www.wellarchitectedlabs.com/security/) Labs
-5. [AWS Security Workshops](https://awssecworkshops.com/workshops/)
-6. Check other good tools like Prowler and ScoutSuite as well.
+2. Try out the scenarios in [Cloud Goat](https://github.com/RhinoSecurityLabs/cloudgoat)
+3. Try AWS CTF from [flaws.cloud](http://flaws.cloud/). Here is [solution on YouTube](https://www.youtube.com/playlist?list=PLRTsCutScZnzo3uV_79Dur73kqskfaTMS) as well
+4. Next level is at [flaws2.cloud](http://flaws2.cloud/)
+5. Try [Well Architected Framework: Security](https://www.wellarchitectedlabs.com/security/) Labs
+6. [AWS Security Workshops](https://awssecworkshops.com/workshops/)
+7. Check other good tools like Prowler and ScoutSuite as well.
 
 ### Check your Knowledge against common security benchmark and frameworks.
 1. AWS CIS Benchmark
