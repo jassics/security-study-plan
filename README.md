@@ -50,18 +50,18 @@ If you want to work as a security engineer, these are the skills/topics/concepts
 When I started learning security concepts, everything was new to me, and I wasted lots of time on google search, youtube videos, articles etc. to figure out what's required and what not.
 I am still learning as cybersecurity is evolving, so we must. My target is to keep this repo up to date, of course with the help of wonderful learners like you.
 
-It takes time to be confident on some skills, treat it as s a long plan. It may take months or sometimes a year too, but keep yourself motivated and don't stop learning. 
-However, If you are familiar with a lot of topics already it will definitely take lesser time for you.
+It takes time to be confident on some skills, treat it as a long plan. It may take months or sometimes a year too, but keep yourself motivated and don't stop learning. 
+However, If you are familiar with a lot of topics already it will definitely take less time for you.
 
 ## How to use it?
-Everything below is like an outline, and you can tick out the items that you have already cocvered or know in order from top to bottom.
+Everything below is like an outline, and you can tick out the items that you have already covered or know in order from top to bottom.
 
 I'm using [GitHub's special markdown flavor](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown), including tasks lists to track progress.
 As a Cybersecurity professional, I would [recommend you to learn git](https://www.udemy.com/course/git-basics-for-everyone) and clone this repo for your personal learning purpose.
 
 ## Update your resume
 Before updating or creating a resume for job, please check:
-1. for what job title you are trying for?
+1. What job title you are trying for?
 2. Do you fall in that experience range?
 3. Check what skills it is looking for?
 4. Check for job location or is it remote(work from home/anywhere)?
@@ -80,7 +80,7 @@ See, if you can finish your resume in 1-2 pages. Check 1 page resume from below 
 10. [Penetration Tester Consultant Resume Sample](https://www.livecareer.com/resume-search/r/penetration-tester-consultant-25926a15cbac482883f8d00d26da0d86)
 
 ## Finding the right job
-You might see hundreds of job openings, some may be from your dream company. But, once you closely look it doesn't match with your skills. It seems job title was little misleading and more of a generic. Like security researched or security analyst are just few examples.
+You might see hundreds of job openings, some may be from your dream company. But, once you closely look it doesn't match with your skills. It seems job title was little misleading and more of a generic description. Like security researcher or security analyst are just few examples.
 So, finetune and narrow down the job search with below websites but not limited to:
 1. Which job title you are targeting?
 2. What skills you have vs what skills JD requires?
