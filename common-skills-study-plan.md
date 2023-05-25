@@ -101,20 +101,22 @@ What to learn and what are interview questions related to this are already menti
 ### I will brief the common concepts here anyways just for quick reference:
 1. IPv4/IPv6
 2. concept of CIDR 
-3. Public vs Private IPs
-4. DMZs
-5. Zero Trust Networks
-6. Common ports and protocols like 22, 25, ssh, https and so on.
-7. Understanding of common cryptographic modules and functions
-8. How DNS works
-9. How SSL works
-10. What are the common network threat around these
-11. MiTM
-12. Network sniffing
-13. Various TCP attacks
-14. DoS and DDoS attacks and its preventions
-15. Common ideas on firewall or Software defined networks
-16. Basic network troubleshooting like why internet is slow or down, why wi-fi is not working, open networks issues et al.
+3. IP addressing and subnetting
+4. Public vs Private IPs
+5. TCP/IP Model
+6. DMZs
+7. Zero Trust Networks
+8. Common ports and protocols like 22, 25, ssh, https and so on.
+9. Understanding of common cryptographic modules and functions
+10. How DNS works
+11. How SSL works
+12 What are the common network threat around these
+13 MiTM
+14 Network sniffing
+15 Various TCP attacks
+16 DoS and DDoS attacks and its preventions
+17 Common ideas on firewall or Software defined networks
+18 Basic network troubleshooting like why internet is slow or down, why wi-fi is not working, open networks issues et al.
 
 ### Books
 1. [See if you know basics as mentioned in this presentation](https://www.ece.uvic.ca/~itraore/elec567-13/notes/dist-03-4.pdf)
