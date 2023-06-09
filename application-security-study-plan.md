@@ -10,12 +10,12 @@ It is more towards shift left security including Threat Modeling, Secure Code Re
 
 ## In short:
 
-1. AppSec is not Pentesting (Penetration Testing) or Web Security (people use it generically).
+1. AppSec is not Pentesting (Penetration Testing) or [Web Security](web-pentest-study-plan.md) (people use it generically).
 2. Think more of a combination of developer and attacker
 3. Talking to developers, giving training to them or going through the code should not scare you.
 4. Tougher than Pentesting (Topic of debate for another day)
 5. Can write code for PoC, Exploit or demo with comfort
-6. API security should be your area of interest.
+6. [API security](api-security-study-plan.md) should be your area of interest.
 
 Usually it will take you 6-12 months to be good at the Application Security fundamentals to get a job at entry level.
 
@@ -30,7 +30,7 @@ Usually it will take you 6-12 months to be good at the Application Security fund
 8. [Courses](#courses) - Try to complete at least 1-2 courses (1-2 months)
 9. [Certifications](#certifications) - on your bandwidth and wish
 10. [Interview Questions](#interview-questions)
-11. [Networking Matters](#networking-matters)
+11. [Application Security Tools](#appsec-tools)
 12. [Whom to follow on Twitter](#whom-to-follow-on-twitter)
 
 ## Web Application Concepts
@@ -146,17 +146,6 @@ Read [Security Development Lifecycle](security-development-lifecycle.md)
 11. You must not ignore **[Burp Suite Pro](https://portswigger.net/burp/pro)**
 12. [Veracode](https://www.veracode.com/)
 13. [InSight from Rapid7](https://www.rapid7.com/products/insight-platform/)
-
-## Networking matters
-Once you are on track and now understands the heat, it's time to:
-1. Make some good LinkedIn contacts from the application security domain.
-2. Find a mentor or follow someone who shares blogs, tutorials, talks on these topics.
-3. Make connections through various security conference online/offline
-4. Publish some good appsec articles, may be basic concepts, but you must publish. Choose medium.com or something of your choice.
-5. Join webinars, conferences, newsletters.
-6. Help someone who is still a beginner or struggling to understand appsec concepts. You will even learn better while guiding/helping others.
-
-By the time you cover all these checklists, you will be already on a way to have a good start in a web security job role. All the best!
 
 ## Whom to follow on twitter
 Why twitter? Because you will see lots of security professionals very active here and sharing cool stuff often.
