@@ -7,11 +7,12 @@ So, I will explain from where to study and how much time you should devote to le
 
 **These 5 common skills are:**
 
-1. -[ ] [Linux](#linux-basics-and-linux-commands) (1 week)
-2. -[ ] [Networking](#networking-fundamentals) (1 week)
-3. -[ ] [Programming](#programming-skills) (2 weeks)
-4. -[ ] [Cloud Computing Fundamentals](#cloud-computing) (2 weeks)
-5. -[ ] [git commands](#git-commands) (1 week)
+1. -[ ] [Linux](#linux-basics-and-linux-commands) (1-2 weeks)
+2. -[ ] [Networking](#networking-fundamentals) (2-4 weeks)
+3. -[ ] [Programming Fundamentals](#programming-skills) (4-8 weeks)
+4. -[ ] [Cloud Computing Fundamentals](#cloud-computing) (3-4 weeks)
+5. -[ ] [Essential git commands](#git-commands) (1 week)
+6. [And remember Networking matters](#networking-matters)
 
 ## Linux basics and Linux Commands (1-2 weeks)
 It should not take more than a week to be comfortable with basic linux commands to do day to day activities.
@@ -20,42 +21,58 @@ Once you are comfortable with basic command, go fo networking and other security
 Bug bounty hunters, Penetration testers and almost all tech focused security professionals use O.S. like Kali Linux, Parrot OS or BlackArch Linux which have lots of security tools to play with.
 But for that you would need to know the basic working of Linux and commands.
 
-### Some common commands I can think of are:
+### Some common (50) commands, I can think of are in alphabetical order:
 
-- pwd,
-- ls, 
-- cd, 
-- cp, 
-- scp, 
-- cat, 
-- uname, 
-- less, 
-- more, 
-- sort, 
-- ssh, 
-- mv, 
-- du, 
-- df, 
-- mount, 
-- mkdir, 
-- whois,
-- whatis, 
-- locate, 
-- chmod, 
-- chown, 
-- sudo, 
-- top, 
-- kill, 
-- grep, 
-- find, 
-- sed, 
-- awk, 
-- ps, 
-- zip, 
-- tar,
-- touch
-- man 
-- service/systemctl
+1. awk
+2. cat
+3. cd
+4. chmod
+5. chown
+6. cp
+7. curl
+8. dig
+9. du
+10. df
+11. echo
+12. export
+13. find
+14. grep
+15. head
+16. history
+17. host
+18. ifconfig
+19. kill
+20. less
+21. locate
+22. ls
+23. man
+24. mkdir
+25. more
+26. mount
+27. mv
+28. nslookup
+29. ping
+30. ps
+31. pwd
+32. rm and rmdir
+33. scp
+34. sed
+35. service/systemctl
+36. sort
+37. ssh
+38. sudo
+39. tail
+40. tar
+41. top
+42. touch
+43. uname
+44. uniq
+45. wget
+46. whois
+47. whatis
+48. w
+49. wc
+50. zip
 
 What else you can think of as common linux commands for everyone?
 
@@ -93,7 +110,7 @@ What else you can think of as common linux commands for everyone?
 2. [Hacking for beginners: Linux and Common Commands](https://www.youtube.com/watch?v=lZAoFs75_cs)
 3. [50 most popular Linux and Terminal Commands](https://www.youtube.com/watch?v=ZtqBQ68cfJc)
 
-## Networking Fundamentals
+## Networking Fundamentals (2-4 weeks)
 Except Audit and Compliance role, I assume almost every security professionals need to have basic to intermediate understanding of Computer Network to excel in its domain.
 
 What to learn and what are interview questions related to this are already mentioned in [what you need to learn in those common skills](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/common-skills.md)
@@ -131,7 +148,7 @@ What to learn and what are interview questions related to this are already menti
 1. [Computer Networking by georgia Tech on Udacity: Recommended](https://www.udacity.com/course/computer-networking--ud436)
 2. [Bits and Bytes of Computer Networking by Google on Coursera](https://www.coursera.org/learn/computer-networking)
 
-## Programming Skills
+## Programming Skills (4-8 weeks)
 Recently, it has become a mandatory skills for any tech security job roles to have a decent knowledge of at least one programming languages.
 Common Programming languages that attracts security folks are:
 
@@ -171,7 +188,7 @@ What actually you should try when you are learning any of these programming lang
 2. [SEC573: Automating Information Security with Python](https://www.sans.org/cyber-security-courses/automating-information-security-with-python/)
 3. [Python for Pentesters](https://www.pentesteracademy.com/course?id=1)
 
-## Cloud Computing 
+## Cloud Computing (3-4 weeks)
 Cloud Computing is everywhere these days be it Industrial, Pharma, Finance, IT etc. 
 Sooner or later, it will be a mandatory skills to have for any cybersecurity job roles.
 
@@ -206,7 +223,7 @@ There are separate plans for Cloud Security Study Plan as listed below:
 2. [Micro Masters Program in Cloud Computing](https://www.edx.org/micromasters/usmx-umgc-cloud-computing)
 
 
-## git commands
+## git commands (1 week)
 You must understand any of the Version Control Software and git is one of the famous one at present.
 Don't go for gui version like sourcetree rather try to learn and understand common git commands at terminal level.
 
@@ -223,10 +240,11 @@ Don't go for gui version like sourcetree rather try to learn and understand comm
 10. git log
 
 There are many job roles/titles which make it as a mandatory skill, such as:
-1. AppSec
-2. Pentest
+1. Application Security
+2. Penetration tester
 3. DevSecOps
 4. API Security
+6. Security Engineering
 
 ### Books
 1. [Pro Git by Appress](https://git-scm.com/book/en/v2) - Highly recommended
@@ -241,4 +259,15 @@ There are many job roles/titles which make it as a mandatory skill, such as:
 1. [Git Fundamentals for everyone on Udemy](https://www.udemy.com/course/git-basics-for-everyone/)
 2. [Version Control with Git by Atlassian on Coursera](https://www.coursera.org/learn/version-control-with-git)
 3. [Learn git and github by codecademy](https://www.codecademy.com/learn/learn-git)
+
+## Networking matters
+Once you are on track and now understands the heat, it's time to:
+1. Make some good LinkedIn contacts from the application security domain.
+2. Find a mentor or follow someone who shares blogs, tutorials, talks on these topics.
+3. Make connections through various security conference online/offline
+4. Publish some good appsec articles, may be basic concepts, but you must publish. Choose medium.com or something of your choice.
+5. Join webinars, conferences, newsletters.
+6. Help someone who is still a beginner or struggling to understand appsec concepts. You will even learn better while guiding/helping others.
+
+By the time you cover all these checklists, you will be already on a way to have a good start in a web security job role. All the best!
 
