@@ -15,6 +15,7 @@ While both threat modeling and VAPT are important tools for ensuring the securit
 8. https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf
 9. https://redcanary.com/blog/threat-modeling/
 10. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
+11. https://shellsharks.com/threat-modeling
 
 ### Video Resources
 1. https://youtu.be/h_BC6QMWDbA
