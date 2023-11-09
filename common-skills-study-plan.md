@@ -127,13 +127,13 @@ What to learn and what are interview questions related to this are already menti
 9. Understanding of common cryptographic modules and functions
 10. How DNS works
 11. How SSL works
-12 What are the common network threat around these
-13 MiTM
-14 Network sniffing
-15 Various TCP attacks
-16 DoS and DDoS attacks and its preventions
-17 Common ideas on firewall or Software defined networks
-18 Basic network troubleshooting like why internet is slow or down, why wi-fi is not working, open networks issues et al.
+12. What are the common network threat around these
+13. MiTM
+14. Network sniffing
+15. Various TCP attacks
+16. DoS and DDoS attacks and its preventions
+17. Common ideas on firewall or Software defined networks
+18. Basic network troubleshooting like why internet is slow or down, why wi-fi is not working, open networks issues et al.
 
 ### Books
 1. [See if you know basics as mentioned in this presentation](https://www.ece.uvic.ca/~itraore/elec567-13/notes/dist-03-4.pdf)
