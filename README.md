@@ -1,5 +1,3 @@
-# Security Study Plan
-
 ![Security Study Plan](security-studyplan-github.png)
 
 A Practical Study Plan to become a successful cybersecurity engineer based on roles like Pentest, AppSec, Cloud Security, DevSecOps, and so on with free/paid resources, tools, and concepts to excel.
