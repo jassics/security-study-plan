@@ -1,26 +1,29 @@
-![Security Study Plan](security-studyplan-github.png)
+![Security Study Plan](images/security-studyplan-github.png)
 
 A Practical Study Plan to become a successful cybersecurity engineer based on roles like Pentest, AppSec, Cloud Security, DevSecOps, and so on with free/paid resources, tools, and concepts to excel.
 
 **It will cover but not limited to:**
 
+**_Done_**
 1. [Common Skills for Security Study Plan](common-skills-study-plan.md)
 2. [AWS Security Study Plan](aws-security-study-plan.md)
 3. [GCP Security Study Plan](gcp-security-study-plan.md)
-4. [Azure Security Study Plan](azure-security-study-plan.md)
-5. [DevSecOps Study Plan](devsecops-study-plan.md)
-6. [Docker Security Study Plan](docker-security-study-plan.md)
-7. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
-8. [Web Penetration Testing Study Plan](web-pentest-study-plan.md)
-9. [Application Security Testing Plan](application-security-study-plan.md)
-10. [API Security Study Plan](api-security-study-plan.md)
-11. [Network Security Study Plan](network-security-study-plan.md)
-12. [Cryptography Study Plan](cryptography-study-plan.md)
-13. [Threat Modeling Study Plan](threat-modeling-study-plan.md)
-14. [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md)
-15. [Secure Code Review Study Plan](secure-code-review-study-plan.md)
-16. [Secure Software Development Lifecycle Study Plan](secure-software-development-lifecycle-study-plan.md)
-17. [Security Architecture Study Plan](security-architecture-study-plan.md)
+4. [Web Penetration Testing Study Plan](web-pentest-study-plan.md)
+5. [Application Security Testing Plan](application-security-study-plan.md)
+6. [API Security Study Plan](api-security-study-plan.md)
+
+**_ToDo_**
+1. [Azure Security Study Plan](azure-security-study-plan.md)
+2. [DevSecOps Study Plan](devsecops-study-plan.md) - _In Progress_
+3. [Docker Security Study Plan](docker-security-study-plan.md)
+4. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
+5. [Network Security Study Plan](network-security-study-plan.md)
+6. [Cryptography Study Plan](cryptography-study-plan.md)
+7. [Threat Modeling Study Plan](threat-modeling-study-plan.md)
+8. [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md)
+9. [Secure Code Review Study Plan](secure-code-review-study-plan.md)
+10. [Secure Software Development Lifecycle Study Plan](secure-software-development-lifecycle-study-plan.md)
+11. [Security Architecture Study Plan](security-architecture-study-plan.md)
 
 I got the idea of creating this repo after seeing [coding-interview-security](https://github.com/jwasham/coding-interview-university) as it echoes the journey that I went through to get into the full-time security role.
 
@@ -77,7 +80,7 @@ See, if you can finish your resume in 1-2 pages. Check the 1-page resume below l
 1. [One page resume template from zety.com](https://zety.com/blog/one-page-resume-templates)
 2. [Easy Resume](https://www.easyresume.io/)
 3. [Various Security Resume sample from qwikresume.com](https://www.qwikresume.com/resume-samples/security-engineer/)
-4. [How To Write a Security Engineer Resume (With Example)](How To Write a Security Engineer Resume (With Example))
+4. [How To Write a Security Engineer Resume (With Example)](https://www.indeed.com/career-advice/resumes-cover-letters/security-engineer-resume)
 5. [Network Security Engineer Sample](https://enhancv.com/resume-examples/network-security-engineer/)
 6. [Cloud Security Engineer Resume](https://www.hireitpeople.com/resume-database/68-network-and-systems-administrators-resumes/138883-cloud-security-engineer-resume)
 7. [AWS Security Engineer Resume](https://www.livecareer.com/resume-search/r/aws-solutions-architect-cloud-security-engineer-dfe9b3bd87d04311bcb32119da547271)
@@ -118,25 +121,6 @@ You can start preparing for the job interview once you have solid knowledge as p
 * Why should we hire you?
 * What did you learn in the last 6 months and how was it relevant to your career/project?
 * Where do you see after 5 years of working with this organization?
-
-## ToDo Updates
-- [x] Common Security Skills for Cybersecurity Study Plan
-- [x] AWS Security Study Plan
-- [x] Web Penetration Testing Study Plan
-- [x] Application Security Study Plan 
-- [x] API Security Study Plan
-- [ ] GCP Security Study Plan - *<span style="color:orange;">In Progress...</span>*
-- [ ] DevSecOps Study Plan
-- [ ] Network Security Study Plan
-- [ ] Docker Security Study Plan
-- [ ] Kubernetes Security Study Plan
-- [ ] Azure Security Study Plan
-- [ ] Cryptography Study Plan
-- [ ] Threat Modeling Study Plan
-- [ ] Software Supply Chain Security Study Plan
-- [ ] Secure Code Review Study Plan
-- [ ] Secure Development Lifecycle Study Plan
-- [ ] Security Architecture Study Plan
 
 You can check [some common answers from here](https://ayedot.com/119/MiniBlog/General-Interview-Questions-and-their-Answers-for-Tech-Jobs)
 
