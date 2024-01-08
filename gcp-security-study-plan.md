@@ -65,16 +65,20 @@ What I mean to say here is:
 These are the core services:
 1. IAM, super important
 2. Compute Instances
-3. GCS
+3. GCS (Storage Object)
 4. VPC, I feel it as the toughest one so far apart from GKE
-5. RDS
-6. API Gateway
-7. GKE
-8. Cloud Run
-9. Cloud Function
-10. Cloud Composer
-11. BigQuery
-12. DataStore
+5. CloudSQL (RDS)
+6. Bigtable (NoSQL)
+7. API Gateway
+8. GKE
+9. Cloud Run
+10. Cloud Function
+11. Cloud Composer
+12. BigQuery
+13. DataStore
+14. DataProc
+15. Secret manager
+16. Cloud Key Management
 
 Below are GCP Core Security services that you should know and try hands-on as much as possible
 
