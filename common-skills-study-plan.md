@@ -1,9 +1,9 @@
 # Common Skills for Cybersecurity Study Plan
 
-Whichever domain you choose in Cybersecurity umbrella like Application Security, Cloud Security or DevSecOPs; there are common skills which one must learn to excel in this domain.
+Whichever domain you choose in the Cybersecurity umbrella like Application Security, Cloud Security, or DevSecOPs; there are common skills that one must learn to excel in this domain.
 I have explained [what you need to learn in those common skills here](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/common-skills.md)
 
-So, I will explain from where to study and how much time you should devote to learn those concepts in these common skills, so that you are job ready and interview ready too!
+So, I will explain where to study and how much time you should devote to learning those concepts in these common skills so that you are job-ready and interview-ready too!
 
 **These 5 common skills are:**
 
@@ -14,12 +14,12 @@ So, I will explain from where to study and how much time you should devote to le
 5. -[ ] [Essential git commands](#git-commands) (1 week)
 6. [And remember Networking matters](#networking-matters)
 
-## Linux basics and Linux Commands (1-2 weeks)
-It should not take more than a week to be comfortable with basic linux commands to do day to day activities.
-Once you are comfortable with basic command, go fo networking and other security related command in little depth.
+## Linux basics and Linux Commands
+It should not take more than a week to be comfortable with basic Linux commands to do day-to-day activities.
+Once you are comfortable with basic commands, go for networking and other security-related command in little depth.
 
-Bug bounty hunters, Penetration testers and almost all tech focused security professionals use O.S. like Kali Linux, Parrot OS or BlackArch Linux which have lots of security tools to play with.
-But for that you would need to know the basic working of Linux and commands.
+Bug bounty hunters, Penetration testers, and almost all tech-focused security professionals use O.S. like Kali Linux, Parrot OS, or BlackArch Linux which have lots of security tools to play with.
+But for that, you would need to know the basic workings of Linux and commands.
 
 ### Some common (50) commands, I can think of are in alphabetical order:
 
@@ -74,7 +74,7 @@ But for that you would need to know the basic working of Linux and commands.
 49. wc
 50. zip
 
-What else you can think of as common linux commands for everyone?
+What else can you think of as common Linux commands for everyone?
 
 ### Beyond basics commands for security professionals (mainly AppSec and Pentesters) are:
 1. netcat
@@ -91,10 +91,10 @@ What else you can think of as common linux commands for everyone?
 12. find 
 13. grep
 14. ifconfig
-15. learn basics of regular expression as well.
+15. learn the basics of regular expression as well.
 16. start and stop services
-17. basic understand of /opt /tmp and log, server locations
-18. comfortable in running scripts written in various languages like python, ruby, go etc.
+17. basic understanding of /opt /tmp and log server locations
+18. comfortable running scripts written in various languages like Python, ruby, go, etc.
 
 ### Books
 1. [Linux Basics for Hackers: Recommended](https://www.amazon.in/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551/)
@@ -110,12 +110,12 @@ What else you can think of as common linux commands for everyone?
 2. [Hacking for beginners: Linux and Common Commands](https://www.youtube.com/watch?v=lZAoFs75_cs)
 3. [50 most popular Linux and Terminal Commands](https://www.youtube.com/watch?v=ZtqBQ68cfJc)
 
-## Networking Fundamentals (2-4 weeks)
-Except Audit and Compliance role, I assume almost every security professionals need to have basic to intermediate understanding of Computer Network to excel in its domain.
+## Networking Fundamentals
+Except for the Audit and Compliance role, I assume almost every security professional needs to have a basic to intermediate understanding of Computer Networks to excel in its domain.
 
-What to learn and what are interview questions related to this are already mentioned in [what you need to learn in those common skills](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/common-skills.md)
+What to learn and what interview questions related to this are already mentioned in [what you need to learn in those common skills](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/common-skills.md)
 
-### I will brief the common concepts here anyways just for quick reference:
+### I will brief the common concepts here anyway just for quick reference:
 1. IPv4/IPv6
 2. concept of CIDR 
 3. IP addressing and subnetting
@@ -127,13 +127,13 @@ What to learn and what are interview questions related to this are already menti
 9. Understanding of common cryptographic modules and functions
 10. How DNS works
 11. How SSL works
-12. What are the common network threat around these
+12. What are the common network threats around these
 13. MiTM
 14. Network sniffing
 15. Various TCP attacks
 16. DoS and DDoS attacks and its preventions
-17. Common ideas on firewall or Software defined networks
-18. Basic network troubleshooting like why internet is slow or down, why wi-fi is not working, open networks issues et al.
+17. Common ideas on firewall or Software-defined networks
+18. Basic network troubleshooting like why the internet is slow or down, why wi-fi is not working, open network issues et al.
 
 ### Books
 1. [See if you know basics as mentioned in this presentation](https://www.ece.uvic.ca/~itraore/elec567-13/notes/dist-03-4.pdf)
@@ -148,27 +148,27 @@ What to learn and what are interview questions related to this are already menti
 1. [Computer Networking by georgia Tech on Udacity: Recommended](https://www.udacity.com/course/computer-networking--ud436)
 2. [Bits and Bytes of Computer Networking by Google on Coursera](https://www.coursera.org/learn/computer-networking)
 
-## Programming Skills (4-8 weeks)
-Recently, it has become a mandatory skills for any tech security job roles to have a decent knowledge of at least one programming languages.
-Common Programming languages that attracts security folks are:
+## Programming Skills
+Recently, it has become a mandatory skill for any tech security job role to have a decent knowledge of at least one programming language.
+Common Programming languages that attract security folks are:
 
 1. Python (recommended)
 2. Go (gaining popularity)
 3. Ruby
 
-What actually you should try when you are learning any of these programming languages:
+What you should try when you are learning any of these programming languages:
 
 1. Learn basic concepts
-2. Try few basic projects like 
-   1. connecting to db and get some data
+2. Try a few basic projects like 
+   1. connecting to DB and get some data
    2. extracting data from a webpage
-   3. display some info from cloud like AWS Instance details region wise
-   4. automate few security stuffs like docker monitor, get public IPs, server details etc
-   5. See if you can find any task related to csv, json
+   3. display some info from the cloud like AWS Instance details region-wise
+   4. automate few security stuff like docker monitor, get public IPs, server details, etc
+   5. See if you can find any task related to CSV, JSON
    6. Learn the use of crypto modules
-   7. simulate few linux or other commands to be comfortable with the language like small nmap simulation
-3. Understand OOP concept and at least you should understand others code comfortably
-4. Try to review source code form security perspective
+   7. simulate a few Linux or other commands to be comfortable with the language like a small nmap simulation
+3. Understand the OOP concept and at least you should understand others' code comfortably
+4. Try to review the source code from a security perspective
 5. [Read Python Security Best Practices](https://snyk.io/blog/python-security-best-practices-cheat-sheet/)
 
 ### Books
@@ -188,7 +188,7 @@ What actually you should try when you are learning any of these programming lang
 2. [SEC573: Automating Information Security with Python](https://www.sans.org/cyber-security-courses/automating-information-security-with-python/)
 3. [Python for Pentesters](https://www.pentesteracademy.com/course?id=1)
 
-## Cloud Computing (3-4 weeks)
+## Cloud Computing
 Cloud Computing is everywhere these days be it Industrial, Pharma, Finance, IT etc. 
 Sooner or later, it will be a mandatory skills to have for any cybersecurity job roles.
 
@@ -223,7 +223,7 @@ There are separate plans for Cloud Security Study Plan as listed below:
 2. [Micro Masters Program in Cloud Computing](https://www.edx.org/micromasters/usmx-umgc-cloud-computing)
 
 
-## git commands (1 week)
+## git commands
 You must understand any of the Version Control Software and git is one of the famous one at present.
 Don't go for gui version like sourcetree rather try to learn and understand common git commands at terminal level.
 
