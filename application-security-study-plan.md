@@ -97,7 +97,7 @@ Read [Secure Code Review](secure-code-review-study-plan.md)
 Read [Cryptography](cryptography-study-plan.md)
 
 ## Security Development Lifecycle (SDL)
-Read [Security Development Lifecycle](security-development-lifecycle.md)
+Read [Security Development Lifecycle](secure-software-development-lifecycle-study-plan.md)
 
 ## Books
 1. [Agile Application Security](https://www.amazon.in/Agile-Application-Security-Enabling-Continuous/dp/9352136292/)
