@@ -36,7 +36,9 @@ Here is some tryhackme **modules** :
 <br>
 
 # 3. how to apply all this acknoledgment in the context of cybersecurity :
-Now, you know how cryptography works, so it's time to apply this knowledges in the context of cybersecurity challenges/tasks : 
+
+Now, you know how cryptography works, so it's time to apply this knokledges in the context of cybersecurity challenges/tasks : 
+
 First, some youtube playlists (again) :
 - [Passwords and Password Cracking](https://tryhackme.com/r/hacktivities/practice) by [The Cyber Mentor](https://www.youtube.com/@TCMSecurityAcademy)
 - [Hak5: SSH Inside and Out - Secure Shell Cryptographic Networks](https://www.youtube.com/playlist?list=PLW5y1tjAOzI3IjZWkI4Qh0GP2bPTTF83a) by [Hak5](https://www.youtube.com/@hak5)
