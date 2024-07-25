@@ -1,8 +1,38 @@
-# Threat Modelling
+## Threat Modelling
 **Threat modeling is the process** of identifying, analyzing, and mitigating potential security threats to a system or organization. It involves identifying the assets that need to be protected, analyzing the potential threats to those assets, and developing strategies to mitigate or eliminate those threats.
 
-# VAPT vs Threat Modelling
+**VAPT vs Threat Modeling**
 While both threat modeling and VAPT are important tools for ensuring the security of a system or organization, they are used for different purposes and at different stages of the development process. Threat modeling is typically done as a proactive measure, while VAPT is done as a reactive measure. Some organizations may choose to use both approaches as part of a comprehensive security program.
+
+#### Key Outputs:
++ **System Diagrams:** Comprehensive illustrations of the architecture and data flows.
++ **Security Requirements:** Defined criteria for protecting the system.
++ **Threat List:** Inventory of potential threats along with mitigation strategies.
+
+#### Terms:
++ **Weakness:** A flaw or bug in software (e.g., errors in input validation, missing validation for user emails).
++ **Vulnerability:** An exploitable weakness (e.g., using the user email field to insert SQL commands).
++ **Attack:** The act of exploiting vulnerabilities.
+  - **Target:** The aim of the attack (e.g., confidential data).
+  - **Attack Vector:** The route an attacker takes to exploit a vulnerability (e.g., web application interface).
+  - **Threat Actor:** The entity behind the threat (e.g., cybercriminal, insider).
++ **Attack Surface:** Any aspect of the system that can be accessed, utilized, or targeted by a threat actor.
++ **Risk:** The combination of the impact and probability of a threat being exploited (Risk = Impact x Probability).
+  - **Impact:** The severity of the negative consequences that each risk entails.
+  - **Likelihood:** The chance of a risk materializing.
++ **Approach:** Outlines the initial steps in the process.
++ **Methodology:** Describes the entire process in detail.
+
+
+### Why Threat Modeling?
+As benefits of threat modeling, we can say:
++ **Proactive Threat Identification:** Early detection of possible security problems.
++ **Cost Efficiency:** Addressing threats early lowers remediation expenses.
++ **Prioritization:** Concentration on the most significant vulnerabilities.
++ **System Understanding:** Enhanced insight into system interactions and data flows.
+
+
+
 
 ### Resources
 1. https://owasp.org/www-project-threat-dragon/
