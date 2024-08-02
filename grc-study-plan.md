@@ -1,4 +1,4 @@
-# GRC Security Study Plan
+# GRC Study Plan
 
 ## Introduction into GRC
 
