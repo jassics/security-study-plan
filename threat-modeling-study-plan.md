@@ -1,8 +1,26 @@
-# Threat Modelling
+## Threat Modelling
 **Threat modeling is the process** of identifying, analyzing, and mitigating potential security threats to a system or organization. It involves identifying the assets that need to be protected, analyzing the potential threats to those assets, and developing strategies to mitigate or eliminate those threats.
 
-# VAPT vs Threat Modelling
+**VAPT vs Threat Modeling**
 While both threat modeling and VAPT are important tools for ensuring the security of a system or organization, they are used for different purposes and at different stages of the development process. Threat modeling is typically done as a proactive measure, while VAPT is done as a reactive measure. Some organizations may choose to use both approaches as part of a comprehensive security program.
+
+#### Key Outputs:
++ **System Diagrams:** Comprehensive illustrations of the architecture and data flows.
++ **Security Requirements:** Defined criteria for protecting the system.
++ **Threat List:** Inventory of potential threats along with mitigation strategies.
+
+### Threat Modeling Concepts & Terms
+
+![](images/Threat-Model.png)
+
+
+### Why Threat Modeling?
+As benefits of threat modeling, we can say:
++ **Proactive Threat Identification:** Early detection of possible security problems.
++ **Cost Efficiency:** Addressing threats early lowers remediation expenses.
++ **Prioritization:** Concentration on the most significant vulnerabilities.
++ **System Understanding:** Enhanced insight into system interactions and data flows.
+
 
 ### Resources
 1. https://owasp.org/www-project-threat-dragon/
