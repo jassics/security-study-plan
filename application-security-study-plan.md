@@ -70,7 +70,7 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 14. SAST vs SCA
 
 ### Advance Level of application security skill sets
-1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/raw/master/2019/en/dist/owasp-api-security-top-10.pdf)
+1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/blob/master/editions/2019/en/dist/owasp-api-security-top-10.pdf)
 2. Go through [OWASP Secure Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf), understand what to verify and how to use this guide.
 3. Very good at [OWASP ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_4.0-en.pdf) (Application Security Verification Standard), it's your job to make every developer aware about it and must use while development.
 4. Go through [OWASP Software Assurance maturity Model](https://owaspsamm.org/model/) (OSAMM), if you aim for a security architect role.
