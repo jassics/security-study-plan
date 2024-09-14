@@ -59,10 +59,10 @@ Then, you will have a better idea of why to use it and how to use this study pla
 If you want to work as a security engineer, these are the skills/topics/concepts you need to know and learn thoroughly..
 
 When I started learning security concepts, everything was new to me, and I wasted lots of time on Google searches, YouTube videos, articles, etc. to figure out what was required and what was not.
-I am still learning as cybersecurity is evolving, so we must. My target is to keep this repo up to date, of course with the help of wonderful learners like you.
+I am still learning as cybersecurity is evolving, so we must. My target is to keep this repo up to date, of course, with the help of excellent learners like you.
 
 It takes time to be confident in some skills, treat it as a long plan. It may take months or sometimes a year too, but keep yourself motivated and don't stop learning. 
-However, If you are familiar with a lot of topics already it will take less time for you.
+However, If you are familiar with a lot of topics already, it will take less time for you.
 
 ## How to use it?
 Everything below is like an outline, and you can tick out the items that you have already covered or know in order from top to bottom.
@@ -72,13 +72,13 @@ As a Cybersecurity professional, I would [recommend you to learn git](https://ww
 
 ## Update your resume
 Before updating or creating a resume for a job, please check:
-1. What job title you are trying for?
+1. What job title are you trying for?
 2. Do you fall in that experience range?
 3. Check what skills it is looking for.
 4. Check for job location or is it remote(work from home/anywhere)?
 
-Now, prepare the resume based on the above info and your skill sets. Try to be honest here.
-See, if you can finish your resume in 1-2 pages. Check the 1-page resume below links:
+Prepare your resume based on the above information and your skill sets. Could you try to be honest here?
+See if you can finish your resume in 1-2 pages. Check the 1-page resume below links:
 1. [One page resume template from zety.com](https://zety.com/blog/one-page-resume-templates)
 2. [Easy Resume](https://www.easyresume.io/)
 3. [Various Security Resume sample from qwikresume.com](https://www.qwikresume.com/resume-samples/security-engineer/)
@@ -91,14 +91,14 @@ See, if you can finish your resume in 1-2 pages. Check the 1-page resume below l
 10. [Penetration Tester Consultant Resume Sample](https://www.livecareer.com/resume-search/r/penetration-tester-consultant-25926a15cbac482883f8d00d26da0d86)
 
 ## Finding the right job
-You might see hundreds of job openings, some may be from your dream company. But, once you closely look it doesn't match with your skills. It seems the job title was a little misleading and more of a generic description. Security researchers or security analysts are just a few examples.
+You might see hundreds of job openings, some of which may be from your dream company. But once you look closely, they don't match your skills. The job title was a little misleading and more of a generic description. Security researchers or security analysts are just a few examples.
 So, finetune and narrow down the job search with the below websites but not limited to:
 1. Which job title you are targeting?
 2. What skills do you have vs what skills JD requires?
-3. Years of experience (range) is matching?
+3. Are years of experience (range) matching?
 
-Now search or subscribe to below job portal below:
-1. Linkedin. Yes, nowadays it's job alert setting does a better job in finding the right job for you.
+Now search or subscribe to the job portal below:
+1. Linkedin. Yes, nowadays, the job alert setting does a better job in finding the right job for you.
 2. Naukri.com (Mostly in Asian countries)
 3. indeed.com
 4. monster.com
@@ -109,11 +109,12 @@ Now search or subscribe to below job portal below:
 9. [Interactive way to find jobs, skills, salary, etc.](https://www.cyberseek.org/pathway.html)
 
 ## Interview Preparation
-You can start preparing for the job interview once you have solid knowledge as per the checklist for the given role(s). There are a few common security questions that you should have a look at:
-1. [Cybersecurity Interview Questions and Answers - Youtube](https://www.youtube.com/watch?v=q5pQ_YtJWpA)
-2. [Cybersecurity Questions and Answers by Springboard](https://www.springboard.com/blog/cybersecurity/25-cybersecurity-job-interview-questions-and-answers/)
-3. [Cybersecurity Questions and Answers form indeed](https://in.indeed.com/career-advice/interviewing/cyber-security-interview-questions)
-4. [100+ Q&A for Cybersecurity domain from guru99](https://www.guru99.com/cyber-security-interview-questions.html)
+You can start preparing for the job interview once you have solid knowledge according to the checklist for the given role(s). There are a few common security questions that you should have a look at:
+1. [All possible security interview questions at one place](https://github.com/jassics/security-interview-questions)
+2. [Cybersecurity Interview Questions and Answers - Youtube](https://www.youtube.com/watch?v=q5pQ_YtJWpA)
+3. [Cybersecurity Questions and Answers by Springboard](https://www.springboard.com/blog/cybersecurity/25-cybersecurity-job-interview-questions-and-answers/)
+4. [Cybersecurity Questions and Answers form indeed](https://in.indeed.com/career-advice/interviewing/cyber-security-interview-questions)
+5. [100+ Q&A for Cybersecurity domain from guru99](https://www.guru99.com/cyber-security-interview-questions.html)
 
 ### Common Interview Questions
 * How do you keep updated yourself in the security domain?
@@ -121,8 +122,8 @@ You can start preparing for the job interview once you have solid knowledge as p
 * What personal achievement are you most proud of?
 * What was your last tough vulnerability that you found?
 * Why should we hire you?
-* What did you learn in the last 6 months and how was it relevant to your career/project?
-* Where do you see after 5 years of working with this organization?
+* What did you learn in the last six months, and how was it relevant to your career/project?
+* Where do you see after five years of working with this organization?
 
 You can check [some common answers from here](https://ayedot.com/119/MiniBlog/General-Interview-Questions-and-their-Answers-for-Tech-Jobs)
 
