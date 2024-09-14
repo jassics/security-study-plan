@@ -1,5 +1,5 @@
 ## Threat Modelling
-> [!INFO]
+> [!IMPORTANT]
 > If you are into Product security or application security or security engineering, you would need this study plan more than any other security professionals. However, it is advised for every security professional to have a fair understanding of Threat Modeling fundamentals.
 
 > [!Note]
@@ -31,7 +31,7 @@ In short,
 ## Threat Modeling Concepts & Terms
 ![Threat Modeling Concepts](images/Threat-Model.png)
 
-### Why Threat Modeling?
+### Why Threat Modeling? :point_up:
 As benefits of threat modeling, we can say:
 + **Proactive Threat Identification:** Early detection of possible security problems.
 + **Cost Efficiency:** Addressing threats early lowers remediation expenses.
@@ -85,6 +85,10 @@ Threat models should be reviewed and updated on a regular basis to ensure that t
 > [!TIP]
 > Try to practice to build threat model diagram as much as possible. Like make a threat model diagram for a person website, wordpress site hosted in AWS, an application using API and third-party integration
 
+### Threat Model Diagram basics for Amazon Elasticsearch as an example :tada: :
+![Threat Modeling example](./images/Amazon_ElasticSearch_Basic_TM.png)
+Try to understand the diagram as much as possible and practice to make something like this on your own. This diagram might need update or modification. The more your practice the easier it would be for you.
+
 ### Resources
 1. https://owasp.org/www-project-threat-dragon/
 2. https://owasp.org/www-community/Threat_Modeling
@@ -99,8 +103,9 @@ Threat models should be reviewed and updated on a regular basis to ensure that t
 11. https://shellsharks.com/threat-modeling
 12. [Clone this repo for more resources: Awesome Threat Modeling by @secfigo](https://github.com/hysnsec/awesome-threat-modelling)
 13. [Threat Modeling Podcast by Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
+14. [Threat Modeling learning resources: Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7209798162687873026/)
 
-### Video Resources
+### Video Resources :bulb:
 1. https://youtu.be/h_BC6QMWDbA
 2. https://youtu.be/GqmQg-cszw4
 3. https://youtu.be/fggB70PxhmA
@@ -109,6 +114,6 @@ Threat models should be reviewed and updated on a regular basis to ensure that t
 6. https://youtu.be/CjzdC0Eerfw
 7. [Paid Course on Udemy: Threat Modeling using STRIDE by Taimur](https://www.udemy.com/course/threat-modeling-using-stride-masterclass/?couponCode=IND21PM)
 
-### Books
+### Books :books:
 1. [Threat Modeling: Design for Security by Adam Shostack](https://amzn.to/3zfKefb)
 2. [Threat Modeling by Izar Tarandach](https://amzn.to/4gEgbif)
