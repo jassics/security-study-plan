@@ -2,6 +2,7 @@
 > [!IMPORTANT]
 > If you are into Product security or application security or security engineering, you would need this study plan more than any other security professionals. However, it is advised for every security professional to have a fair understanding of Threat Modeling fundamentals.
 
+![Threat Modeling Study Plan](images/Threat-Modeling-Study-Plan.png)
 > [!Note]
 > It should take 1-2 months for good understanding of Threat Modeling with some hands-on experiences.
 
@@ -10,7 +11,8 @@ Threat modelling is a structured approach for analysing the security of an appli
 From details about threats and likely attacks against each application, the organization operates more effectively through better decisions about prioritization of initiatives for security. 
 Additionally, decisions for risk acceptance are more informed, therefore better aligned to the business.
 
-You must go through [OWASP Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) for basic understanding.
+> [!TIP]
+> You must go through [OWASP Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) for basic understanding.
 
 In short,
 - **Threat modeling is the process** of identifying, analyzing, and mitigating potential security threats to a system or organization. 
