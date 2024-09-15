@@ -91,21 +91,41 @@ Threat models should be reviewed and updated regularly to ensure that they remai
 ![Threat Modeling example](./images/Amazon_ElasticSearch_Basic_TM.png)
 Try to understand the diagram as much as possible and practice making something like this independently. This diagram might need an update or modification. The more practice you practice, the easier it will be for you.
 
-### Resources
+### What's Next
+Once you gain the fair knowledge of threat modeling and already practiced a few. Now try to answer these questions that may help you in real time and also in interview
+1. How can we onboard Threat Modeling process in our existing SDLC
+2. What are the technical challenges you would face while dealing with threat modeling
+3. How can you make it scalable and iterable throughout the software cycle
+4. It can be different for different application or system. How to handle all those?
+5. Which TM process we must promote in our organisation?
+6. How are you going to validate the issues you found during Threat Modeling?
+
+### Threat Modeling tools to explore
+1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
+2. [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool)
+3. [STRIDE GPT](https://stridegpt.streamlit.app/)
+4. [Threagile - run agile threat modeling](https://run.threagile.io/)
+5. [PyTM - a Pythonic Framework for Threat Modeling](https://github.com/izar/pytm)
+6. [draw.io is also a good tool to draw threat model diagram](https://www.drawio.com/)
+
+### Resources to learn and practice
 1. https://owasp.org/www-project-threat-dragon/
 2. https://owasp.org/www-community/Threat_Modeling
 3. https://www.simplilearn.com/what-is-threat-modeling-article
 4. https://www.synopsys.com/glossary/what-is-threat-modeling.html
 5. https://www.eccouncil.org/threat-modeling/
 6. https://komsr3ll.medium.com/threat-modelling-attack-vectors-4f4989336588
-7. https://www.oreilly.com/library/view/hands-on-red-team/9781788995238/55d89c3e-e3f2-414a-872f-37620e9ab43f.xhtml
-8. https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf
+7. [Mindmap of a threat model used by Red Team](https://www.oreilly.com/library/view/hands-on-red-team/9781788995238/55d89c3e-e3f2-414a-872f-37620e9ab43f.xhtml)
+8. [Cyber Threat Modeling by MITRE](https://www.mitre.org/sites/default/files/2021-11/prs-18-1174-ngci-cyber-threat-modeling.pdf)
 9. https://redcanary.com/blog/threat-modeling/
 10. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
 11. https://shellsharks.com/threat-modeling
 12. [Clone this repo for more resources: Awesome Threat Modeling](https://github.com/hysnsec/awesome-threat-modelling) by [@secfigo](https://github.com/secfigo)
 13. [Threat Modeling Podcast by Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
 14. [Threat Modeling learning resources: Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7209798162687873026/)
+15. [Certified Threat Modeling Professional by Practical DevSecOps](https://www.practical-devsecops.com/certified-threat-modeling-professional/)
+16. [Kubernetes Threat Modeling](https://www.trendmicro.com/vinfo/in/security/news/security-technology/a-deep-dive-into-kubernetes-threat-modeling)
+17. [AWS S3 Threat Modeling - One you think you are ready for real time projects](https://controlcatalog.trustoncloud.com/dashboard/aws/s3)
 
 ### Video Resources :bulb:
 1. https://youtu.be/h_BC6QMWDbA
