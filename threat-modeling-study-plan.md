@@ -68,28 +68,28 @@ Based on the likelihood and impact of the identified threats, develop strategies
 After the threat mitigation strategies have been implemented, it is important to test and validate their effectiveness to ensure that they are effective in mitigating or eliminating the identified threats.
 
 ### Review and update: 
-Threat models should be reviewed and updated on a regular basis to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
+Threat models should be reviewed and updated regularly to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
 
 ## To perform threat modeling, follow these steps:
 1. **Define the scope of the threat modeling study:** 
 This includes identifying the system or organization that needs to be protected and the assets that need to be considered in the threat modeling process.
 2. **Identify potential threats:** 
-This involves identifying potential threats to the assets identified in step 1. This can be done through a variety of methods, such as brainstorming sessions, reviewing industry reports and research, and consulting with subject matter experts.
+This involves identifying potential threats to the assets identified in Step 1. This can be done through various methods, such as brainstorming sessions, reviewing industry reports and research, and consulting with subject matter experts.
 3. **Analyze the likelihood and impact of identified threats:** 
-Once potential threats have been identified, the next step is to assess the likelihood and impact of each threat. This helps prioritize the threats and determine which ones need to be addressed first.
+Once potential threats have been identified, the next step is to assess the likelihood and impact of each threat. This helps prioritize the threats and determine which ones must be addressed first.
 4. **Develop strategies to mitigate or eliminate identified threats:** 
-Based on the likelihood and impact of the identified threats, develop strategies to mitigate or eliminate those threats. These strategies can include implementing technical controls, such as firewalls and intrusion detection systems, as well as non-technical controls, such as security awareness training and incident response plans.
+Based on the likelihood and impact of the identified threats, develop strategies to mitigate or eliminate those threats. These strategies can include implementing technical controls, such as firewalls and intrusion detection systems, and non-technical controls, such as security awareness training and incident response plans.
 5. **Test and validate the effectiveness of the threat mitigation strategies:** 
-After the threat mitigation strategies have been implemented, it is important to test and validate their effectiveness to ensure that they are effective in mitigating or eliminating the identified threats.
+After the threat mitigation strategies have been implemented, it is essential to test and validate their effectiveness to ensure that they are effective in mitigating or eliminating the identified threats.
 6. **Review and update the threat model:** 
-Threat models should be reviewed and updated on a regular basis to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
+Threat models should be reviewed and updated regularly to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
 
 > [!TIP]
-> Try to practice to build threat model diagram as much as possible. Like make a threat model diagram for a person website, wordpress site hosted in AWS, an application using API and third-party integration
+> Try to practice building a threat model diagram as much as possible. Such as making a threat model diagram for a personal website, a WordPress site hosted in AWS, or an application using API and third-party integration.
 
 ### Threat Model Diagram basics for Amazon Elasticsearch as an example :tada: :
 ![Threat Modeling example](./images/Amazon_ElasticSearch_Basic_TM.png)
-Try to understand the diagram as much as possible and practice to make something like this on your own. This diagram might need update or modification. The more your practice the easier it would be for you.
+Try to understand the diagram as much as possible and practice making something like this independently. This diagram might need an update or modification. The more practice you practice, the easier it will be for you.
 
 ### Resources
 1. https://owasp.org/www-project-threat-dragon/
@@ -103,7 +103,7 @@ Try to understand the diagram as much as possible and practice to make something
 9. https://redcanary.com/blog/threat-modeling/
 10. https://www.jemurai.com/2020/11/10/risk-and-threat-modeling-with-mind-maps/
 11. https://shellsharks.com/threat-modeling
-12. [Clone this repo for more resources: Awesome Threat Modeling by @secfigo](https://github.com/hysnsec/awesome-threat-modelling)
+12. [Clone this repo for more resources: Awesome Threat Modeling](https://github.com/hysnsec/awesome-threat-modelling) by [@secfigo](https://github.com/secfigo)
 13. [Threat Modeling Podcast by Chris Romeo](https://open.spotify.com/show/4q9BxNrRb0NWnLBpSmNqoP)
 14. [Threat Modeling learning resources: Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7209798162687873026/)
 
