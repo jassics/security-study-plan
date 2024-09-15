@@ -1,6 +1,7 @@
 # GRC Study Plan
 Here’s a detailed study plan for GRC (Governance, Risk, and Compliance) professionals and beginners:
 
+![GRC Study Plan](images/grc-study-plan.png)
 ## Introduction into GRC
 GRC is an initialism that denotes Governance, Risk, and Compliance, but the reality is much more. GRC is the integrated collection of capabilities that enable an organization to reliably achieve objectives, address uncertainty, and act with integrity.
 
