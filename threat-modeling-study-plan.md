@@ -40,6 +40,15 @@ As benefits of threat modeling, we can say:
 + **Prioritization:** Concentration on the most significant vulnerabilities.
 + **System Understanding:** Enhanced insight into system interactions and data flows.
 
+### Famous Threat Modeling Methodologies
+There are many, but these are famous ones and the ones you would be using in your work:
+1. STRIDE (the most common and famous one)
+2. CVSS
+3. Attack Tree (Pentesters would love your threat model)
+4. PASTA
+5. Octave
+6. Lindunn (Privacy threat modeling framework)
+
 ### VAPT vs Threat Modeling
 - While both threat modeling and VAPT are important tools for ensuring the security of a system or organization, they are used for different purposes and at different stages of the development process. 
 - Threat modeling is typically done as a proactive measure, while VAPT is done as a reactive measure. 
@@ -99,6 +108,11 @@ Once you gain the fair knowledge of threat modeling and already practiced a few.
 4. It can be different for different application or system. How to handle all those?
 5. Which TM process we must promote in our organisation?
 6. How are you going to validate the issues you found during Threat Modeling?
+7. Learn what's these and how to achieve:
+   7.1 agile threat modeling,
+   7.2 automated threat modeling,
+   7.3 rapid threat modeling,
+   7.4 advanced threat modeling
 
 ### Threat Modeling tools to explore
 1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
