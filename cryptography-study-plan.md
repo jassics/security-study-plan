@@ -1,4 +1,4 @@
-# cryptography Study Plan
+# Cryptography Study Plan
 
 In this plan, let's assume that you **already** have some **computer science skills** (linux basics, common windows or mac os use, search on the internet, edit a file...). 
 <br>
@@ -53,7 +53,7 @@ Finally, you can find a lot of challenges related to cryptography in rootme (ano
 
 # Final advices : 
 
-To finish with this plan, as I said above, you should at least create **free-accounts on platforms such as [tryhackme](https://tryhackme.com) or [rootme](https://root-me.org)**. This is useful to **learn cybersecurity** and developp **skills** and **knowledge**. 
+To finish with this plan, as I said above, you should at least create **free-accounts on platforms such as [pwn.guide](https://pwn.guide), [TryHackMe](https://tryhackme.com) or [Rootme](https://root-me.org)**. This is useful to **learn cybersecurity** and developp **skills** and **knowledge**. 
 <br>
 <br>
 You should create a [github](https://www.github.com) account too, to post code and **projects about cybersecurity or whatever you want** (if you don't code yet, please consider this other [tryhackme module](https://tryhackme.com/module/scripting-for-pentesters). After that, you will certainly **find content** on **youtube** to go further in **programming**, which is **more than useful** for **cybersecurity**.
