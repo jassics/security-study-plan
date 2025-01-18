@@ -76,6 +76,7 @@ Before updating or creating a resume for a job, please check:
 2. Do you fall in that experience range?
 3. Check what skills it is looking for.
 4. Check for job location or is it remote(work from home/anywhere)?
+5. A free and open-source resume builder: [rxresu.me](https://rxresu.me/)
 
 Prepare your resume based on the above information and your skill sets. Could you try to be honest here?
 See if you can finish your resume in 1-2 pages. Check the 1-page resume below links:
