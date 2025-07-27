@@ -2,6 +2,8 @@
 
 This study plan covers all the topics, concepts, blogs, videos, books, videos, newsletters etc. by keeping GenAI security in mind.
 
+![GenAI Security Study Plan](images/genai-security-study-plan.png)
+
 It should take 6-9 months to be good at GenAI security so that you can do one or more of the below listed things:
 1. LLM pentesting
 2. GenAI security assessment
@@ -9,19 +11,19 @@ It should take 6-9 months to be good at GenAI security so that you can do one or
 4. Understanding of GenAI from GRC perspective
 5. Knowledge of different GenAI security frameworks
 6. AI enabled Threat Modeling or Threat Modeling of AI systems
-7. LLM safety, LLM Guardrails, Responsible AI, AI ethic etc.
+7. Good grip on LLM safety, LLM Guardrails, Responsible AI, AI ethic etc.
 
-It would help you in your current work or finding a new work using GenAI security skills.
+It would help you in your current work as well as finding a new work using GenAI security skills.
 
 Note: I am not writing anything that would require core AI/ML skills. It's all are done after keeping security focus in mind.
 
 > [!IMPORTANT]  
 > This field is still evolving, so our repo would too! Stay tuned!
 
-## Organizational Capabilities After 6-9 Months
+## Organizational Capabilities that you can be job ready after going through mentioned study plan
 
 ### Security Assessments & Audits
-- Conduct comprehensive GenAI security assessments using OWASP LLM Top 10 framework
+- Conduct comprehensive GenAI security assessments using [OWASP LLM Top 10 framework](https://genai.owasp.org/)
 - Perform LLM application penetration testing and vulnerability assessments
 - Audit RAG (Retrieval Augmented Generation) implementations for security risks
 - Evaluate prompt injection and jailbreaking vulnerabilities
@@ -29,9 +31,9 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - Review AI/ML supply chain security (model provenance, dependencies, third-party APIs)
 
 ### Governance, Risk & Compliance (GRC)
-- Develop GenAI security policies and procedures aligned with NIST AI RMF
+- Develop GenAI security policies and procedures aligned with [NIST AI RMF](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
 - Create AI governance frameworks and risk management strategies
-- Implement compliance controls for AI regulations (EU AI Act, etc.)
+- Implement compliance controls for AI regulations ([EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215), etc.)
 - Establish AI ethics and responsible AI practices
 - Design AI security awareness training programs for employees
 - Create incident response plans specifically for AI/ML security incidents
@@ -45,7 +47,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - Implement monitoring and logging for AI systems
 
 ### Risk Management & Threat Modeling
-- Conduct AI/ML specific threat modeling exercises
+- Conduct [AI/ML specific threat modeling exercises](https://www.matillion.com/blog/ai-threat-modeling)
 - Assess business risks associated with GenAI implementations
 - Develop risk mitigation strategies for AI adoption
 - Create AI security metrics and KPIs for organizational reporting
@@ -74,7 +76,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 > [!NOTE]  
 > ToC will highlight GenAI based concepts and learning reqources as and when we come across some awesome learning materials. 
 
-## ToC:
+## Study Plan ToC:
 1. [GenAI/LLM fundamentals Concepts](#genai-fundamental-concepts) - 4 weeks
 2. [Prompt Engineering](#prompt-engineering) - 1 week
 3. [RAG](#rag) - 1-2 weeks
@@ -87,7 +89,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 10. [GenAI Security Tools](#genai-security-tools)
 
 ---
-## Note: I will add the format and categories later. 
+## Note: I will add the format and categories later. It's just a placeholder for now.
 
 1. LLM CS-324 from Stanford University: https://stanford-cs324.github.io/winter2022/ 
 2. COS 597G (Fall 2022): Understanding Large Language Models from Princeton University: https://www.cs.princeton.edu/courses/archive/fall22/cos597G/ 
