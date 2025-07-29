@@ -77,16 +77,485 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 > ToC will highlight GenAI based concepts and learning reqources as and when we come across some awesome learning materials. 
 
 ## Study Plan ToC:
-1. [GenAI/LLM fundamentals Concepts](#genai-fundamental-concepts) - 4 weeks
+1. [GenAI/LLM Fundamental Concepts](#genai-fundamental-concepts) - 4 weeks
 2. [Prompt Engineering](#prompt-engineering) - 1 week
-3. [RAG](#rag) - 1-2 weeks
+3. [RAG (Retrieval Augmented Generation)](#rag) - 1-2 weeks
 4. [Fine Tuning](#fine-tuning) - 2 weeks
-5. [AI Agents)](#ai-agents) - 1 week
+5. [AI Agents](#ai-agents) - 1 week
 6. [Agentic AI](#agentic-ai) - 1 week
-7. [MCP](#mcp) - 1 week
+7. [MCP (Model Context Protocol)](#mcp) - 1 week
 8. [Certifications](#certifications) - on your bandwidth and wish
 9. [GenAI Interview Questions](#genai-interview-questions)
 10. [GenAI Security Tools](#genai-security-tools)
+
+---
+
+## GenAI Fundamental Concepts
+**Duration: 4 weeks**
+
+### Week 1: AI/ML Foundations & LLM Basics
+- [ ] **Understanding AI vs ML vs Deep Learning vs GenAI**
+  - [What are Foundation Models](https://www.datacamp.com/blog/what-are-foundation-models)
+  - [Introduction to Large Language Models](https://www.coursera.org/learn/generative-ai-with-llms)
+  - [Transformer Architecture Explained](https://jalammar.github.io/illustrated-transformer/)
+
+- [ ] **LLM Architecture & Components**
+  - Attention mechanisms and self-attention
+  - Encoder-decoder architecture
+  - Pre-training vs fine-tuning concepts
+  - Token embeddings and positional encoding
+
+- [ ] **Popular LLM Models**
+  - GPT family (GPT-3.5, GPT-4, GPT-4o)
+  - Claude (Anthropic)
+  - Llama 2/3 (Meta)
+  - Gemini (Google)
+  - Open-source vs proprietary models
+
+### Week 2: LLM Security Fundamentals
+- [ ] **OWASP LLM Top 10**
+  - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
+  - LLM01: Prompt Injection
+  - LLM02: Insecure Output Handling
+  - LLM03: Training Data Poisoning
+  - LLM04: Model Denial of Service
+  - LLM05: Supply Chain Vulnerabilities
+  - LLM06: Sensitive Information Disclosure
+  - LLM07: Insecure Plugin Design
+  - LLM08: Excessive Agency
+  - LLM09: Overreliance
+  - LLM10: Model Theft
+
+- [ ] **Common Attack Vectors**
+  - [Prompt Injection and Jailbreaking](https://ogre51.medium.com/security-of-llm-apps-prompt-injection-jailbreaking-fb9fc5c883a8)
+  - Data poisoning attacks
+  - Model extraction and theft
+  - Adversarial examples
+  - Membership inference attacks
+
+### Week 3: AI Governance & Compliance
+- [ ] **Regulatory Frameworks**
+  - [NIST AI Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+  - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+  - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)
+  - ISO/IEC 23053:2022 (AI risk management)
+
+- [ ] **AI Ethics & Responsible AI**
+  - Bias and fairness in AI systems
+  - Transparency and explainability
+  - Privacy and data protection
+  - Accountability and human oversight
+
+### Week 4: Threat Modeling & Risk Assessment
+- [ ] **AI-Specific Threat Modeling**
+  - [Microsoft's AI/ML Threat Modeling](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
+  - [AI Threat Modeling by Matillion](https://www.matillion.com/blog/ai-threat-modeling)
+  - [Quick AI Threat Model Check](https://plot4.ai/assessments/quick-check)
+
+- [ ] **Risk Assessment Frameworks**
+  - [Adversarial Machine Learning (NIST)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+  - [Failure Modes in Machine Learning](https://securityandtechnology.org/wp-content/uploads/2020/07/failure_modes_in_machine_learning.pdf)
+  - Business impact assessment for AI systems
+
+**Hands-on Practice:**
+- [ ] Complete [Gandalf LLM Security Challenge](https://gandalf.lakera.ai/)
+- [ ] Try [Prompt Airlines CTF](https://promptairlines.com/)
+- [ ] Practice with [LLM Security Portal](https://llmsecurity.net/)
+
+---
+
+## Prompt Engineering
+**Duration: 1 week**
+
+### Understanding Prompt Engineering
+- [ ] **Prompt Engineering Fundamentals**
+  - What is prompt engineering and why it matters for security
+  - Types of prompts: zero-shot, few-shot, chain-of-thought
+  - Prompt structure and best practices
+  - Context window limitations and management
+
+- [ ] **Security-Focused Prompt Engineering**
+  - Defensive prompt engineering techniques
+  - Input validation through prompts
+  - Output sanitization strategies
+  - Prompt injection prevention techniques
+
+### Advanced Prompt Techniques
+- [ ] **Prompt Injection Attacks**
+  - Direct prompt injection
+  - Indirect prompt injection
+  - Jailbreaking techniques
+  - Prompt leaking attacks
+
+- [ ] **Defensive Strategies**
+  - Prompt templates and parameterization
+  - Input filtering and validation
+  - Output monitoring and filtering
+  - Role-based prompt design
+
+**Hands-on Practice:**
+- [ ] Practice prompt injection techniques on safe platforms
+- [ ] Design secure prompt templates
+- [ ] Test prompt robustness against various attack vectors
+
+---
+
+## RAG (Retrieval Augmented Generation)
+**Duration: 1-2 weeks**
+
+### Week 1: RAG Fundamentals
+- [ ] **Understanding RAG Architecture**
+  - [RAG: The Essential Guide](https://www.nightfall.ai/ai-security-101/retrieval-augmented-generation-rag)
+  - [Why RAG is Revolutionising GenAI](https://www.immuta.com/guides/data-security-101/retrieval-augmented-generation-rag/)
+  - Components: Retrieval system, knowledge base, generation model
+  - Vector databases and embeddings
+  - Chunking strategies and document processing
+
+- [ ] **RAG Implementation Patterns**
+  - Simple RAG vs Advanced RAG
+  - Multi-step reasoning with RAG
+  - Hybrid search approaches
+  - RAG with fine-tuned models
+
+### Week 2: RAG Security (Optional - for deeper understanding)
+- [ ] **RAG-Specific Security Risks**
+  - [Riding the RAG Trail: Access, Permissions and Context](https://www.lasso.security/blog/riding-the-rag-trail-access-permissions-and-context)
+  - [Security Risks with RAG Architectures](https://ironcorelabs.com/security-risks-rag/)
+  - [Mitigating Security Risks in RAG Applications](https://cloudsecurityalliance.org/blog/2023/11/22/mitigating-security-risks-in-retrieval-augmented-generation-rag-llm-applications)
+
+- [ ] **RAG Security Best Practices**
+  - Access control for knowledge bases
+  - Data privacy in retrieval systems
+  - Context injection attacks
+  - Information leakage through retrieval
+  - Secure document processing pipelines
+
+**Hands-on Practice:**
+- [ ] Build a simple RAG system with security controls
+- [ ] Test for information leakage vulnerabilities
+- [ ] Implement access controls for knowledge bases
+
+---
+
+## Fine Tuning
+**Duration: 2 weeks**
+
+### Week 1: Fine-Tuning Fundamentals
+- [ ] **Understanding Fine-Tuning**
+  - Pre-training vs fine-tuning vs prompt engineering
+  - Types of fine-tuning: full, parameter-efficient (LoRA, QLoRA)
+  - When to use fine-tuning vs other approaches
+  - Data requirements and preparation
+
+- [ ] **Fine-Tuning Techniques**
+  - Supervised fine-tuning (SFT)
+  - Reinforcement Learning from Human Feedback (RLHF)
+  - Constitutional AI approaches
+  - Domain-specific fine-tuning
+
+### Week 2: Fine-Tuning Security
+- [ ] **Security Considerations in Fine-Tuning**
+  - Training data security and privacy
+  - Model poisoning through fine-tuning
+  - Backdoor attacks in fine-tuned models
+  - Model extraction risks
+
+- [ ] **Secure Fine-Tuning Practices**
+  - Data sanitization and validation
+  - Secure training environments
+  - Model versioning and provenance
+  - Testing fine-tuned models for security
+
+**Hands-on Practice:**
+- [ ] Fine-tune a small model with security considerations
+- [ ] Test for data leakage in fine-tuned models
+- [ ] Implement secure fine-tuning pipelines
+
+---
+
+## AI Agents
+**Duration: 1 week**
+
+### Understanding AI Agents
+- [ ] **AI Agent Fundamentals**
+  - What are AI agents and how they differ from simple LLMs
+  - Agent architectures: ReAct, Plan-and-Execute, Multi-agent systems
+  - Tool use and function calling
+  - Memory and state management in agents
+
+- [ ] **Types of AI Agents**
+  - Conversational agents
+  - Task-specific agents
+  - Autonomous agents
+  - Multi-agent systems and collaboration
+
+### AI Agent Security
+- [ ] **Security Risks with AI Agents**
+  - Excessive agency and unauthorized actions
+  - Tool misuse and privilege escalation
+  - Agent-to-agent communication security
+  - Persistent memory security risks
+
+- [ ] **Securing AI Agents**
+  - Principle of least privilege for agents
+  - Action validation and approval workflows
+  - Monitoring agent behavior and decisions
+  - Secure tool integration patterns
+
+**Hands-on Practice:**
+- [ ] Build a simple AI agent with security controls
+- [ ] Test agent behavior under various scenarios
+- [ ] Implement monitoring for agent actions
+
+---
+
+## Agentic AI
+**Duration: 1 week**
+
+### Advanced Agentic Systems
+- [ ] **Agentic AI Concepts**
+  - Autonomous decision-making systems
+  - Goal-oriented AI behavior
+  - Planning and reasoning in agentic systems
+  - Human-AI collaboration patterns
+
+- [ ] **Agentic AI Architectures**
+  - Multi-agent orchestration
+  - Hierarchical agent systems
+  - Distributed agentic networks
+  - Agent communication protocols
+
+### Security in Agentic AI
+- [ ] **Unique Security Challenges**
+  - Emergent behaviors in agentic systems
+  - Goal misalignment and specification gaming
+  - Inter-agent security and trust
+  - Scalability of security controls
+
+- [ ] **Governance for Agentic AI**
+  - Establishing boundaries and constraints
+  - Monitoring and auditing agentic behavior
+  - Human oversight and intervention mechanisms
+  - Ethical considerations in autonomous systems
+
+**Hands-on Practice:**
+- [ ] Design security controls for agentic systems
+- [ ] Analyze case studies of agentic AI failures
+- [ ] Develop monitoring strategies for autonomous agents
+
+---
+
+## MCP (Model Context Protocol)
+**Duration: 1 week**
+
+### Understanding MCP
+- [ ] **MCP Fundamentals**
+  - What is Model Context Protocol
+  - MCP architecture and components
+  - Client-server communication patterns
+  - Resource management and sharing
+
+- [ ] **MCP Implementation**
+  - Setting up MCP servers and clients
+  - Resource discovery and access
+  - Tool integration through MCP
+  - Context sharing between applications
+
+### MCP Security
+- [ ] **Security Considerations**
+  - Authentication and authorization in MCP
+  - Resource access control
+  - Data privacy in context sharing
+  - Network security for MCP communications
+
+- [ ] **Best Practices**
+  - Secure MCP server deployment
+  - Client-side security measures
+  - Monitoring MCP interactions
+  - Incident response for MCP systems
+
+**Hands-on Practice:**
+- [ ] Set up a secure MCP environment
+- [ ] Implement access controls for MCP resources
+- [ ] Test MCP security configurations
+
+---
+
+## Certifications
+**Duration: Based on your bandwidth and goals**
+
+### AI/ML Security Certifications
+- [ ] **Certified AI/ML Pentester**
+  - [SecOps Group Certification](https://secops.group/product/certified-ai-ml-pentester/)
+  - Covers LLM penetration testing methodologies
+  - Hands-on practical assessments
+
+- [ ] **Cloud AI Security Certifications**
+  - AWS Machine Learning Specialty
+  - Google Cloud Professional ML Engineer
+  - Azure AI Engineer Associate
+  - Focus on security aspects of cloud AI services
+
+
+### Vendor-Specific Certifications
+- [ ] **OpenAI Safety and Alignment**
+- [ ] **Anthropic Constitutional AI**
+- [ ] **Microsoft Responsible AI**
+- [ ] **Google AI Ethics**
+
+**Preparation Resources:**
+- [ ] [AttackIQ Foundation of AI Security](https://www.academy.attackiq.com/courses/foundations-of-ai-security)
+- [ ] [Coursera AI for Cybersecurity Specialization](https://www.coursera.org/specializations/ai-for-cybersecurity)
+- [ ] [IBM GenAI for Cybersecurity Professionals](https://www.coursera.org/specializations/generative-ai-for-cybersecurity-professionals)
+
+---
+
+## GenAI Interview Questions
+
+### Technical Questions
+- [ ] **LLM Fundamentals**
+  - Explain the transformer architecture and its security implications
+  - What are the key differences between GPT, BERT, and T5 models?
+  - How do attention mechanisms work and what security risks do they pose?
+  - Describe the training process of large language models
+
+- [ ] **Security-Specific Questions**
+  - Walk through the OWASP LLM Top 10 and provide examples
+  - How would you test an LLM application for prompt injection vulnerabilities?
+  - Explain the difference between direct and indirect prompt injection
+  - What are the main security considerations when implementing RAG?
+  - How would you secure a fine-tuning pipeline?
+
+### Scenario-Based Questions
+- [ ] **Risk Assessment Scenarios**
+  - "A company wants to implement a customer service chatbot using GPT-4. What security risks would you identify?"
+  - "How would you conduct a security assessment of an existing LLM application?"
+  - "Design a secure architecture for a RAG-based document Q&A system"
+
+- [ ] **Incident Response Scenarios**
+  - "An LLM application is leaking sensitive customer data. How would you investigate?"
+  - "Users report that the chatbot is providing inappropriate responses. What's your approach?"
+  - "A competitor seems to have extracted your fine-tuned model. How do you respond?"
+
+### Governance and Compliance
+- [ ] **Regulatory Questions**
+  - How does the EU AI Act impact LLM deployments?
+  - What are the key components of NIST AI RMF?
+  - How would you implement AI governance in an organization?
+  - What metrics would you use to measure AI security posture?
+
+### Hands-on Technical Challenges
+- [ ] **Practical Exercises**
+  - Demonstrate prompt injection techniques
+  - Show how to implement LLM Guard or similar tools
+  - Explain model scanning and vulnerability detection
+  - Design monitoring and alerting for LLM applications
+
+---
+
+## GenAI Security Tools
+
+### Open Source Security Tools
+- [ ] **LLM Guard by ProtectAI**
+  - [GitHub Repository](https://github.com/protectai/llm-guard)
+  - [Playground](https://huggingface.co/spaces/protectai/llm-guard-playground)
+  - Input/output filtering and sanitization
+  - Prompt injection detection
+  - Sensitive data detection and redaction
+
+- [ ] **Model Scanning Tools**
+  - [ModelScan by ProtectAI](https://github.com/protectai/modelscan)
+  - Scans AI/ML models for security vulnerabilities
+  - Detects malicious code in model files
+  - Supports multiple model formats
+
+- [ ] **AI/ML Exploit Tools**
+  - [AI Exploits by ProtectAI](https://github.com/protectai/ai-exploits)
+  - Collection of AI/ML security exploits
+  - Educational and testing purposes
+  - Demonstrates common attack vectors
+
+### Commercial Security Platforms
+- [ ] **Lakera Guard**
+  - Real-time LLM security monitoring
+  - Prompt injection detection
+  - Content filtering and moderation
+  - API-based integration
+
+- [ ] **Robust Intelligence**
+  - AI security and monitoring platform
+  - Model validation and testing
+  - Continuous monitoring for drift and attacks
+  - Enterprise-grade security controls
+
+- [ ] **WhyLabs**
+  - ML monitoring and observability
+  - Data drift detection
+  - Model performance monitoring
+  - Security-focused analytics
+
+### Testing and Assessment Tools
+- [ ] **Garak**
+  - LLM vulnerability scanner
+  - Automated testing for various attack types
+  - Extensible framework for custom tests
+  - Community-driven development
+
+- [ ] **PromptFoo**
+  - LLM evaluation and testing framework
+  - Security-focused test cases
+  - Automated red teaming capabilities
+  - Integration with CI/CD pipelines
+
+### Bug Bounty and Research Platforms
+- [ ] **Huntr.com**
+  - [World's first AI/ML bug bounty platform](https://huntr.com/)
+  - Responsible disclosure for AI vulnerabilities
+  - Community-driven security research
+  - Rewards for finding AI security issues
+
+### Monitoring and Observability
+- [ ] **LangSmith**
+  - LLM application monitoring
+  - Trace analysis and debugging
+  - Performance and security metrics
+  - Integration with LangChain
+
+- [ ] **Weights & Biases**
+  - ML experiment tracking
+  - Model monitoring and versioning
+  - Security-focused metrics and alerts
+  - Team collaboration features
+
+### Cloud-Native Security Tools
+- [ ] **AWS Bedrock Guardrails**
+  - Content filtering and safety controls
+  - Custom guardrail policies
+  - Real-time monitoring and blocking
+  - Integration with AWS services
+
+- [ ] **Azure AI Content Safety**
+  - Content moderation and filtering
+  - Custom classification models
+  - API-based integration
+  - Multi-language support
+
+- [ ] **Google Cloud AI Platform Security**
+  - Model security scanning
+  - Access controls and IAM
+  - Audit logging and monitoring
+  - Compliance reporting
+
+### Implementation Checklist
+- [ ] Evaluate tools based on your specific use case
+- [ ] Set up monitoring and alerting for LLM applications
+- [ ] Implement input/output filtering and validation
+- [ ] Deploy model scanning in CI/CD pipelines
+- [ ] Establish incident response procedures
+- [ ] Regular security assessments and penetration testing
+- [ ] Stay updated with latest tools and techniques
+
+---
 
 ---
 ## Note: I will add the format and categories later. It's just a placeholder for now.
