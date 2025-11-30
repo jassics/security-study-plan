@@ -13,18 +13,19 @@ A Practical Study Plan to become a successful cybersecurity engineer based on ro
 6. [API Security Study Plan](api-security-study-plan.md)
 7. [Threat Modeling Study Plan](threat-modeling-study-plan.md)
 8. [GRC Study Plan](grc-study-plan.md)
+9. [Secure Software Development Lifecycle Study Plan](secure-software-development-lifecycle-study-plan.md)
+10. [Security Architecture Study Plan](security-architecture-study-plan.md)
+11. [DevSecOps Study Plan](devsecops-study-plan.md)
+12. [Docker Security Study Plan](docker-security-study-plan.md)
+13. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
+14. [Cryptography Study Plan](cryptography-study-plan.md)
+15. [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md)
 
 **_ToDo_**
 1. [Azure Security Study Plan](azure-security-study-plan.md)
-2. [DevSecOps Study Plan](devsecops-study-plan.md)
-3. [Docker Security Study Plan](docker-security-study-plan.md)
-4. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
-6. [Network Security Study Plan](network-security-study-plan.md)
-7. [Cryptography Study Plan](cryptography-study-plan.md)
-8. [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md)
-9. [Secure Code Review Study Plan](secure-code-review-study-plan.md)
-10. [Secure Software Development Lifecycle Study Plan](secure-software-development-lifecycle-study-plan.md)
-11. [Security Architecture Study Plan](security-architecture-study-plan.md)
+2. [Network Security Study Plan](network-security-study-plan.md)
+3. [Secure Code Review Study Plan](secure-code-review-study-plan.md)
+
 
 I created this repo after seeing [coding-interview-security](https://github.com/jwasham/coding-interview-university), which echoes my journey to getting into the full-time security role.
 
