@@ -20,6 +20,7 @@ A Practical Study Plan to become a successful cybersecurity engineer based on ro
 13. [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)
 14. [Cryptography Study Plan](cryptography-study-plan.md)
 15. [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md)
+16. [GenAI Security Study Plan](genai-security-study-plan.md)
 
 **_ToDo_**
 1. [Azure Security Study Plan](azure-security-study-plan.md)
