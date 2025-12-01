@@ -37,9 +37,11 @@ Usually it will take you 6-12 months to be good at the Product Security fundamen
 11. [Interview Questions](#interview-questions)
 
 ## Product Security Fundamentals
+**Duration: 3-4 weeks**
 
 Goal here is to understand what Product Security is and where it sits between AppSec, engineering, and the rest of the security org.
 
+### Week 1-4: The Role & Lifecycle
 1. Understand the role and responsibilities of Product Security:
    1. How it differs from Application Security, Security Architecture, and Pentesting.
    2. Typical responsibilities: partnering with product teams, reviewing designs, helping with threat modeling, triaging findings, guiding remediation.
@@ -56,9 +58,11 @@ Goal here is to understand what Product Security is and where it sits between Ap
 4. Map where Product Security can add value in each step.
 
 ## Working with Product and Engineering
+**Duration: 2-3 weeks**
 
 Product Security is a **people and process** heavy role.
 
+### Week 5-7: Integration & Culture
 1. Learn how product management works:
    1. Basic concepts: product roadmap, backlog, epics, user stories.
    2. How priorities are decided (OKRs, business goals, customer requests).
@@ -75,9 +79,11 @@ Product Security is a **people and process** heavy role.
    3. Writing clear tickets and documentation.
 
 ## Secure SDLC in Product Teams
+**Duration: 4-6 weeks**
 
 Here you focus on making the Secure SDLC **practical** for product teams.
 
+### Week 8-13: Practical SDLC
 1. Read [Security Development Lifecycle (SDL) Study Plan](secure-software-development-lifecycle-study-plan.md).
 2. Map SDL activities to real product workflows:
    1. When to do security design reviews.
@@ -94,9 +100,11 @@ Here you focus on making the Secure SDLC **practical** for product teams.
    3. Baseline for SDLC security activities.
 
 ## Threat Modeling and Risk-Based Prioritization
+**Duration: 3-4 weeks**
 
 Threat modeling is a key part of Product Security.
 
+### Week 14-17: Threat Modeling
 1. Read [Threat Modeling Study Plan](threat-modeling-study-plan.md).
 2. Practice at least one structured method (e.g., STRIDE or similar).
 3. Focus on **practical** threat modeling in product teams:
@@ -109,9 +117,11 @@ Threat modeling is a key part of Product Security.
    3. When to accept risk vs when to push for fixes.
 
 ## Metrics, Backlog and Communication
+**Duration: 2-3 weeks**
 
 You also need to help leadership understand where the product stands.
 
+### Week 18-20: Reporting & Strategy
 1. Learn basic security metrics for product security, such as:
    1. Number of open security issues by severity and age.
    2. Mean time to remediate (MTTR) for different severities.
@@ -125,9 +135,11 @@ You also need to help leadership understand where the product stands.
    3. Highlighting wins (reduced risk, improved coverage, closed gaps).
 
 ## Integrations with AppSec, Cloud and GRC
+**Duration: 2-3 weeks**
 
 Product Security sits in the middle of several other teams.
 
+### Week 21-23: Cross-Functional Collaboration
 1. With Application Security:
    1. Share findings and patterns across products.
    2. Reuse AppSec guidelines and standards.

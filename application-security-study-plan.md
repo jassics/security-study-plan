@@ -34,10 +34,12 @@ Usually it will take you 6-12 months to be good at the Application Security fund
 12. [Whom to follow on Twitter](#whom-to-follow-on-twitter)
 
 ## Web Application Concepts
+**Duration: 6 weeks**
+
 This topic will have an overlap with the concepts required for Pentesting, but you have to now think more of a defender than offender.
 Go with your pace, but make sure you understand the basic web security concepts very well like HTTP Security Response headers, Bruteforce, CSRF, Injection, JWT, Cryptography, Hashing, Encoding etc.
 
-### Basics
+### Week 1-2: Basics
 1. Understanding of [various HTTP methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods), PUT vs POST, UPDATE vs PATCH, leverage OPTIONS method
 2. Ability to [understand response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
   1. what if you got 200, when you tried something malicious
@@ -50,7 +52,7 @@ Go with your pace, but make sure you understand the basic web security concepts 
 6. [Basics of security terminologies](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/cybersecurity-terminologies.md)
 7. [Essentials Security Concepts](https://github.com/jassics/cybersecurity-skills-career-roadmap/blob/master/security-concepts.md)
 
-### Security Concepts
+### Week 3-4: Security Concepts
 You can find the majority of the security concepts at [OWASP Cheatsheet](https://cheatsheetseries.owasp.org/index.html)
 
 Understand the fundamental concepts on what it is, how it can be vulnerable and how you can either exploit it or mitigate it.
@@ -69,7 +71,7 @@ Understand the fundamental concepts on what it is, how it can be vulnerable and 
 13. Good understand of Cryptography and its implementation in application
 14. SAST vs SCA
 
-### Advance Level of application security skill sets
+### Week 5-6: Advance Level of application security skill sets
 1. Very good at [OWASP Top 10 for Web 2021](https://owasp.org/Top10/) and [OWASP Top 10 for API: 2019](https://github.com/OWASP/API-Security/blob/master/editions/2019/en/dist/owasp-api-security-top-10.pdf)
 2. Go through [OWASP Secure Code Review Guide](https://owasp.org/www-pdf-archive/OWASP_Code_Review_Guide_v2.pdf), understand what to verify and how to use this guide.
 3. Very good at [OWASP ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_4.0-en.pdf) (Application Security Verification Standard), it's your job to make every developer aware about it and must use while development.

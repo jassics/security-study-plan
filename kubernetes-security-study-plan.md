@@ -52,38 +52,69 @@ Goal here is to be very comfortable with how Kubernetes works, specifically from
    2. Which nodes run which workloads.
    3. How traffic flows inside and outside the cluster.
 
-## Cluster and Control Plane Security
+## Kubernetes Fundamentals and Cluster Setup
+**Duration: 1-2 weeks**
 
-Here you focus on securing the cluster itself.
+Before securing it, you must understand how it works.
 
-1. Access to cluster:
-   1. Authentication methods (certs, tokens, OIDC).
-   2. RBAC roles and role bindings.
-2. API server and etcd security basics:
-   1. TLS configuration and encryption at rest.
-   2. Securing etcd access (only via API server).
-3. Node security:
-   1. Hardening nodes (OS patching, limiting access).
-   2. kubelet security configuration basics.
-4. Managed vs self-managed Kubernetes:
-   1. Understand what your cloud provider manages vs what you must secure.
+### Week 1-2: Core Concepts
+1. **Architecture:** Control Plane (API Server, etcd, Scheduler, Controller Manager) vs Worker Nodes (Kubelet, Kube-proxy, Container Runtime).
+2. **Objects:** Pods, Deployments, Services, ConfigMaps, Secrets, Namespaces.
+3. **Networking:** CNI basics, Pod-to-Pod communication, Service discovery.
+4. **Practice:** Set up a cluster using `kind` or `minikube` and deploy a simple app.
 
-## Workload and Identity Security
+## Cluster Hardening
+**Duration: 1-2 weeks**
 
-Now focus on how workloads are defined and what identities they use.
+Securing the infrastructure itself.
 
-1. Pod security:
-   1. SecurityContext basics (runAsUser, fsGroup, capabilities, readOnlyRootFilesystem).
-   2. Avoiding privileged containers.
-2. Namespaces and multi-tenancy basics:
-   1. Isolating workloads by namespace.
-   2. Using namespaces for scoping RBAC and network policies.
-3. Service accounts and workload identity:
-   1. How pods authenticate to the API server.
-   2. Mapping Kubernetes service accounts to cloud IAM roles where applicable.
-4. Secrets management:
-   1. Basics of Kubernetes Secrets and their limitations.
-   2. Using external secret managers if needed.
+### Week 3-4: Hardening the Cluster
+1. **CIS Benchmarks:** Understand and apply CIS Kubernetes Benchmark.
+2. **API Server Security:**
+   - Disable anonymous access.
+   - Enable audit logging.
+   - Restrict access to etcd.
+3. **RBAC (Role-Based Access Control):**
+   - Roles vs ClusterRoles.
+   - Bindings.
+   - Principle of Least Privilege.
+4. **Node Security:**
+   - OS hardening.
+   - Kubelet security configuration.
+
+## Workload Security
+**Duration: 1-2 weeks**
+
+Securing what runs *inside* the cluster.
+
+### Week 5-6: Securing Pods & Deployments
+1. **Pod Security Standards (PSS):** Privileged, Baseline, Restricted profiles.
+2. **Security Context:**
+   - `runAsUser`, `runAsGroup`.
+   - `readOnlyRootFilesystem`.
+   - `allowPrivilegeEscalation: false`.
+3. **Network Policies:**
+   - Default deny all.
+   - Allow specific traffic (ingress/egress).
+4. **Secrets Management:**
+   - Kubernetes Secrets (encryption at rest).
+   - External Secret Stores (Vault, AWS Secrets Manager).
+
+## Supply Chain and Runtime Security
+**Duration: 1-2 weeks**
+
+Ensuring integrity and monitoring behavior.
+
+### Week 7-8: Advanced Topics
+1. **Admission Controllers:**
+   - Validating and Mutating webhooks.
+   - Policy engines: OPA Gatekeeper or Kyverno.
+2. **Supply Chain:**
+   - Image signing (Cosign).
+   - Image scanning in CI/CD.
+3. **Runtime Security:**
+   - Detecting anomalies (Falco).
+   - Sandboxed containers (gVisor, Kata Containers). if needed.
 
 ## Network, Policies and Multi-tenancy
 

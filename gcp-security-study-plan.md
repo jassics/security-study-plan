@@ -15,21 +15,7 @@ My only suggestion here is ask below 4 questions while learning each topic/conce
 I am listing only the topic name with few lines and possibly some examples. How much you learn and comfortable with the concept or topic is upon you. 
 And I will share the minimal link to make you up to the mark and you are free to learn anything more than this for better candidacy and experience.
 
-#### For any GCP Service(s), please follow this strategy:
-1. What does this service do?
-2. What problem it would solve for the business?
-3. Security Best Practices guide for GCP services. Ex: GCS security best practices, VPC security best practices.
-4. What permissions you should provide for each role or principal or service account to maintain the least privilege principle.
-5. How it is being used, can there be some security misconfiguration if not configured properly. If so, what are the security guideline to configure it.
-6. Is multi-tier, multi region required for this service?
-7. How data at rest and data in transit can be achieved?
-8. Is logging required? If so, how are you going to log and what data and till what period
-9. Are we monitoring it? what's the reason for Yes or No?
-10. Any specific security settings for that service like Bucket Permissions for specific GCS bucket
-
-To understand and use GCP resources effectively from security standpoint, you must understand common resources which an organization would use. Below are some important resources which you need to understand as you are either the cloud solution engineer or cloud architect.
-
-#### IAM (1 week): 
+### Week 1: IAM Deep Dive
 It's very important topic for any cloud role. Try to understand it practically as much as your job demands.
 1. [Start with GCP IAM official doc](https://cloud.google.com/iam/docs/overview)
 2. [Understand IAM roles and permissions is 2nd important thing to excel in IAM concepts](https://cloud.google.com/iam/docs/roles-overview)
@@ -37,32 +23,47 @@ It's very important topic for any cloud role. Try to understand it practically a
 4. Custom role vs Google Managed role
 5. Cross-Account IAM policy to different roles, services, account
 6. Understand the IAM policy from security mindset. Why this, why not this?
-8. [Using IAM Securely](https://cloud.google.com/iam/docs/using-iam-securely)
+7. [Using IAM Securely](https://cloud.google.com/iam/docs/using-iam-securely)
 
-#### GCS (Google Cloud Storage)
-#### GKE
-#### VPC (Virtual Private Cloud)
-#### Firewall Rules and policies
-#### Load Balancer
-#### Cloud DNS
-#### Cloud CDN
-#### Google Cloud Armor
-#### Google Cloud Logging
-#### BigQuery
-#### API Gateway
-#### Certificate Manager
-#### Secrets Manager
-#### Cloud Run
-#### Cloud Function
+### Week 2-3: Core Services
+**For any GCP Service(s), please follow this strategy:**
+1. What does this service do?
+2. What problem it would solve for the business?
+3. Security Best Practices guide for GCP services. Ex: GCS security best practices, VPC security best practices.
+4. What permissions you should provide for each role or principal or service account to maintain the least privilege principle.
+5. How it is being used, can there be some security misconfiguration if not configured properly.
+6. Is multi-tier, multi region required for this service?
+7. How data at rest and data in transit can be achieved?
+8. Is logging required? If so, how are you going to log and what data and till what period
+9. Are we monitoring it? what's the reason for Yes or No?
+10. Any specific security settings for that service like Bucket Permissions for specific GCS bucket
 
-### GCP Native Security skills
+**Key Services to Cover:**
+1. GCS (Google Cloud Storage)
+2. GKE
+3. VPC (Virtual Private Cloud)
+4. Firewall Rules and policies
+5. Load Balancer
+6. Cloud DNS
+7. Cloud CDN
+8. Google Cloud Armor
+9. Google Cloud Logging
+10. BigQuery
+11. API Gateway
+12. Certificate Manager
+13. Secrets Manager
+14. Cloud Run
+15. Cloud Function
+
+## GCP Native Security skills
+**Duration: 4-6 weeks**
+
 What I mean to say here is:
 1. GCP core services related to security
 2. GCP Security services hands-on knowledge
 
-**What are these?**
-
-These are the core services:
+### Week 4-6: Core Services Security
+**These are the core services:**
 1. IAM, super important
 2. Compute Instances
 3. GCS (Storage Object)
@@ -80,16 +81,17 @@ These are the core services:
 15. Secret manager
 16. Cloud Key Management
 
-Below are GCP Core Security services that you should know and try hands-on as much as possible
-
+### Week 7-9: Security Services Hands-on
+**Below are GCP Core Security services that you should know and try hands-on as much as possible:**
 1. IAM Policy Analyzer
 2. IAM Organization Policies
 
-### GCP Security Whitepapers
+## GCP Security Whitepapers
+**Duration: 2 weeks**
+
 GCP has awesome lists of whitepapers related to GCP Security. We are adding few important one here. You can anytime check more for updated or new security whitepapers [here](https://aws.amazon.com/security/security-learning/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
 
-And don't forget to **bookmark GCP Security bulletin** for new vulnerabilities' news from [here](https://aws.amazon.com/security/security-bulletins/)
-
+### Week 10-11: Reading & Analysis
 1. [GCP Overview](https://cloud.google.com/docs/overview) - One of the important whitepapers to understand an overview of GCP
 2. [Introduction to GCP Security Whitepaper](https://cloud.google.com/static/docs/security/overview/resources/google_security_wp.pdf)
 3. [Google Cloud Security Foundation Guide](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf)
@@ -100,13 +102,16 @@ And don't forget to **bookmark GCP Security bulletin** for new vulnerabilities' 
 8. [NIST Cybersecurity Framework in the GCP cloud](https://services.google.com/fh/files/misc/gcp_nist_cybersecurity_framework.pdf)
 9. [NIST 800-144 Security and Privacy in Public Cloud Computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-144.pdf)
 
-### Check your GCP Pentesting Skills
+## Check your GCP Pentesting Skills
+**Duration: 2-3 weeks**
+
+### Week 12-14: Practical Labs
 1. A Damn Vulnerable GCP Infrastructure [GCPGoat](https://github.com/ine-labs/GCPGoat)
 2. Try out the scenarios in [Cloud Goat](https://github.com/RhinoSecurityLabs/cloudgoat)
 3. [GCP Pentest Labs](https://github.com/lacioffi/GCP-pentest-lab/)
 4. [GCP Pentesting](https://cloud.hacktricks.xyz/pentesting-cloud/gcp-security)
 
-### Check your Knowledge against common security benchmark and frameworks.
+## Check your Knowledge against common security benchmark and frameworks.
 1. CIS Benchmark for Google Cloud. You can download pdf version from [here](https://www.cisecurity.org/benchmark/google_cloud_computing_platform)
 2. [CSA Cloud Matrix and STAR Framework](https://cloudsecurityalliance.org/download/artifacts/cloud-controls-matrix-v4/)
 3. [NIST CSF for GCP](https://services.google.com/fh/files/misc/gcp_nist_cybersecurity_framework.pdf)

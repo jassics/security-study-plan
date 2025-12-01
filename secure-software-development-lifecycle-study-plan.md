@@ -37,9 +37,11 @@ Usually it will take you 6-12 weeks to be comfortable with SDL fundamentals and 
 11. [Interview Questions](#interview-questions)
 
 ## SDL Fundamentals
+**Duration: 1-2 weeks**
 
 Goal here is to understand what SDL is trying to achieve.
 
+### Week 1-2: The Big Picture
 1. Review basic SDLC models:
    1. Waterfall vs iterative vs agile.
    2. How modern teams actually deliver (Scrum/Kanban, CI/CD).
@@ -54,9 +56,11 @@ Goal here is to understand what SDL is trying to achieve.
    4. [Security Architecture Study Plan](security-architecture-study-plan.md)
 
 ## Security in Requirements and Design
+**Duration: 2-3 weeks**
 
 Security must start before code is written.
 
+### Week 3-5: Shift Left
 1. Requirements phase:
    1. Define security and privacy requirements along with functional ones.
    2. Examples: authN/authZ, logging, encryption, data retention, compliance.
@@ -71,9 +75,11 @@ Security must start before code is written.
    3. Architecture diagrams with security controls marked.
 
 ## Security in Implementation and Code Review
+**Duration: 2-3 weeks**
 
 Here you focus on day-to-day development activities.
 
+### Week 6-8: Secure Build
 1. Secure coding practices:
    1. Follow language-specific secure coding guidelines.
    2. Use frameworks and libraries securely.
@@ -86,9 +92,11 @@ Here you focus on day-to-day development activities.
 4. Link to [Secure Code Review Study Plan](secure-code-review-study-plan.md) for deeper code review skills.
 
 ## Security Testing and Verification
+**Duration: 2-3 weeks**
 
 Testing must verify that controls are correctly implemented.
 
+### Week 9-11: Verification
 1. Unit and integration tests with security in mind where possible.
 2. DAST / API testing for running apps and services.
 3. Additional testing methods where relevant:
@@ -98,9 +106,11 @@ Testing must verify that controls are correctly implemented.
 5. Ensure test results feed back into backlog and SDL metrics.
 
 ## Release, Operations and Feedback
+**Duration: 1-2 weeks**
 
 Security does not end at release.
 
+### Week 12-13: Post-Release
 1. Pre-release:
    1. Security sign-off criteria for high-risk features.
    2. Checklist to verify critical controls (auth, logging, encryption, etc.).
@@ -113,9 +123,11 @@ Security does not end at release.
    2. Regular retrospectives on security issues.
 
 ## Frameworks and Maturity Models
+**Duration: 1-2 weeks**
 
 Finally, understand how SDL ties into broader frameworks.
 
+### Week 14-15: Maturity
 1. OWASP SAMM (Software Assurance Maturity Model):
    1. High-level understanding of practice areas and maturity levels.
 2. Microsoft SDL concepts (at a summary level).

@@ -37,9 +37,11 @@ Usually it will take you 6-12 months to be good at the Security Architecture fun
 11. [Interview Questions](#interview-questions)
 
 ## Security Architecture Fundamentals
+**Duration: 4-6 weeks**
 
 Goal here is to understand what security architecture means and where it fits in the overall security program.
 
+### Week 1-6: Core Architecture
 1. Understand the role of a Security Architect vs AppSec Engineer vs Cloud Security Engineer vs GRC.
 2. Understand high-level components of modern systems:
    1. Applications / microservices
@@ -55,9 +57,11 @@ Goal here is to understand what security architecture means and where it fits in
 You will use these fundamentals in almost every other section.
 
 ## Frameworks, Standards and Models
+**Duration: 3-4 weeks**
 
 You don't need to memorize everything, but you should know **what exists**, **when to use it**, and **where to look**.
 
+### Week 7-10: Frameworks
 1. High-level security architecture frameworks
    1. SABSA (Sherwood Applied Business Security Architecture) – concept of business-driven security architecture
    2. TOGAF and how security fits into enterprise architecture
@@ -74,9 +78,11 @@ You don't need to memorize everything, but you should know **what exists**, **wh
 Try to understand how these frameworks translate into **concrete architecture requirements** (e.g. logging, segmentation, encryption, IAM, backups, resilience).
 
 ## Designing Secure Architectures
+**Duration: 4-6 weeks**
 
 Focus on how you design secure solutions from the start.
 
+### Week 11-16: Design Patterns
 1. Network and segmentation concepts
    1. DMZs, zero trust network concepts, micro‑segmentation
    2. North-south vs east-west traffic
@@ -97,9 +103,11 @@ Focus on how you design secure solutions from the start.
 Try to pick one or two small systems (side project, home lab, or existing app at work) and **draw** the "as‑is" and "to‑be" secure architecture.
 
 ## Threat Modeling and Risk Management
+**Duration: 3-4 weeks**
 
 Here, you combine architecture diagrams with attacker thinking.
 
+### Week 17-20: Threat Modeling
 1. Read [Threat Modeling Study Plan](threat-modeling-study-plan.md).
 2. Learn at least one methodology:
    1. STRIDE
@@ -116,9 +124,11 @@ Repeat this for at least 3–4 different architectures:
 - Internal line-of-business application
 
 ## Secure SDLC and Architecture Governance
+**Duration: 3-4 weeks**
 
 Security architecture is effective only if it is built into the way software is delivered.
 
+### Week 21-24: Governance
 1. Revisit [Security Development Lifecycle (SDL) Study Plan](secure-software-development-lifecycle-study-plan.md).
 2. Understand where security architects engage in SDLC:
    1. Requirement and design reviews
@@ -131,9 +141,11 @@ Security architecture is effective only if it is built into the way software is 
    3. Security standards, baselines, and guardrails
 
 ## Reference Architectures and Patterns
+**Duration: 3-4 weeks**
 
 Look for and collect **reference architectures** for typical environments:
 
+### Week 25-28: Reference Architectures
 1. On‑prem or hybrid architectures
    1. DMZ, VPN, identity, central logging, SIEM, bastion hosts
 2. Cloud architectures

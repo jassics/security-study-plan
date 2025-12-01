@@ -5,18 +5,23 @@ I am making the study plan irrespective of job role under AWS Security category.
 So, check how much you can cover and close the checkbox. The more you close, the better candidate you are for the job role.
 Also, I assume you have already checked and comfortable with [Common Security Skills study plan](common-skills-study-plan.md).
 
-## AWS Security Skills Learning and Checklist
-My only suggestion here is ask below 4 questions while learning each topic/concepts etc.
-1. What is this? (For example: What is security group)
-2. Why am I learning this?
-3. How I can implement this?
-4. How it will make secure or how to make it secure depending upon the topic or concept again?
+## ToC
+1. [AWS Fundamentals](#aws-fundamentals) - 2-3 weeks
+2. [AWS Native Security core skills](#aws-native-security-core-skills) - 4-6 weeks
+3. [AWS Security Whitepapers](#aws-security-whitepapers) - 2 weeks
+4. [Check your AWS Pentesting Skills](#check-your-aws-pentesting-skills) - 2-3 weeks
+5. [Check your Knowledge against common security benchmark and frameworks](#check-your-knowledge-against-common-security-benchmark-and-frameworks)
+6. [AWS Security Videos and Courses](#aws-security-videos-and-courses)
+7. [AWS Security Interview Questions](#aws-security-interview-questions)
+8. [People to follow on twitter](#people-to-follow-on-twitter)
 
-### AWS Fundamentals
+## AWS Fundamentals
+**Duration: 2-3 weeks**
+
 I am listing only the topic name. How much you learn and comfortable with the concept or topic is upon you. 
 And I will share the minimal link to make you up to the mark and you are free to learn anything more than this for better candidacy and experience.
 
-#### IAM
+### Week 1: IAM Deep Dive
 One of the most important and must have skills for you. Try to understand IAM functionalities as much as possible.
 1. [Understand IAM policy in 60 minutes: Youtube](https://www.youtube.com/watch?v=YQsK4MtsELU)
 2. [Understand IAM permissions](https://aws.amazon.com/iam/features/manage-permissions/)
@@ -30,33 +35,35 @@ One of the most important and must have skills for you. Try to understand IAM fu
 10. [Service Control Policy](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
 11. [Security Best Practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
-#### Amazon S3
-#### KMS
-#### VPC
-#### Lambda
-#### AWS EKS and ECS
-#### AMAZON RDS
+### Week 2-3: Core Services
+**For any AWS Service(s), please follow this strategy:**
+1. What does this service does & what problem it would solve for business
+2. Security Best Practices guide for AWS service. Ex: S3 security best practices, VPC security best practices.
+3. What permissions you should provide for each role to maintain the least privilege principle.
+4. How it is being used, can there be some security misconfiguration if not configured properly.
+5. Is multi-tier, multi region required for this service
+6. How data at rest and data in transit can be achieved.
+7. Is logging required? If so, how are you going to log and what data and till what period
+8. Are we monitoring it? what's the reason for Yes or No
+9. Any specific security settings for that service like Bucket Policy for S3 bucket
 
-### For any AWS Service(s), please follow this strategy:
-1. What does this service does
-2. What problem it would solve for business
-3. Security Best Practices guide for AWS service. Ex: S3 security best practices, VPC security best practices.
-4. What permissions you should provide for each role to maintain the least privilege principle.
-5. How it is being used, can there be some security misconfiguration if not configured properly. If so, what are the security guideline to configure it.
-6. Is multi-tier, multi region required for this service
-7. How data at rest and data in transit can be achieved.
-8. Is logging required? If so, how are you going to log and what data and till what period
-9. Are we monitoring it? what's the reason for Yes or No
-10. Any specific security settings for that service like Bucket Policy for S3 bucket
+**Key Services to Cover:**
+1. Amazon S3
+2. KMS
+3. VPC
+4. Lambda
+5. AWS EKS and ECS
+6. AMAZON RDS
 
-### AWS Native Security core skills
+## AWS Native Security core skills
+**Duration: 4-6 weeks**
+
 What I mean to say here is:
 1. AWS core services related security skills
 2. AWS Security services hands-on knowledge
 
-**What are these?**
-These are the core services:
-
+### Week 4-6: Core Services Security
+**These are the core services:**
 1. IAM, super important
 2. EC2
 3. S3
@@ -66,8 +73,8 @@ These are the core services:
 7. Lambda
 8. ECS and EKS
 
-Below are AWS Core Security services that you should know and try hands-on as much as possible
-
+### Week 7-9: Security Services Hands-on
+**Below are AWS Core Security services that you should know and try hands-on as much as possible:**
 1. IAM Access Analyzer
 2. S3 Bucket Policy
 3. Security Group and NACL
@@ -82,11 +89,12 @@ Below are AWS Core Security services that you should know and try hands-on as mu
 12. Secrets Manager
 13. Cognito
 
-### AWS Security Whitepapers
+## AWS Security Whitepapers
+**Duration: 2 weeks**
+
 AWS has awesome lists of whitepapers related to AWS Security. We are adding few important one here. You can anytime check more for updated or new security whitepapers [here](https://aws.amazon.com/security/security-learning/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
 
-And don't forget to **bookmark AWS Security bulletin** for new vulnerabilities news from [here](https://aws.amazon.com/security/security-bulletins/)
-
+### Week 10-11: Reading & Analysis
 1. [AWS Overview](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) - One of the important whitepaper to understand an overview of AWS
 2. [Introduction to AWS Security Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/introduction-aws-security.pdf)
 3. [AWS Well-Architected Security Pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/wellarchitected-security-pillar.pdf)
@@ -110,7 +118,10 @@ And don't forget to **bookmark AWS Security bulletin** for new vulnerabilities n
 21. [AWS KMS Best Practices](https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf)
 22. [Security Overview of AWS Fargate](https://d1.awsstatic.com/whitepapers/AWS_Fargate_Security_Overview_Whitepaper.pdf)
 
-### Check your AWS Pentesting Skills
+## Check your AWS Pentesting Skills
+**Duration: 2-3 weeks**
+
+### Week 12-14: Practical Labs
 1. Did you use [pacu](https://github.com/RhinoSecurityLabs/pacu)? if not, start using it
 2. Try out the scenarios in [Cloud Goat](https://github.com/RhinoSecurityLabs/cloudgoat)
 3. Try AWS CTF from [flaws.cloud](http://flaws.cloud/). Here is [solution on YouTube](https://www.youtube.com/playlist?list=PLRTsCutScZnzo3uV_79Dur73kqskfaTMS) as well
@@ -119,7 +130,7 @@ And don't forget to **bookmark AWS Security bulletin** for new vulnerabilities n
 6. [AWS Security Workshops](https://awssecworkshops.com/workshops/)
 7. Check other good tools like Prowler and ScoutSuite as well.
 
-### Check your Knowledge against common security benchmark and frameworks.
+## Check your Knowledge against common security benchmark and frameworks.
 1. AWS CIS Benchmark
 2. CSA Cloud Matrix and STAR Framework
 3. [NIST CSF for AWS](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf)
