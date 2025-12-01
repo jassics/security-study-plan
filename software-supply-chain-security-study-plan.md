@@ -38,9 +38,11 @@ Usually it will take you 8-16 weeks to be comfortable with software supply chain
 11. [Interview Questions](#interview-questions)
 
 ## Supply Chain Fundamentals
+**Duration: 2-3 weeks**
 
 Goal here is to understand what “software supply chain” actually means.
 
+### Week 1-3: The Chain
 1. Understand the basic stages:
    1. Developer workstation and source control.
    2. Dependencies and package managers.
@@ -60,9 +62,11 @@ Goal here is to understand what “software supply chain” actually means.
    5. Misconfigurations in deployment.
 
 ## Dependencies and Package Ecosystems
+**Duration: 2-3 weeks**
 
 Dependencies are one of the largest attack surfaces.
 
+### Week 4-6: Dependencies
 1. Understand different ecosystems:
    1. npm/yarn/pnpm for JavaScript/TypeScript.
    2. PyPI for Python, Maven/Gradle for Java, NuGet for .NET, etc.
@@ -79,9 +83,11 @@ Dependencies are one of the largest attack surfaces.
    2. Severity, exploitability, and prioritization of dependency vulns.
 
 ## Build Systems and CI/CD Security
+**Duration: 2-3 weeks**
 
 Here you focus on securing the build and delivery machinery.
 
+### Week 7-9: Pipeline Security
 1. Understand key components:
    1. CI servers/agents.
    2. Build scripts and configuration.
@@ -97,9 +103,11 @@ Here you focus on securing the build and delivery machinery.
 4. Cross-link with [DevSecOps Study Plan](devsecops-study-plan.md) for CI/CD details.
 
 ## Artifact Integrity, Signing and SBOM
+**Duration: 2-3 weeks**
 
 This is about making sure what you build is exactly what gets deployed.
 
+### Week 10-12: Integrity
 1. Artifact repositories and registries:
    1. Access control and separation of environments.
    2. Immutable artifacts where possible.
@@ -114,9 +122,11 @@ This is about making sure what you build is exactly what gets deployed.
    2. Ensure builds are reproducible and traceable.
 
 ## Historical Supply Chain Incidents
+**Duration: 1-2 weeks**
 
 You will learn a lot by understanding how major incidents happened.
 
+### Week 13-14: Case Studies
 1. **npm ecosystem attacks** (examples at a high level):
    1. Malicious packages published to npm to steal credentials, exfiltrate data, or run cryptominers.
    2. Typosquatting attacks where packages with names similar to popular libraries are published.
@@ -134,9 +144,11 @@ You will learn a lot by understanding how major incidents happened.
    3. What changes were made after the incident (e.g., more signing, better monitoring, stricter access control).
 
 ## Detection, Response and Governance
+**Duration: 2-3 weeks**
 
 Finally, focus on how to detect and respond to supply chain issues and how to govern the program.
 
+### Week 15-17: Operations
 1. Detection:
    1. Monitoring dependency changes and vulnerability feeds.
    2. Alerting on unusual build or deployment behavior.

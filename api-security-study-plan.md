@@ -8,26 +8,16 @@ It will cover what you need to learn to excel in API security (part of AppSec do
 2. How API endpoints are defined and its request and response
 3. You know basics of coding to write your own APIs for testing
 4. OWASP Top 10 for web
-5. OWASP Top 10 for API
+5. [OWASP Top 10 for API 2023](https://owasp.org/API-Security/editions/2023/en/0x11-t10/) (Latest version)
 
 I will explain very basic or just the overview so that you can start learning those concepts from there.
 
 **Note:** Usually it will take you 3-6 months to be good at the API Security fundamentals to get a job at entry level.
 
-## ToC:
-1. [API Fundamentals](#api-fundamentals)
-   1. [API endpoints](#1-api-endpoints)
-   2. [Types of microservices](#2-types-of-microservices)
-   3. [microservices from API Security perspective](#3-try-to-understand-microservices-from-api-security-perspective)
-   4. [Cloud-Native API](#4-cloud-native-api)
-2. [API Security Understandings](#api-security-understandings)
-   1. [API Security is not web security](#1-api-security-is-not-web-security)
-   2. [What is API Security](#2-what-is-api-security)
-   3. [Why API Security](#3-why-api-security)
-   4. [AuthN and AuthZ](#4-authn-and-authz)
-   5. [Rate Limit](#5-rate-limit)
-   6. [API Gateway](#6-api-gateway)
-3. [API Security Labs and Practices](#api-security-labs-and-practices)
+## Study Plan ToC:
+1. [API Fundamentals](#api-fundamentals) - 2 weeks
+2. [API Security Understandings](#api-security-understandings) - 2 weeks
+3. [API Security Labs and Practices](#api-security-labs-and-practices) - 2 weeks
 4. [API Security Tools](#api-security-tools)
 5. [Books](#books)
 6. [Videos](#videos)
@@ -36,7 +26,10 @@ I will explain very basic or just the overview so that you can start learning th
 9. [Interview Questions](#interview-questions)
 
 ## API Fundamentals
-### 1. API endpoints
+**Duration: 2 weeks**
+
+### Week 1: Basics of API & Endpoints
+#### 1. API endpoints
 **Let's try to understand API endpoints in layman terms.**
 
 Imagine you're ordering food from a restaurant using a food delivery app. You open the app and select the items you want to order. When you're done, you click the "Place Order" button. Behind the scenes, the app needs to communicate with the restaurant's system to process your order. This is where API endpoints come into play.
@@ -49,7 +42,7 @@ Similarly, if you want to check the status of your order later, the app sends a 
 
 **In summary,** API endpoints act as communication channels between different systems, allowing them to exchange information and perform specific actions. They serve as designated entry points that receive requests from one system and provide the necessary responses based on the requested action.
 
-### 2. Types of microservices
+#### 2. Types of microservices
 Try to understand what types of microservices exist from application architectural view. Then it will be easy for you to understand microservices patter. Once you know these concepts, it will actually help you to the API security assessment accurately.
 
 Microservices are an architectural approach to building software applications by breaking them down into small, loosely coupled, and independently deployable services. Each microservice focuses on a specific business capability or function. Here are some common types of microservices:
@@ -65,7 +58,8 @@ Microservices are an architectural approach to building software applications by
 
 These are just a few examples of the types of microservices that can exist in an application. The specific types and number of microservices can vary depending on the requirements of the application and the domain it serves. The goal is to decompose the application into small, manageable services, each responsible for a specific business capability, allowing for scalability, agility, and independent development and deployment.
 
-### 3. Try to understand Microservices from API Security perspective
+### Week 2: Microservices & Cloud Native APIs
+#### 3. Try to understand Microservices from API Security perspective
 When it comes to API security in the context of microservices, there are a few important types of microservices that developers and security professionals should be aware of. Let's explore them:
 
 1. Authentication Service: This microservice handles user authentication and identity management. It verifies the identity of users, usually through username/password combinations, tokens, or other authentication mechanisms. It ensures that only authorized users can access protected resources and performs actions like user registration, login, and logout. 
@@ -77,7 +71,7 @@ When it comes to API security in the context of microservices, there are a few i
 
 Understanding these types of microservices from an API security perspective allows developers and security professionals to design, implement, and maintain secure microservice architectures. It helps them identify the specific security concerns associated with each microservice and apply appropriate security measures to protect the system and its APIs from potential threats and attacks.
 
-### 4. Cloud native API
+#### 4. Cloud native API
 You can't deny the fact that Cloud is everywhere and understanding how API is being used in cloud would be an aded advantage for you.
 A cloud-native API refers to an API that is designed, developed, and deployed with a cloud-native approach, taking full advantage of cloud computing capabilities and principles. Cloud-native APIs are specifically tailored for cloud environments, enabling scalability, resilience, and flexibility. Here are a few examples of cloud-native APIs:
 
@@ -90,10 +84,13 @@ A cloud-native API refers to an API that is designed, developed, and deployed wi
 These examples illustrate different types of cloud-native APIs that leverage cloud infrastructure and principles to deliver scalable, resilient, and flexible solutions. Cloud-native APIs enable organizations to take full advantage of cloud computing benefits, such as elasticity, cost efficiency, and rapid deployment, while building robust and modern applications.
 
 ## API Security Understandings
+**Duration: 2 weeks**
+
 Now, as you understand basic blocks of API, types of API, microservices, cloud-native APIs etc. 
 Let's understand few basic concepts while dealing with API Security like AuthN, AuthZ, OAuth, API Gateway, why API security is different from web security and so on.
 
-### 1. API Security is not web security!
+### Week 3: Core Security Concepts
+#### 1. API Security is not web security!
 When I talk about API Security and say that web security is different. Many either get confused or don't agree. But, ideally API security and web application security are two different concepts, although they are related. Web application security refers to the measures taken to protect web applications, including the servers, databases, and user interfaces that are involved in delivering web content. API security, on the other hand, is about protecting the API itself and the data that it transmits.
 
 **Here are some of the key differences between API security and web application security:**
@@ -104,7 +101,7 @@ When I talk about API Security and say that web security is different. Many eith
 
 Overall, API security and web application security are equally important and require different measures to ensure they remain safe and secure. While web application security focuses on the user interface, server, and database, API security focuses on the API itself, the data it transmits, and the ways in which different systems interact with it.
 
-### 2. What is API Security
+#### 2. What is API Security
 API security refers to the measures taken to protect an Application Programming Interface (API) from unauthorized access, modification, and exploitation. APIs are a set of rules and protocols that allow various software applications to interact with each other. Therefore, they need to be secure to ensure that only authorized parties have access to them.
 
 **API security can be ensured through the following measures:**
@@ -120,7 +117,7 @@ API security refers to the measures taken to protect an Application Programming 
 - Stripe API: The Stripe API uses authentication and API keys to restrict access to authorized users. It also uses rate limiting to prevent excessive API usage and offers real-time fraud detection to prevent fraudulent transactions.
 - Twilio API: The Twilio API uses authentication and authorization to restrict access to authorized users. It also uses HTTPS to encrypt data and provides rate throttling to prevent excessive API usage. Additionally, it offers access control features to restrict API access to specific IP addresses or domains.
 
-### 3. Why API Security
+#### 3. Why API Security
 API security is crucial for several reasons:
 
 1. Data Protection: APIs often handle sensitive data, such as user credentials, personal information, financial data, or business secrets. Securing APIs ensures that this data remains confidential and is not compromised or accessed by unauthorized entities. 
@@ -133,7 +130,8 @@ API security is crucial for several reasons:
 
 In summary, API security is essential to protect sensitive data, ensure authorized access, maintain trust and reputation, comply with regulations, prevent attacks, secure integrations, and enable monitoring and auditing. It is a fundamental aspect of building robust and secure applications and systems in today's interconnected digital landscape.
 
-### 4. AuthN and AuthZ
+### Week 4: Advanced Concepts (AuthN, AuthZ, Rate Limiting)
+#### 4. AuthN and AuthZ
 Authentication (AuthN) and authorization (AuthZ) are two essential concepts in API security. Let's explore each of them with practical examples:
 
 **Authentication (AuthN):**
@@ -153,9 +151,45 @@ Authorization is the process of granting or denying access to specific resources
 
 In summary, authentication (AuthN) is the process of verifying a user's identity, while authorization (AuthZ) determines the permissions and access rights granted to an authenticated user. These two concepts work together to ensure that only authenticated users with appropriate privileges can access the desired resources or perform specific actions.
 
-### 5. Rate limit
+#### 5. Rate limit
+Rate limiting is a strategy for limiting network traffic. It puts a cap on how often someone can repeat an action within a certain timeframe – for instance, trying to log in to an account. Rate limiting can help stop certain kinds of malicious bot activity. It can also reduce strain on web servers.
 
-### 6. API Gateway
+**Why is it important?**
+1.  **Preventing DoS/DDoS:** Stops attackers from flooding your API with requests to crash it.
+2.  **Brute Force Protection:** Limits the speed at which an attacker can guess passwords or tokens.
+3.  **Resource Management:** Ensures fair usage of your API resources among all users.
+
+**Common Algorithms:**
+-   **Token Bucket:** Tokens are added to a bucket at a fixed rate. Each request consumes a token. If empty, request is denied.
+-   **Leaky Bucket:** Requests are processed at a fixed rate, smoothing out bursts.
+-   **Fixed Window:** Counts requests in a fixed time window (e.g., 100 req/min). Can be bypassed at window edges.
+-   **Sliding Window:** A more accurate version of fixed window that smooths out the edges.
+
+**Implementation:**
+-   Rate limits are often implemented at the API Gateway or Load Balancer level.
+-   Use HTTP headers to communicate limits to clients:
+    -   `X-RateLimit-Limit`: The maximum number of requests allowed in a window.
+    -   `X-RateLimit-Remaining`: The number of requests remaining in the current window.
+    -   `X-RateLimit-Reset`: The time at which the current window resets.
+-   Return `429 Too Many Requests` status code when the limit is exceeded.
+
+#### 6. API Gateway
+An API Gateway is an API management tool that sits between a client and a collection of backend services. It acts as a reverse proxy to accept all application programming interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result.
+
+**Key Security Functions:**
+1.  **Authentication & Authorization:** Offload AuthN/AuthZ from individual microservices. The gateway verifies tokens (e.g., JWT) and passes user context downstream.
+2.  **Rate Limiting & Throttling:** Enforce limits to protect backend services from overload and abuse.
+3.  **Input Validation:** Sanitize incoming requests to prevent injections (SQLi, XSS) before they reach the backend.
+4.  **IP Whitelisting/Blacklisting:** Allow or deny traffic based on IP source.
+5.  **SSL/TLS Termination:** Handle encryption/decryption at the gateway to reduce overhead on backend services.
+6.  **Logging & Monitoring:** Centralized point for logging all API traffic for auditing and analytics.
+
+**Popular API Gateways:**
+-   **Kong:** Open-source, highly extensible.
+-   **Apigee (Google Cloud):** Enterprise-grade full lifecycle API management.
+-   **AWS API Gateway:** Fully managed service for AWS environments.
+-   **Azure API Management:** Managed service for Azure.
+-   **Tyk:** Open-source API gateway and management platform.
 
 ## API Security Labs and Practices
 1. [OWASP crAPI](https://github.com/OWASP/crAPI): Completely Ridiculous API (crAPI) can help teams understand the ten most important security aspects of an API within a mock environment. crAPI has implemented almost every security loophole that APIs should not have—this offers a good model that showcases how not to secure APIs.
@@ -168,6 +202,9 @@ crAPI uses a microservices architecture and is composed of several services whic
 - Workshop—vehicle workshop endpoints 
 - Postgres—SQL Database 
 - Mongo—NoSQL Database
+
+2. [vAPI](https://github.com/roottusk/vapi): vAPI is Vulnerable Adversarial Programmable Interface, which is an open-source PHP-based API that mimics OWASP API Top 10 scenarios through exercises.
+3. [VAmPI](https://github.com/erev0s/VAmPI): Vulnerable API made with Python/Flask.
 
 ## API Security Tools
 1. [Dastardly form Burp suite (free): Use it in CI/CD pipeline](https://portswigger.net/burp/documentation/dastardly/generic) 

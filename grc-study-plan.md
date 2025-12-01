@@ -29,27 +29,57 @@ But for the scope of this study plan we will focus on the following elements:
 - Security & Continuity
 - Audit & Assurance
 
-## Duration for Learning GRC Fundamentals
-### Beginners
-- **Basic Understanding (4-6 weeks):** This includes foundational concepts, terminology, and an overview of GRC frameworks.
-- **Intermediate Knowledge (8-12 weeks):** In-depth study of governance, risk management, and compliance processes, and their application in real-world scenarios.
+## ToC
+1. [GRC Fundamentals](#grc-fundamentals) - 2 weeks
+2. [Governance and Policy](#governance-and-policy) - 2 weeks
+3. [Risk Management Deep Dive](#risk-management-deep-dive) - 2 weeks
+4. [Compliance and Auditing](#compliance-and-auditing) - 2 weeks
+5. [Tools, Metrics and Operations](#tools-metrics-and-operations) - 2 weeks
+6. [Resources](#resources)
 
-### Advanced Professionals
-- **Refinement and Specialization (6-8 weeks):** Advanced topics, integration of GRC systems, and case studies on complex GRC challenges.
+## GRC Fundamentals
+**Duration: 2 weeks**
 
-## Concepts Required to Excel in the GRC Domain
-### Governance
+Understand the core concepts of Governance, Risk, and Compliance and how they integrate.
+
+### Week 1-2: Core Concepts
+- **Governance:** The framework and processes that ensure an organization’s strategies, objectives, and risks are managed and aligned with its goals.
+- **Risk Management:** Identifying, assessing, and mitigating risks that could impact the organization’s ability to achieve its objectives.
+- **Compliance:** Ensuring that the organization adheres to laws, regulations, standards, and internal policies.
+- **Key Frameworks Overview:**
+    - Governance: COSO, COBIT
+    - Risk: ISO 31000, NIST RMF
+    - Compliance: GDPR, HIPAA, SOX, ISO 27001
+
+## Governance and Policy
+**Duration: 2 weeks**
+
+Focus on the "G" in GRC - setting the direction and rules.
+
+### Week 3-4: Establishing Governance
 - **Strategic Planning:** Understanding organizational goals and aligning GRC efforts.
 - **Policy Development:** Crafting policies that support governance and compliance.
 - **Internal Controls:** Designing and implementing controls to mitigate risks.
+- **Roles & Responsibilities:** Board, Management, Audit, Risk Owners.
 
-### Risk Management
-- **Risk Assessment:** Techniques for identifying and evaluating risks.
-- **Risk Mitigation:** Strategies for controlling and reducing risk impact.
+## Risk Management Deep Dive
+**Duration: 2 weeks**
+
+Focus on the "R" in GRC - managing uncertainty.
+
+### Week 5-6: Risk Lifecycle
+- **Risk Assessment:** Techniques for identifying and evaluating risks (Qualitative vs Quantitative).
+- **Risk Mitigation:** Strategies for controlling and reducing risk impact (Avoid, Accept, Transfer, Mitigate).
 - **Incident Management:** Processes for handling and recovering from risk events.
+- **Third-Party Risk Management (TPRM):** Managing risks from vendors and suppliers.
 
-### Compliance
-- **Regulatory Knowledge:** Understanding of relevant laws and regulations.
+## Compliance and Auditing
+**Duration: 2 weeks**
+
+Focus on the "C" in GRC - adhering to rules and proving it.
+
+### Week 7-8: Regulatory Landscape
+- **Regulatory Knowledge:** Deep dive into relevant regulations (GDPR, HIPAA, PCI-DSS).
 - **Compliance Auditing:** Techniques for auditing and ensuring compliance.
 - **Reporting and Documentation:** Skills for documenting and reporting compliance status.
 

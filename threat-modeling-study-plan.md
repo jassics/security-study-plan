@@ -30,89 +30,71 @@ In short,
 8. Impact of exploitation of vulnerability by a threat agent
 9. Decision tree to treat the risk
 
-## Threat Modeling Concepts & Terms
-![Threat Modeling Concepts](images/Threat-Model.png)
+## ToC
+1. [Threat Modeling Fundamentals](#threat-modeling-fundamentals) - 2 weeks
+2. [Methodologies](#methodologies) - 2 weeks
+3. [Process and Tools](#process-and-tools) - 2 weeks
+4. [Advanced Topics and Practice](#advanced-topics-and-practice) - 2 weeks
+5. [Resources](#resources)
 
-### Why Threat Modeling? :point_up:
-As benefits of threat modeling, we can say:
-+ **Proactive Threat Identification:** Early detection of possible security problems.
-+ **Cost Efficiency:** Addressing threats early lowers remediation expenses.
-+ **Prioritization:** Concentration on the most significant vulnerabilities.
-+ **System Understanding:** Enhanced insight into system interactions and data flows.
+## Threat Modeling Fundamentals
+**Duration: 2 weeks**
 
-### Famous Threat Modeling Methodologies
-There are many, but these are famous ones and the ones you would be using in your work:
-1. STRIDE (the most common and famous one)
-2. CVSS
-3. Attack Tree (Pentesters would love your threat model)
-4. PASTA
-5. Octave
-6. Lindunn (Privacy threat modeling framework)
+Understand the "Why" and "What" of Threat Modeling.
 
-### VAPT vs Threat Modeling
-- While both threat modeling and VAPT are important tools for ensuring the security of a system or organization, they are used for different purposes and at different stages of the development process. 
-- Threat modeling is typically done as a proactive measure, while VAPT is done as a reactive measure. 
-- Some organizations may choose to use both approaches as part of a comprehensive security program.
-- Threat Model helps developers, pentesters and others to narrow down the scope and yields a better code or pentest outcome.
+### Week 1-2: Core Concepts
+- **Definition:** Identifying, analyzing, and mitigating potential security threats.
+- **Why it matters:** Proactive identification, cost efficiency, prioritization.
+- **Key Elements:**
+    - **Assets:** What are we protecting?
+    - **Threats:** What can go wrong?
+    - **Vulnerabilities:** Where are we weak?
+    - **Mitigations:** What are we going to do about it?
+- **The 4 Questions:**
+    1. What are we building?
+    2. What can go wrong?
+    3. What are we going to do about it?
+    4. Did we do a good job?
 
-#### Key Outputs:
-+ **System Diagrams:** Comprehensive illustrations of the architecture and data flows.
-+ **Security Requirements:** Defined criteria for protecting the system.
-+ **Threat List:** Inventory of potential threats along with mitigation strategies.
+## Methodologies
+**Duration: 2 weeks**
 
-## Here are some areas that are typically covered in threat modeling:
-### Assets: 
-The first step in threat modeling is to identify the assets that need to be protected. These assets can include data, hardware, software, and people.
+Learn the structured approaches to finding threats.
 
-### Threats: 
-The next step is to identify the potential threats to the identified assets. This can be done through a variety of methods, such as brainstorming sessions, reviewing industry reports and research, and consulting with subject matter experts.
+### Week 3-4: Frameworks
+1. **STRIDE:** Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege. (Focus heavily on this).
+2. **PASTA:** Process for Attack Simulation and Threat Analysis (Risk-centric).
+3. **Attack Trees:** Visualizing attack paths.
+4. **Other models:** CVSS (scoring), DREAD (scoring), LINDUNN (privacy).
 
-### Likelihood and impact: 
-Once potential threats have been identified, the next step is to assess the likelihood and impact of each threat. This helps prioritize the threats and determine which ones need to be addressed first.
+## Process and Tools
+**Duration: 2 weeks**
 
-### Mitigation strategies: 
-Based on the likelihood and impact of the identified threats, develop strategies to mitigate or eliminate those threats. These strategies can include implementing technical controls, such as firewalls and intrusion detection systems, as well as non-technical controls, such as security awareness training and incident response plans.
+How to actually *do* it in a real project.
 
-### Testing and validation: 
-After the threat mitigation strategies have been implemented, it is important to test and validate their effectiveness to ensure that they are effective in mitigating or eliminating the identified threats.
+### Week 5-6: Execution
+1. **Data Flow Diagrams (DFDs):**
+    - Trust boundaries.
+    - Processes, Data Stores, Data Flows, External Entities.
+2. **The Process:**
+    - Define Scope -> Decompose Application -> Identify Threats -> Mitigate -> Validate.
+3. **Tools:**
+    - **OWASP Threat Dragon:** Open source, web/desktop based.
+    - **Microsoft Threat Modeling Tool:** The classic standard.
+    - **Threagile:** Agile, code-driven threat modeling.
 
-### Review and update: 
-Threat models should be reviewed and updated regularly to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
+## Advanced Topics and Practice
+**Duration: 2 weeks**
 
-## To perform threat modeling, follow these steps:
-1. **Define the scope of the threat modeling study:** 
-This includes identifying the system or organization that needs to be protected and the assets that need to be considered in the threat modeling process.
-2. **Identify potential threats:** 
-This involves identifying potential threats to the assets identified in Step 1. This can be done through various methods, such as brainstorming sessions, reviewing industry reports and research, and consulting with subject matter experts.
-3. **Analyze the likelihood and impact of identified threats:** 
-Once potential threats have been identified, the next step is to assess the likelihood and impact of each threat. This helps prioritize the threats and determine which ones must be addressed first.
-4. **Develop strategies to mitigate or eliminate identified threats:** 
-Based on the likelihood and impact of the identified threats, develop strategies to mitigate or eliminate those threats. These strategies can include implementing technical controls, such as firewalls and intrusion detection systems, and non-technical controls, such as security awareness training and incident response plans.
-5. **Test and validate the effectiveness of the threat mitigation strategies:** 
-After the threat mitigation strategies have been implemented, it is essential to test and validate their effectiveness to ensure that they are effective in mitigating or eliminating the identified threats.
-6. **Review and update the threat model:** 
-Threat models should be reviewed and updated regularly to ensure that they remain current and relevant. This includes identifying new threats, reassessing the likelihood and impact of existing threats, and updating the threat mitigation strategies as needed.
+Scaling and integrating into SDLC.
 
-> [!TIP]
-> Try to practice building a threat model diagram as much as possible. Such as making a threat model diagram for a personal website, a WordPress site hosted in AWS, or an application using API and third-party integration.
-
-### Threat Model Diagram basics for Amazon Elasticsearch as an example :tada: :
-![Threat Modeling example](./images/Amazon_ElasticSearch_Basic_TM.png)
-Try to understand the diagram as much as possible and practice making something like this independently. This diagram might need an update or modification. The more practice you practice, the easier it will be for you.
-
-### What's Next
-Once you gain the fair knowledge of threat modeling and already practiced a few. Now try to answer these questions that may help you in real time and also in interview
-1. How can we onboard Threat Modeling process in our existing SDLC
-2. What are the technical challenges you would face while dealing with threat modeling
-3. How can you make it scalable and iterable throughout the software cycle
-4. It can be different for different application or system. How to handle all those?
-5. Which TM process we must promote in our organisation?
-6. How are you going to validate the issues you found during Threat Modeling?
-7. Learn what's these and how to achieve:
-   7.1 agile threat modeling,
-   7.2 automated threat modeling,
-   7.3 rapid threat modeling,
-   7.4 advanced threat modeling
+### Week 7-8: Scaling & Integration
+1. **Integration:** How to fit TM into Agile/DevOps (Rapid Threat Modeling).
+2. **Validation:** Verifying mitigations through testing (pentesting, unit tests).
+3. **Practice:**
+    - Model a simple web app.
+    - Model a cloud infrastructure (e.g., S3 bucket setup).
+    - Model a CI/CD pipeline.
 
 ### Threat Modeling tools to explore
 1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)

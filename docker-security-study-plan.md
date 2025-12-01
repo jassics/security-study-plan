@@ -35,9 +35,11 @@ Usually it will take you 4-8 weeks to be comfortable with Docker Security fundam
 9. [Interview Questions](#interview-questions)
 
 ## Docker and Container Fundamentals
+**Duration: 1-2 weeks**
 
 Goal here is to be very comfortable with how Docker works before going deep into security.
 
+### Week 1-2: Core Concepts
 1. Revisit basic Docker concepts:
    1. Images, layers, containers.
    2. Dockerfile instructions (FROM, RUN, COPY, CMD, ENTRYPOINT, EXPOSE, USER, etc.).
@@ -50,9 +52,11 @@ Goal here is to be very comfortable with how Docker works before going deep into
    2. Run containers, inspect them, and play with basic commands.
 
 ## Image Build and Supply Chain Security
+**Duration: 1-2 weeks**
 
 Here you focus on building **secure images** and understanding supply chain risk.
 
+### Week 3-4: Secure Images
 1. Secure Dockerfile practices:
    1. Use minimal base images.
    2. Avoid unnecessary packages and tools.
@@ -70,9 +74,11 @@ Here you focus on building **secure images** and understanding supply chain risk
    2. Compare image sizes and contents before vs after.
 
 ## Runtime Hardening and Host Security
+**Duration: 1-2 weeks**
 
 Even with secure images, runtime and host configuration matter a lot.
 
+### Week 5-6: Runtime Security
 1. Container runtime security basics:
    1. Dropping capabilities.
    2. Read-only filesystems where possible.
@@ -88,9 +94,11 @@ Even with secure images, runtime and host configuration matter a lot.
    1. How these concepts later map into Kubernetes or other orchestrators (see [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)).
 
 ## Scanning, Policies and CI/CD Integration
+**Duration: 1-2 weeks**
 
 This is where Docker Security meets DevSecOps.
 
+### Week 7-8: Automation & Policies
 1. Image scanning:
    1. Understand what image scanners usually check (OS packages, app libs).
    2. Severity, fix availability, and risk-based triage.
