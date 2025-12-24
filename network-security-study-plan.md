@@ -86,3 +86,5 @@ You should create a [github](https://www.github.com) account too, to post code a
 <br>
 <br>
 A [X(twitter)](https://twitter.com) account can be **useful** too to **keep informed of cybersecurity news** and to **build a reputation into the domain**.
+
+If you want to go deeper into monitoring, detection and incident response after Network Security, read the [Blue Team, Detection & Response Study Plan](blue-team-detection-response-study-plan.md).

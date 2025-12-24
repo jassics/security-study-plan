@@ -152,6 +152,8 @@ Learn any of the famous CSPs like AWS, Azure or GCP and
 7. Data Encryption
 8. Cloud Networking concept is very important to succeed in Cloud Security
 
+For a deeper focus on identity and access, see the [Identity and Access Management (IAM) Security Study Plan](iam-security-study-plan.md).
+
 There are separate plans for Cloud Security Study Plan as listed below:
 1. [AWS Security Study Plan](aws-security-study-plan.md)
 2. [Azure Security Study Plan](azure-security-study-plan.md)
