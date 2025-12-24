@@ -16,6 +16,7 @@ It is more towards shift left security including Threat Modeling, Secure Code Re
 4. Tougher than Pentesting (Topic of debate for another day)
 5. Can write code for PoC, Exploit or demo with comfort
 6. [API security](api-security-study-plan.md) should be your area of interest.
+7. Good understanding of [Identity and Access Management (IAM)](iam-security-study-plan.md) will help for auth-related design and reviews.
 
 Usually it will take you 6-12 months to be good at the Application Security fundamentals to get a job at entry level.
 
@@ -100,6 +101,9 @@ Read [Cryptography](cryptography-study-plan.md)
 
 ## Security Development Lifecycle (SDL)
 Read [Security Development Lifecycle](secure-software-development-lifecycle-study-plan.md)
+
+## Mobile Application Security
+If you work with mobile apps (Android/iOS), also check the [Mobile Application Security Study Plan](mobile-application-security-study-plan.md).
 
 ## Books
 1. [Agile Application Security](https://www.amazon.in/Agile-Application-Security-Enabling-Continuous/dp/9352136292/)

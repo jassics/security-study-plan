@@ -135,3 +135,5 @@ Scaling and integrating into SDLC.
 ### Books :books:
 1. [Threat Modeling: Design for Security by Adam Shostack](https://amzn.to/3zfKefb)
 2. [Threat Modeling by Izar Tarandach](https://amzn.to/4gEgbif)
+
+After learning Threat Modeling, you can connect it with monitoring and incident response by exploring the [Blue Team, Detection & Response Study Plan](blue-team-detection-response-study-plan.md).
