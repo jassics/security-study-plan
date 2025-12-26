@@ -23,6 +23,8 @@ A Practical Study Plan to become a successful cybersecurity engineer based on ro
 16. [Secure Code Review Study Plan](secure-code-review-study-plan.md)
 17. [Secure Software Development Lifecycle Study Plan](secure-software-development-lifecycle-study-plan.md)
 18. [Security Architecture Study Plan](security-architecture-study-plan.md)
+19. [GenAI Security Study Plan](genai-security-study-plan.md)
+20. [Product Security Study Plan](product-security-study-plan.md)
 
 **_Additional Study Plans_**
 1. [Identity and Access Management (IAM) Security Study Plan](iam-security-study-plan.md)
