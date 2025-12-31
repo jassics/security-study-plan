@@ -559,7 +559,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 
 ---
 ## Additional Resources
-3. **Courses & University Materials**
+1. **Courses & University Materials**
    - [Stanford CS324: Large Language Models](https://stanford-cs324.github.io/winter2022/)
    - [Princeton COS 597G: Understanding Large Language Models](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
    - [Coursera: Generative AI with LLMs (AWS & DeepLearning.AI)](https://www.coursera.org/learn/generative-ai-with-llms)
@@ -568,7 +568,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
    - [Coursera: AI for Cybersecurity Specialization (Johns Hopkins)](https://www.coursera.org/specializations/ai-for-cybersecurity)
    - [AttackIQ: Foundations of AI Security](https://www.academy.attackiq.com/courses/foundations-of-ai-security)
 
-4. **Security Guides & Checklists**
+2. **Security Guides & Checklists**
    - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
    - [OWASP LLM AI Security and Governance Checklist](https://owasp.org/www-project-top-10-for-large-language-model-applications/llm-top-10-governance-doc/LLM_AI_Security_and_Governance_Checklist.pdf)
    - [NIST AI Risk Management Framework (AI RMF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
@@ -578,7 +578,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
    - [Plot4.ai: Quick AI Threat Model Check](https://plot4.ai/assessments/quick-check)
    - [Failure Modes in Machine Learning](https://securityandtechnology.org/wp-content/uploads/2020/07/failure_modes_in_machine_learning.pdf)
 
-5. **Articles & Blogs**
+3. **Articles & Blogs**
    - [DataCamp: What are Foundation Models](https://www.datacamp.com/blog/what-are-foundation-models)
    - [Lasso Security: Riding the RAG Trail](https://www.lasso.security/blog/riding-the-rag-trail-access-permissions-and-context)
    - [IronCore Labs: Security Risks with RAG Architectures](https://ironcorelabs.com/security-risks-rag/)
@@ -589,17 +589,17 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
    - [Medium: Safeguarding LLM with LLM Guard](https://medium.com/@dataenthusiast.io/language-models-at-risk-safeguarding-ai-with-llm-guard-11a3e7923af5)
    - [Mercari: Security Incident Response using LLM](https://engineering.mercari.com/en/blog/entry/20241206-streamlining-security-incident-response-with-automation-and-large-language-models/)
 
-6. **Tools & Platforms**
+4. **Tools & Platforms**
    - [LLM Security Portal](https://llmsecurity.net/)
    - [PortSwigger: Web LLM Attacks](https://portswigger.net/web-security/llm-attacks)
    - [Huntr.com: AI/ML Bug Bounty Platform](https://huntr.com/)
    - [ProtectAI GitHub (LLM Guard, ModelScan, AI Exploits)](https://github.com/protectai)
    - [LLM Guard Playground](https://huggingface.co/spaces/protectai/llm-guard-playground)
 
-7. **Challenges & CTFs**
+5. **Challenges & CTFs**
    - [Gandalf: LLM Security Challenge](https://gandalf.lakera.ai/)
    - [Prompt Airlines: AI Security CTF](https://promptairlines.com/)
    - [SecOps Group: Certified AI/ML Pentester Exam](https://secops.group/product/certified-ai-ml-pentester/)
 
-8. **Videos**
+6. **Videos**
    - [WhyLabs: Intro to LLM Security](https://www.youtube.com/watch?v=dj1H4g4YSlU)
