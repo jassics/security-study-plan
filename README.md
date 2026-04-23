@@ -2,8 +2,6 @@
 
 A Practical Study Plan to become a successful cybersecurity engineer based on roles like Pentest, AppSec, Cloud Security, DevSecOps, and so on with free/paid resources, tools, and concepts to excel.
 
-![Alt](https://repobeats.axiom.co/api/embed/9ac7cef0ec3dd8b3dba95cac4110cec35d5eaddd.svg "Repobeats analytics image")
-
 **It will cover but not limited to:**
 
 **_Done_**
