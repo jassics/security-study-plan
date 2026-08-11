@@ -23,17 +23,18 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 ## Organizational Capabilities that you can be job ready after going through mentioned study plan
 
 ### Security Assessments & Audits
-- Conduct comprehensive GenAI security assessments using [OWASP LLM Top 10 framework](https://genai.owasp.org/)
+- Conduct comprehensive GenAI security assessments using the [OWASP Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) and the [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
 - Perform LLM application penetration testing and vulnerability assessments
+- Score agentic AI findings with [OWASP AIVSS](https://aivss.owasp.org/) instead of forcing them into plain CVSS
 - Audit RAG (Retrieval Augmented Generation) implementations for security risks
 - Evaluate prompt injection and jailbreaking vulnerabilities
 - Assess model security, including adversarial attacks and data poisoning risks
 - Review AI/ML supply chain security (model provenance, dependencies, third-party APIs)
 
 ### Governance, Risk & Compliance (GRC)
-- Develop GenAI security policies and procedures aligned with [NIST AI RMF](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+- Develop GenAI security policies and procedures aligned with [NIST AI RMF](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) and [ISO/IEC 42001:2023 (AIMS)](https://www.iso.org/standard/42001)
 - Create AI governance frameworks and risk management strategies
-- Implement compliance controls for AI regulations ([EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215), etc.)
+- Implement compliance controls for AI regulations ([EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215), [India AI Governance Guidelines](https://indiaai.gov.in/), etc.)
 - Establish AI ethics and responsible AI practices
 - Design AI security awareness training programs for employees
 - Create incident response plans specifically for AI/ML security incidents
@@ -61,10 +62,13 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - Create automated security testing for prompt injection and other LLM vulnerabilities
 
 ### Incident Response & Forensics
-- Investigate AI/ML security incidents and breaches
-- Develop playbooks for AI-specific security incidents
+- Investigate AI/ML security incidents and breaches, using the [OWASP GenAI Incident Response Guide v1.0](https://genai.owasp.org/resource/genai-incident-response-guide-1-0/) as the reference framework
+- Tell an *AI* incident apart from an ordinary cyber incident — the guide gives diagnostic criteria by AI stack layer and a quick-reference table (OWASP GenAI Incident Response Guide v1.0)
+- Develop playbooks for AI-specific security incidents (attacks on AI systems, on AI supply chains, and on third-party model providers)
+- Build an AI asset inventory and stakeholder map *before* an incident, and pay particular attention to non-human identities (OWASP GenAI Incident Response Guide v1.0)
 - Perform forensic analysis on compromised AI systems
-- Create incident classification systems for AI/ML security events
+- Create incident classification systems for AI/ML security events, including an AI incident severity matrix and a defined blast radius per incident
+- Learn from the guide's worked vignettes: Air Canada chatbot, Microsoft Tay, the "EchoLeak" Microsoft Copilot exploit, MathGPT code execution, and the ChatGPT "Operator" agent data leak
 
 ### Consulting & Advisory Services
 - Provide GenAI security consulting to organizations
@@ -84,9 +88,10 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 5. [AI Agents](#ai-agents) - 1 week
 6. [Agentic AI](#agentic-ai) - 1 week
 7. [MCP (Model Context Protocol)](#mcp) - 1 week
-8. [Certifications](#certifications) - on your bandwidth and wish
-9. [GenAI Interview Questions](#genai-interview-questions)
-10. [GenAI Security Tools](#genai-security-tools)
+8. [GenAI for the Security Engineer](#genai-for-the-security-engineer) - 1 week
+9. [Certifications](#certifications) - on your bandwidth and wish
+10. [GenAI Interview Questions](#genai-interview-questions)
+11. [GenAI Security Tools](#genai-security-tools)
 
 ---
 
@@ -113,18 +118,24 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Open-source vs proprietary models
 
 ### Week 2: LLM Security Fundamentals
-- [ ] **OWASP LLM Top 10**
-  - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
-  - LLM01: Prompt Injection
-  - LLM02: Insecure Output Handling
-  - LLM03: Training Data Poisoning
-  - LLM04: Model Denial of Service
-  - LLM05: Supply Chain Vulnerabilities
-  - LLM06: Sensitive Information Disclosure
-  - LLM07: Insecure Plugin Design
-  - LLM08: Excessive Agency
-  - LLM09: Overreliance
-  - LLM10: Model Theft
+- [ ] **OWASP Top 10 for LLM Applications 2026 (current list — start here)**
+  - [OWASP Top 10 for LLM Applications 2026 (v2026, August 2026)](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/)
+  - LLM01:2026 Prompt Injection
+  - LLM02:2026 Sensitive Information Disclosure
+  - LLM03:2026 Excessive Agency
+  - LLM04:2026 Supply Chain
+  - LLM05:2026 Data and Model Poisoning
+  - LLM06:2026 Unbounded Consumption
+  - LLM07:2026 Misinformation
+  - LLM08:2026 Hidden Context Exposure *(re-scoped from 2025's "System Prompt Leakage")*
+  - LLM09:2026 Vector and Embedding Weaknesses
+  - LLM10:2026 Improper Output Handling
+  - Note: the 2026 list is the first to validate the practitioner vote against a corpus of real incidents (7,714 collected, 6,639 classified), and its Appendix A maps every entry to MITRE ATLAS, ATT&CK, CWE, NIST AI 600-1 and OWASP AIVSS (OWASP Top 10 for LLM Applications 2026)
+
+- [ ] **How the list evolved (useful for interviews and for reading older reports)**
+  - [OWASP Top 10 for LLM Applications 2023 v1.1 (historical)](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
+  - Track what moved: Excessive Agency and Unbounded Consumption escalated in 2026; Supply Chain, Data & Model Poisoning and Improper Output Handling were deprioritized (OWASP Top 10 for LLM Applications 2026)
+  - Retired/renamed entries you will still see in the wild: Insecure Plugin Design, Model Denial of Service, Overreliance, Model Theft, System Prompt Leakage
 
 - [ ] **Common Attack Vectors**
   - [Prompt Injection and Jailbreaking](https://ogre51.medium.com/security-of-llm-apps-prompt-injection-jailbreaking-fb9fc5c883a8)
@@ -132,13 +143,26 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Model extraction and theft
   - Adversarial examples
   - Membership inference attacks
+  - Hidden context exposure (system prompts, tool definitions, retrieved context leaking to users)
+
+- [ ] **GenAI Data Security (data-layer risks, separate from model-layer risks)**
+  - [OWASP GenAI Data Security: Risks and Mitigations 2026 (v1.0, March 2026)](https://genai.owasp.org/resource/owasp-genai-data-security-risks-mitigations-2026/) — 21 risks, DSGAI01-DSGAI21
+  - Worth memorising the high-frequency ones: DSGAI01 Sensitive Data Leakage, DSGAI02 Agent Identity & Credential Exposure, DSGAI03 Shadow AI & Unsanctioned Data Flows, DSGAI13 Vector Store Platform Data Security
+  - AI-DSPM (Data Security Posture Management for GenAI) as an emerging control area (OWASP GenAI Data Security 2026)
+  - [LLM and GenAI Data Security Best Practices 2025 (OWASP GenAI Security Project)](https://genai.owasp.org/resources/)
 
 ### Week 3: AI Governance & Compliance
-- [ ] **Regulatory Frameworks**
-  - [NIST AI Risk Management Framework](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
-  - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+- [ ] **Regulatory Frameworks & Standards**
+  - [NIST AI 600-1: Generative AI Profile (AI RMF companion)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
   - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)
-  - ISO/IEC 23053:2022 (AI risk management)
+  - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+  - [ISO/IEC 42001:2023 — Artificial Intelligence Management System (AIMS)](https://www.iso.org/standard/42001) — the world's first AI management-system standard (released Dec 2023). It is a *management system* standard, not a technical spec: 10 clauses plus annexes, audited per ISO 19011, and the natural certification target if your org wants an auditable AI governance posture (ISO/IEC 42001:2023 AIMS Internal Auditor course outline)
+  - ISO/IEC 23053:2022 (AI/ML system framework)
+  - [India AI Governance Guidelines (MeitY, Government of India)](https://indiaai.gov.in/) — India's national framework, built on seven "sutras" (Trust, People First, Innovation over Restraint, Fairness & Equity, Accountability, Understandable by Design, Safety/Resilience/Sustainability) and six pillars across enablement, regulation and oversight; techno-legal and voluntary-measure led rather than prescriptive (India AI Governance Guidelines)
+
+- [ ] **Implementation Frameworks (turning governance into controls)**
+  - [Databricks AI Security Framework (DASF) v2.0](https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf) — maps risks across 12 AI system components (raw data → data prep → datasets → catalog governance → algorithms → evaluation → models → model management → serving/inference request & response → MLOps → platform security) to concrete mitigation controls; useful when you need a control list, not just a risk list. DASF 2.0 enumerates 62 technical risks against 64 recommended controls (Databricks AI Security Framework v2.0); Databricks has since published [DASF v3.0 adding agentic AI risks and controls](https://www.databricks.com/blog/agentic-ai-security-new-risks-and-controls-databricks-ai-security-framework-dasf-v30)
+  - [OWASP LLM AI Security & Governance Checklist v1.1](https://genai.owasp.org/resources/)
 
 - [ ] **AI Ethics & Responsible AI**
   - Bias and fairness in AI systems
@@ -151,9 +175,12 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - [Microsoft's AI/ML Threat Modeling](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
   - [AI Threat Modeling by Matillion](https://www.matillion.com/blog/ai-threat-modeling)
   - [Quick AI Threat Model Check](https://plot4.ai/assessments/quick-check)
+  - [OWASP Agentic AI — Threats and Mitigations (v1.0, Feb 2025)](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/) — reference agentic architecture used as the canvas for threat models, a structured Agentic Threat Taxonomy Navigator, and four worked example threat models (Agentic AI Threats and Mitigations v1.0)
 
-- [ ] **Risk Assessment Frameworks**
-  - [Adversarial Machine Learning (NIST)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+- [ ] **Risk Assessment & Scoring Frameworks**
+  - [NIST AI 100-2e2025: Adversarial Machine Learning — A Taxonomy and Terminology of Attacks and Mitigations (March 2025)](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) — current edition; supersedes the 2023 e2023 edition and now includes contributions from the US AI Safety Institute and UK AI Security Institute (NIST AI 100-2e2025)
+  - [NIST AI 100-2e2023 (previous edition, for reference)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+  - [OWASP AIVSS — AI Vulnerability Scoring System (v0.8)](https://aivss.owasp.org/) — agentic AI's answer to CVSS. It keeps a CVSS v4.0 base score and layers an Agentic AI Risk Score (AARS) built from 10 agentic risk amplification factors plus a threat multiplier and mitigation factor, so an "excessive agency" issue no longer gets scored like a static web bug. Ships a JSON report schema and maps to the OWASP Agentic AI Top 10 and CSA MAESTRO layers (AIVSS Scoring System for OWASP Agentic AI Core Security Risks v0.8)
   - [Failure Modes in Machine Learning](https://securityandtechnology.org/wp-content/uploads/2020/07/failure_modes_in_machine_learning.pdf)
   - Business impact assessment for AI systems
 
@@ -161,6 +188,8 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - [ ] Complete [Gandalf LLM Security Challenge](https://gandalf.lakera.ai/)
 - [ ] Try [Prompt Airlines CTF](https://promptairlines.com/)
 - [ ] Practice with [LLM Security Portal](https://llmsecurity.net/)
+- [ ] Work through the [OWASP GenAI Red Teaming Guide v1.0](https://genai.owasp.org/initiatives/genai-red-teaming-initiative/) blueprint — it splits red teaming into four evaluation phases (model, implementation, system, and runtime/human & agentic), each with its own checklist, plus appendices on metrics, tools/datasets, continuous monitoring, and agentic red-teaming tasks (GenAI Red Teaming Guide v1.0)
+- [ ] Score one finding yourself with the [AIVSS calculator](https://aivss.owasp.org/) and compare it to a plain CVSS v4.0 score
 
 ---
 
@@ -229,6 +258,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Context injection attacks
   - Information leakage through retrieval
   - Secure document processing pipelines
+  - Map your RAG findings to LLM09:2026 Vector and Embedding Weaknesses (OWASP Top 10 for LLM Applications 2026) and to DSGAI13 Vector Store Platform Data Security / DSGAI15 Over-Broad Context Windows & Prompt Over-Sharing (OWASP GenAI Data Security 2026)
 
 **Hands-on Practice:**
 - [ ] Build a simple RAG system with security controls
@@ -295,17 +325,26 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Tool misuse and privilege escalation
   - Agent-to-agent communication security
   - Persistent memory security risks
+  - **Confused deputy attacks** — the classic access-control flaw, back in a new form. An agent holding broad delegated credentials can be tricked by any content it reads (an email, a GitHub issue, a retrieved doc, a tool output) into acting with its operator's full authority. The February 2026 Cline AI coding-assistant compromise is the worked example: a crafted GitHub issue title triggered an authenticated coding session to install an attacker-controlled package, which then shipped as an official update to roughly 4,000 developer machines (Confused Deputy Attacks on Autonomous AI Agents, CSA AI Safety Initiative, 2026 — note: published as unofficial AI-assisted research, so treat the incident detail as secondary sourcing)
+  - Skill-layer risks: agent "skills" execute with the host agent's full privileges and are distributed through registries with weak provenance — see AST01 Malicious Skills and AST02 Supply Chain Compromise, both rated Critical ([OWASP Agentic Skills Top 10 v0.5](https://owasp.org/www-project-agentic-skills-top-10/)). Covered in depth in the [Agentic AI](#agentic-ai) section below
 
 - [ ] **Securing AI Agents**
   - Principle of least privilege for agents
   - Action validation and approval workflows
   - Monitoring agent behavior and decisions
   - Secure tool integration patterns
+  - Read the mitigation playbooks in [OWASP Agentic AI — Threats and Mitigations v1.0](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/), organised across agent design, memory, planning & autonomy, tool use, and deployment & operations
+
+- [ ] **Agent Identity & Delegated Authorization (emerging, live gap area)**
+  - Why OAuth 2.0 breaks down here: it assumes a deterministic client, but an agent's action plan is generated at runtime, so a bearer token can no longer be read as evidence of user intent
+  - [Agentic JWT (A-JWT): A Secure Delegation Protocol for Autonomous AI Agents (arXiv:2509.13597, Sep 2025)](https://arxiv.org/abs/2509.13597) — proposes binding each agent action to a cryptographically verifiable user intent and a chained delegation assertion, with per-agent proof-of-possession keys to stop replay and in-process impersonation
+  - Related reading: non-human identity management, workload identity, and short-lived scoped credentials for agents
 
 **Hands-on Practice:**
 - [ ] Build a simple AI agent with security controls
 - [ ] Test agent behavior under various scenarios
 - [ ] Implement monitoring for agent actions
+- [ ] Reproduce a confused-deputy scenario in a sandbox: give a test agent a broad token, feed it attacker-controlled content through a tool output, and observe what it does
 
 ---
 
@@ -318,30 +357,85 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Goal-oriented AI behavior
   - Planning and reasoning in agentic systems
   - Human-AI collaboration patterns
+  - Landscape read before you go deep: [State of Agentic AI Security and Governance v2.01 (June 2026)](https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/) — agent taxonomy by operational role, implementation and composition patterns, autonomy level as a cross-cutting dimension, and where AI safety and AI security actually differ
 
 - [ ] **Agentic AI Architectures**
   - Multi-agent orchestration
   - Hierarchical agent systems
   - Distributed agentic networks
   - Agent communication protocols
+  - [Securing Agentic Applications Guide v1.0 (July 2025)](https://genai.owasp.org/resource/securing-agentic-applications-guide-1-0/) — attack-surface analysis plus per-architecture hardening actions for single-agent, central-orchestrator, and swarm topologies, and for the key operational capabilities (API access, code execution, web use)
 
 ### Security in Agentic AI
+- [ ] **OWASP Top 10 for Agentic Applications 2026 (ASI)**
+  - [OWASP Top 10 for Agentic Applications 2026 (December 2025)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+  - ASI01: Agent Goal Hijack
+  - ASI02: Tool Misuse and Exploitation
+  - ASI03: Identity and Privilege Abuse
+  - ASI04: Agentic Supply Chain Vulnerabilities
+  - ASI05: Unexpected Code Execution (RCE)
+  - ASI06: Memory & Context Poisoning
+  - ASI07: Insecure Inter-Agent Communication
+  - ASI08: Cascading Failures
+  - ASI09: Human-Agent Trust Exploitation
+  - ASI10: Rogue Agents
+  - Also read Appendix D (the ASI agentic exploits & incidents tracker) and Appendix C, which maps the list to the OWASP Non-Human Identities Top 10 (OWASP Top 10 for Agentic Applications 2026)
+
+- [ ] **Agent Skills Security (the layer most teams are still missing)**
+  - [OWASP Agentic Skills Top 10 v0.5 (June 2026, OWASP Incubator project)](https://owasp.org/www-project-agentic-skills-top-10/)
+  - **Why skills are their own attack surface:** skills are the *behaviour* layer — reusable units that tell an agent what to do and grant it the tools to do it. The industry hardened the model layer and the MCP tool layer; the skill layer in between grew fast and under-protected. Skills execute with the host agent's **full privileges**, blend natural-language instructions with executable code, and ship through registries that mostly lack the provenance controls of mature package ecosystems (OWASP Agentic Skills Top 10 v0.5)
+  - The ten risks — two Critical, four High, four Medium:
+
+    | ID | Risk | Severity | Key mitigation |
+    |---|---|---|---|
+    | AST01 | Malicious Skills | Critical | Signing, registry scanning |
+    | AST02 | Supply Chain Compromise | Critical | Provenance, transparency logs |
+    | AST03 | Over-Privileged Skills | High | Least-privilege manifests |
+    | AST04 | Insecure Metadata | High | Static analysis, manifest linting |
+    | AST05 | Unsafe Deserialization | High | Safe parsers, sandboxed loading |
+    | AST06 | Weak Isolation | High | Containerization, sandboxing |
+    | AST07 | Update Drift | Medium | Immutable pinning, hash verification |
+    | AST08 | Poor Scanning | Medium | Behavioral + semantic scanning |
+    | AST09 | No Governance | Medium | Inventory, audit, identity controls |
+    | AST10 | Cross-Platform Reuse | Medium | Universal format, re-validation |
+
+  - **The dual attack surface — this is the part that breaks traditional scanning.** A malicious skill attacks through *both* the code layer (shell scripts, Python calls) and the natural-language instruction layer (markdown prose in `SKILL.md` that simply tells the agent to do something). Snyk's ToxicSkills research found **100% of malicious skills combined both vectors** — so a package scanner that only reads code will miss half the payload (OWASP Agentic Skills Top 10 v0.5)
+  - **Attack patterns worth knowing by name:** typosquatting (`google-workspace` vs `gogle-workspace`); social-engineering "Prerequisites" sections that instruct the *user* to paste attacker-supplied install commands; ClickFix-style fake "setup required" prompts; `SOUL.md` persistence, where a backdoor is written into the agent's identity file and **survives skill uninstall**; memory poisoning via `MEMORY.md` so the agent executes attacker commands in *future* sessions; and persistent WebSocket connections to attacker C2 for live command execution
+  - **Real-world evidence (cite these — skill security is often dismissed as theoretical):**
+    - *ClawHavoc*, January 2026: 1,184 malicious skills across 12 publisher accounts sharing a single C2 IP, delivering Atomic Stealer (AMOS) against macOS crypto wallets, SSH keys and browser credentials. At peak infection, **five of the seven most-downloaded ClawHub skills were confirmed malware**
+    - Snyk, February 2026: **three lines of markdown** in a `SKILL.md` were enough to exfiltrate SSH keys
+    - USENIX Security 2026 measurement study (Liu et al., arXiv:2602.06547): 98,380 skills analysed across public marketplaces; 157 confirmed malicious carrying 632 vulnerabilities (avg 4.03 each); **73.2% implemented shadow features hidden from the user**, and 54.1% traced back to a single publisher cluster
+  - **Controls to design for, in rough order of leverage:** require ed25519 signatures and reject unsigned installs; Merkle-root signing for the registry itself; scan at *both* publish time and install time using behavioural analysis rather than pattern matching; execute skills in containers/sandboxes with no network by default; hash-pin installed skills and alert on any modification; never auto-execute a "Prerequisites" section without explicit human review; surface publisher trust level, install count and scan status in the install UI; structured audit logging of skill actions (OWASP Agentic Skills Top 10 v0.5)
+  - **Framework mapping:** AST01 maps to LLM Supply Chain and LLM01 Prompt Injection (indirect), plus ASVS V14 Configuration. In CSA MAESTRO terms it lands primarily on Layer 7 (Agent Ecosystem — registry compromise, marketplace manipulation), with Layer 3 (Agent Frameworks), Layer 6 (Security & Compliance), Layer 4 (Deployment & Infrastructure) and Layer 5 (Evaluation & Observability) also in scope
+  - *Two caveats when you cite this:* the document is **v0.5, an OWASP Incubator project** — directionally strong, not yet a settled standard; and its OWASP mapping table uses the **2025** LLM numbering (Supply Chain as LLM03), which is **LLM04:2026** in the current list — translate before you put it in a report
+
 - [ ] **Unique Security Challenges**
   - Emergent behaviors in agentic systems
   - Goal misalignment and specification gaming
   - Inter-agent security and trust
   - Scalability of security controls
+  - Multi-agent communication attacks — see `Red Teaming LLM Multi-agent Systems via Communication Attacks` (arXiv:2502.14847) for the attack model
+
+- [ ] **Zero Trust Architecture for Agents**
+  - [Zero Trust for AI Agents (Anthropic/Claude)](https://www.anthropic.com/) — a tiered capability framework, current agentic threat vectors, an agent implementation workflow, and defensive operations at machine speed; written for CISOs (Parts I-II) and architects/engineers (Parts III-V). Core premise: traditional access controls will not stop an agent misusing *legitimate* permissions, so architect for breach from day one (Claude — Zero Trust for AI Agents)
+  - `Design Principles for LLM-based Systems with Zero Trust: Foundation for Secure Agentic Systems` — a joint publication of Germany's BSI and France's ANSSI; useful as a government-grade, vendor-neutral counterpart to the above
+  - Practical translation: no standing broad credentials, per-action authorization, blast-radius limits proportional to autonomy, and human-in-the-loop gates on irreversible actions
 
 - [ ] **Governance for Agentic AI**
   - Establishing boundaries and constraints
   - Monitoring and auditing agentic behavior
   - Human oversight and intervention mechanisms
   - Ethical considerations in autonomous systems
+  - Score agentic risks consistently with [OWASP AIVSS v0.8](https://aivss.owasp.org/) rather than raw CVSS
 
 **Hands-on Practice:**
 - [ ] Design security controls for agentic systems
 - [ ] Analyze case studies of agentic AI failures
 - [ ] Develop monitoring strategies for autonomous agents
+- [ ] Take one agentic feature you own and walk it end-to-end against ASI01-ASI10, then score the top three findings with AIVSS
+- [ ] Inventory every agent skill installed across your team's agent platforms — most orgs cannot answer this, which is AST09 (No Governance) in practice
+- [ ] Write a deliberately malicious test skill in a sandbox that attacks through the prose layer only (no malicious code), then run it past whatever scanner you currently trust and see if it is caught
+- [ ] Draft a skill-approval policy: signature required, least-privilege manifest, hash-pinned version, no auto-executed "Prerequisites", sandboxed execution
 
 ---
 
@@ -362,22 +456,75 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Context sharing between applications
 
 ### MCP Security
-- [ ] **Security Considerations**
-  - Authentication and authorization in MCP
-  - Resource access control
-  - Data privacy in context sharing
-  - Network security for MCP communications
+- [ ] **The MCP Threat Landscape**
+  - Tool poisoning and rug-pull attacks, prompt injection via tool output, memory poisoning, tool interference ([A Practical Guide for Securely Using Third-Party MCP Servers v1.0, October 2025](https://genai.owasp.org/resource/cheatsheet-a-practical-guide-for-securely-using-third-party-mcp-servers-1-0/))
+  - Why MCP amplifies impact: unlike a traditional API, an MCP server typically runs with delegated user permissions, exposes dynamic tool-based surfaces, and can chain multiple tool calls — so a single flaw compounds (A Practical Guide for Secure MCP Server Development v1.0)
+
+- [ ] **Building MCP Servers Securely**
+  - [A Practical Guide for Secure MCP Server Development v1.0 (February 2026)](https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/) — covers secure MCP architecture, safe tool design, data validation & resource management, prompt-injection controls, authn/authz, secure deployment & updates, governance, and continuous validation
+  - Use its **MCP Security Minimum Bar (Review Checklist)** as your go/no-go gate before any MCP server ships
+
+- [ ] **Consuming Third-Party MCP Servers**
+  - Server discovery, verification, and pinning before connection
+  - MCP client-side security considerations and authorization scoping
+  - Automated MCP scanners for tool-definition and manifest review
+  - Reference: [CheatSheet — A Practical Guide for Securely Using Third-Party MCP Servers v1.0](https://genai.owasp.org/resource/cheatsheet-a-practical-guide-for-securely-using-third-party-mcp-servers-1-0/)
 
 - [ ] **Best Practices**
   - Secure MCP server deployment
   - Client-side security measures
   - Monitoring MCP interactions
-  - Incident response for MCP systems
+  - Incident response for MCP systems — build MCP-specific playbooks for suspected tool poisoning and data leakage, with explicit containment, eradication and recovery steps (OWASP GenAI Incident Response Guide v1.0)
+  - Agent identity carries into MCP too: scope tokens per tool, avoid one shared credential across agents (see the Agent Identity & Delegated Authorization notes under AI Agents)
 
 **Hands-on Practice:**
 - [ ] Set up a secure MCP environment
 - [ ] Implement access controls for MCP resources
 - [ ] Test MCP security configurations
+- [ ] Review a real third-party MCP server against the MCP Security Minimum Bar checklist and write up what you would block
+
+---
+
+## GenAI for the Security Engineer
+**Duration: 1 week**
+
+This section flips the lens: instead of securing GenAI systems, it covers using GenAI fundamentals to be a more effective security engineer day to day, and where GenAI is reshaping your own job.
+
+### High-Leverage Fundamentals
+- [ ] **The concepts that actually pay off in practice** (not the deepest ML theory, the ones that change how you reason about risk)
+  - Context window as trust boundary — everything in it is potentially instructive; this single idea collapses prompt injection, memory poisoning, RAG poisoning, and confused-deputy into one mental model instead of four
+  - Tokenization, embeddings, and vector similarity — needed to reason about LLM09:2026 Vector and Embedding Weaknesses and encoding-based filter bypasses
+  - Inference-time vs. training-time risk — decides whether a risk is yours or your model vendor's; most enterprise GenAI risk is inference-time and architectural (NIST AI 100-2e2025)
+  - Tool/function calling mechanics — the line where a model stops generating text and starts acting; this is where excessive agency becomes real
+  - Agent memory types (short-term, episodic, vector, identity/instruction files) — memory is the persistence mechanism attackers target; see the Agentic AI section's coverage of skill/memory poisoning
+  - Non-deterministic evaluation — an LLM control can't be pass/failed with one test run; write acceptance criteria as evals, not test cases (OWASP GenAI Red Teaming Guide v1.0)
+  - The differentiator: being able to name the *mechanism* behind a risk ("this retriever pulls untrusted third-party content into a context window that also holds a tool-calling system prompt with write scope") instead of citing a Top 10 label
+
+### AI-Assisted Code: A New Supply-Chain Input
+- [ ] **What AI-generated code actually looks like at scale**
+  - Sonar's analysis of 7.9B lines of code across 970,000 developers and 40,000 organizations found ~1,200 security issues per million lines of code, ~170 confirmed vulnerabilities per MLOC, and roughly 1-2 security issues introduced per developer per month; log injection was the most common vulnerability and hardcoded credentials the most common hotspot, with 50% of discovered secrets being database passwords (Sonar, *The State of Code, Vol. 2: Security*, July 2025)
+  - Sonar's framing is the useful part: "AI coding tools are excellent mimics" — they reproduce the patterns already in your codebase, so your existing code quality becomes a supply-chain input to everything AI generates from it
+  - Practical implication: fixing your repo's most common recurring vulnerability pattern also reduces the AI-generated version of it
+
+### AI TRiSM and the Organizational Gap
+- [ ] **Where the real gap is (organizational, not technical)**
+  - Gartner: nearly 90% of enterprises are still researching or piloting GenAI, and most have not yet put AI TRiSM technical controls or policies in place (Gartner, *AI in Cybersecurity: Define Your Direction*)
+  - AI TRiSM control taxonomy: content anomaly detection, data protection, application security, explainability/transparency, model management (ModelOps), adversarial resistance — split between what the AI builder/owner must implement and what the AI user must buy to fill gaps
+  - Gartner lists "unmanaged, uncontrolled use of confidential data in third-party applications" (shadow AI) as a direct and urgent risk, alongside erroneous decision-making from over-trusted AI outputs
+  - Honest caveat worth carrying into exec conversations: Gartner's own read is that AI in cybersecurity "hasn't yet fulfilled its promises" — full automation and quantifiable outcomes sit on the hype side, while cost/resources, human augmentation, and new threats sit on the reality side
+
+### First Moves: Where to Have Impact First
+- [ ] **Four moves, roughly in priority order**
+  1. AI asset inventory + shadow AI discovery — nobody else in most orgs is doing this yet, and it is immediately useful (Gartner; OWASP GenAI Data Security 2026 DSGAI03 Shadow AI & Unsanctioned Data Flows)
+  2. A GenAI feature intake checklist, so security is consulted before build instead of at launch
+  3. An agent/skill inventory — most orgs cannot currently answer "what agent skills are installed" (OWASP Agentic Skills Top 10 AST09)
+  4. AI incident classification bolted onto existing IR, using the OWASP GenAI Incident Response Guide v1.0's AI-vs-cyber diagnostic criteria
+
+**Hands-on Practice:**
+- [ ] Run a shadow-AI discovery pass against one business unit and compare it to what security already knew about
+- [ ] Draft a one-page GenAI feature intake checklist for your org
+- [ ] Pick one recurring vulnerability pattern in a repo you own and check whether AI-assisted commits are reproducing it
+- [ ] Map your team's current AI security controls against the six AI TRiSM categories and mark the gaps
 
 ---
 
@@ -420,11 +567,15 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Describe the training process of large language models
 
 - [ ] **Security-Specific Questions**
-  - Walk through the OWASP LLM Top 10 and provide examples
+  - Walk through the OWASP Top 10 for LLM Applications 2026 and provide examples — and explain what changed from 2025 (e.g. Excessive Agency rising to LLM03, System Prompt Leakage re-scoped into Hidden Context Exposure)
+  - Walk through the OWASP Top 10 for Agentic Applications 2026 (ASI01-ASI10) and give a concrete attack scenario for three of them
   - How would you test an LLM application for prompt injection vulnerabilities?
   - Explain the difference between direct and indirect prompt injection
+  - What is a confused deputy attack on an AI agent, and why does OAuth 2.0 not solve it?
   - What are the main security considerations when implementing RAG?
   - How would you secure a fine-tuning pipeline?
+  - How would you threat model an MCP server, and what is your minimum bar before it ships?
+  - Why is CVSS alone a poor fit for agentic AI risk, and what does AIVSS add?
 
 ### Scenario-Based Questions
 - [ ] **Risk Assessment Scenarios**
@@ -441,6 +592,8 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - [ ] **Regulatory Questions**
   - How does the EU AI Act impact LLM deployments?
   - What are the key components of NIST AI RMF?
+  - What is ISO/IEC 42001:2023 and when would you pursue certification against it?
+  - How do the India AI Governance Guidelines differ in approach from the EU AI Act?
   - How would you implement AI governance in an organization?
   - What metrics would you use to measure AI security posture?
 
@@ -507,6 +660,17 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
   - Automated red teaming capabilities
   - Integration with CI/CD pipelines
 
+### Risk Scoring & Framework Tooling
+- [ ] **OWASP AIVSS (AI Vulnerability Scoring System)**
+  - [AIVSS project and calculator](https://aivss.owasp.org/) (v0.8)
+  - CVSS v4.0 base score plus an Agentic AI Risk Score (AARS) from 10 agentic amplification factors
+  - JSON report schema for machine-readable findings
+  - Maps to the OWASP Agentic AI Top 10 and CSA MAESTRO layers
+
+- [ ] **MCP Security Scanners**
+  - Automated scanners for MCP tool definitions and server manifests — see the tools listed in the OWASP third-party MCP server cheat sheet
+  - Use alongside the MCP Security Minimum Bar review checklist
+
 ### Bug Bounty and Research Platforms
 - [ ] **Huntr.com**
   - [World's first AI/ML bug bounty platform](https://huntr.com/)
@@ -569,16 +733,25 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
    - [AttackIQ: Foundations of AI Security](https://www.academy.attackiq.com/courses/foundations-of-ai-security)
 
 2. **Security Guides & Checklists**
-   - [OWASP Top 10 for LLM Applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf)
-   - [OWASP LLM AI Security and Governance Checklist](https://owasp.org/www-project-top-10-for-large-language-model-applications/llm-top-10-governance-doc/LLM_AI_Security_and_Governance_Checklist.pdf)
-   - [NIST AI Risk Management Framework (AI RMF)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
+   - [OWASP Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) *(current)*
+   - [OWASP Top 10 for LLM Applications 2023 v1.1](https://owasp.org/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-2023-v1_1.pdf) *(historical, for reading older reports)*
+   - [OWASP LLM AI Security and Governance Checklist v1.1](https://genai.owasp.org/resources/)
+   - [OWASP GenAI Data Security: Risks and Mitigations 2026](https://genai.owasp.org/resource/owasp-genai-data-security-risks-mitigations-2026/)
+   - LLM and GenAI Data Security Best Practices 2025 (OWASP GenAI Security Project)
+   - [OWASP GenAI Incident Response Guide v1.0](https://genai.owasp.org/resource/genai-incident-response-guide-1-0/)
+   - [OWASP GenAI Red Teaming Guide v1.0](https://genai.owasp.org/initiatives/genai-red-teaming-initiative/)
+   - [NIST AI 600-1: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
    - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)
-   - [NIST Adversarial Machine Learning](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf)
+   - [NIST AI 100-2e2025: Adversarial Machine Learning](https://csrc.nist.gov/pubs/ai/100/2/e2025/final) *(current edition)*
+   - [NIST AI 100-2e2023: Adversarial Machine Learning](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2023.pdf) *(previous edition)*
+   - [Databricks AI Security Framework (DASF) v2.0](https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf)
    - [Microsoft: Threat Modeling AI/ML](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
    - [Plot4.ai: Quick AI Threat Model Check](https://plot4.ai/assessments/quick-check)
    - [Failure Modes in Machine Learning](https://securityandtechnology.org/wp-content/uploads/2020/07/failure_modes_in_machine_learning.pdf)
+   - Gartner: *AI in Cybersecurity: Define Your Direction* — AI TRiSM control taxonomy and the state of enterprise GenAI risk-control adoption
 
 3. **Articles & Blogs**
+   - Sonar: *The State of Code, Vol. 2: Security* (July 2025) — AI-assisted code vulnerability data at scale (7.9B LOC analyzed)
    - [DataCamp: What are Foundation Models](https://www.datacamp.com/blog/what-are-foundation-models)
    - [Lasso Security: Riding the RAG Trail](https://www.lasso.security/blog/riding-the-rag-trail-access-permissions-and-context)
    - [IronCore Labs: Security Risks with RAG Architectures](https://ironcorelabs.com/security-risks-rag/)
@@ -603,3 +776,26 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 
 6. **Videos**
    - [WhyLabs: Intro to LLM Security](https://www.youtube.com/watch?v=dj1H4g4YSlU)
+
+7. **Agentic AI, AI Agents & MCP Security**
+   - [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)
+   - [OWASP Agentic AI — Threats and Mitigations v1.0](https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/)
+   - [OWASP Securing Agentic Applications Guide v1.0](https://genai.owasp.org/resource/securing-agentic-applications-guide-1-0/)
+   - [OWASP State of Agentic AI Security and Governance v2.01](https://genai.owasp.org/resource/state-of-agentic-ai-security-and-governance/)
+   - [OWASP Agentic Skills Top 10 v0.5](https://owasp.org/www-project-agentic-skills-top-10/)
+   - [OWASP Agentic Security Initiative (hub for all of the above)](https://genai.owasp.org/initiatives/agentic-security-initiative/)
+   - [OWASP AIVSS — AI Vulnerability Scoring System](https://aivss.owasp.org/)
+   - [A Practical Guide for Secure MCP Server Development v1.0](https://genai.owasp.org/resource/a-practical-guide-for-secure-mcp-server-development/)
+   - [CheatSheet — A Practical Guide for Securely Using Third-Party MCP Servers v1.0](https://genai.owasp.org/resource/cheatsheet-a-practical-guide-for-securely-using-third-party-mcp-servers-1-0/)
+   - Confused Deputy Attacks on Autonomous AI Agents (Cloud Security Alliance AI Safety Initiative, 2026 — unofficial AI-assisted research)
+   - Zero Trust for AI Agents (Anthropic/Claude)
+   - Design Principles for LLM-based Systems with Zero Trust: Foundation for Secure Agentic Systems (BSI, Germany + ANSSI, France)
+   - [Agentic JWT: A Secure Delegation Protocol for Autonomous AI Agents (arXiv:2509.13597)](https://arxiv.org/abs/2509.13597)
+   - [Red Teaming LLM Multi-agent Systems via Communication Attacks (arXiv:2502.14847)](https://arxiv.org/abs/2502.14847)
+
+8. **Governance, Standards & Regional Regulation**
+   - [ISO/IEC 42001:2023 — AI Management System (AIMS)](https://www.iso.org/standard/42001)
+   - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+   - [India AI Governance Guidelines (MeitY, Government of India)](https://indiaai.gov.in/)
+   - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+   - [Databricks AI Security Framework (DASF) v2.0](https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf)
