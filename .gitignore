@@ -1,1 +1,7 @@
 .idea/
+
+# Personal ebook generator (not for public repo)
+generate_ebook.py
+requirements-ebook.txt
+Security_Study_Plan_Ebook.pdf
+*.pdf
