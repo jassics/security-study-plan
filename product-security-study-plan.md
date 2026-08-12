@@ -115,6 +115,7 @@ Threat modeling is a key part of Product Security.
    1. Simple risk scoring (likelihood x impact).
    2. Aligning with internal risk rating (e.g., Critical/High/Medium/Low).
    3. When to accept risk vs when to push for fixes.
+5. **AI/LLM-powered features:** when a product feature adds an LLM, RAG, or agentic component, extend your threat model to prompt injection, data leakage via the model, and excessive tool/agent permissions — see [GenAI Security Study Plan](genai-security-study-plan.md).
 
 ## Metrics, Backlog and Communication
 **Duration: 2-3 weeks**
@@ -150,8 +151,9 @@ Product Security sits in the middle of several other teams.
    3. Work together on network, IAM, and data protection.
 3. With GRC / Compliance:
    1. Map product controls to policies and frameworks (e.g., ISO, SOC 2, GDPR).
-   2. Help prepare for audits and customer security reviews.
-   3. Turn compliance requirements into concrete product controls.
+   2. For products with AI/LLM features, also map controls to AI governance frameworks (e.g., EU AI Act risk tiers, ISO/IEC 42001 AI management system).
+   3. Help prepare for audits and customer security reviews.
+   4. Turn compliance requirements into concrete product controls.
 
 ## Books
 

@@ -60,6 +60,17 @@ Goal here is to understand what “software supply chain” actually means.
    3. Compromised build agents or pipelines.
    4. Poisoned images or artifacts.
    5. Misconfigurations in deployment.
+4. Learn the frameworks that give this domain a common language:
+   1. **[SLSA: Supply-chain Levels for Software Artifacts](https://slsa.dev/)** — the de facto standard for build provenance. Current spec is [SLSA v1.2](https://slsa.dev/spec/v1.2/) (Approved); v1.1 is still widely cited.
+      1. The Build track and its levels ([Build track basics](https://slsa.dev/spec/v1.2/build-track-basics)):
+         1. **L0** — no provenance, no guarantees. Where most projects start.
+         2. **L1** — the build runs on a build platform that automatically generates provenance describing how the artifact was built, and that provenance is distributed to consumers.
+         3. **L2** — the build platform itself generates *and signs* the provenance, so a tampered artifact can be detected without trusting the uploader.
+         4. **L3** — hardened build platform: builds are isolated from each other, and the provenance signing key is not reachable from user-defined build steps. This is what defends against a SolarWinds- or tj-actions-style build compromise.
+      2. Understand the terms *provenance*, *attestation*, *build platform*, *producer/consumer* and *verifier* — you will meet them again in in-toto and Sigstore.
+      3. Practical framing: pick a target level per artifact tier, and know which controls move you from L1 to L3 rather than treating SLSA as a badge.
+   2. [OWASP Top 10 CI/CD Security Risks](https://owasp.org/www-project-top-10-ci-cd-security-risks/) — the risk taxonomy for the build side of the chain.
+   3. **A03:2025 Software Supply Chain Failures** in the [OWASP Top 10:2025](https://owasp.org/Top10/2025/) — supply chain is now a top-three web application risk category in its own right; useful when you need to justify this work to AppSec leadership. See [Application Security Study Plan](application-security-study-plan.md).
 
 ## Dependencies and Package Ecosystems
 **Duration: 2-3 weeks**
@@ -114,12 +125,29 @@ This is about making sure what you build is exactly what gets deployed.
 2. Signing and verification (high level):
    1. Code signing concepts.
    2. Image signing and verification.
-3. SBOM (Software Bill of Materials):
+3. Get hands-on with the current standard tooling — this is what "signing and SBOM" actually looks like in practice:
+   1. **[Sigstore](https://www.sigstore.dev/)** — keyless signing for artifacts and container images using short-lived certificates tied to an OIDC identity (your CI workflow), with a public transparency log (Rekor) so signatures are auditable.
+      1. **[cosign](https://github.com/sigstore/cosign)** — the tool you will use day to day: `cosign sign` / `cosign verify` for images and blobs, and attaching attestations and SBOMs to an image. Start with the [signing overview](https://docs.sigstore.dev/cosign/signing/overview/).
+      2. Understand why keyless beats long-lived signing keys: nothing to steal, and the identity in the certificate tells you *which pipeline* built the artifact.
+      3. Learn to enforce verification at admission time (e.g. a Kubernetes policy controller), not just to sign — an unverified signature buys you nothing. Cross-link with [Kubernetes Security Study Plan](kubernetes-security-study-plan.md).
+   2. **[in-toto](https://in-toto.io/)** attestations — a signed, machine-readable statement about an artifact ("this image was built by this workflow from this source", "these tests passed", "this SBOM belongs to this digest").
+      1. Learn the [in-toto attestation framework](https://github.com/in-toto/attestation) format: subject (artifact digest), predicate type, predicate. SLSA provenance is itself an in-toto attestation predicate.
+      2. This is how provenance, SBOMs and scan results get bound to a specific artifact digest instead of floating around as loose files.
+   3. **[OpenSSF Scorecard](https://scorecard.dev/)** — automated checks on the security posture of an open source repository (branch protection, code review, pinned dependencies, dangerous workflow patterns, signed releases, maintenance activity).
+      1. Run it via the [scorecard CLI or GitHub Action](https://github.com/ossf/scorecard) on your own repos, and use published scores as one input when evaluating a new dependency.
+      2. Know its limits: it measures *practices*, not the absence of vulnerabilities, and a high score is not a substitute for review.
+4. SBOM (Software Bill of Materials):
    1. What an SBOM is and why it matters.
    2. How SBOMs help in incident response and compliance.
-4. Simple practices:
+   3. Know the two formats you will actually be asked for:
+      1. **[CycloneDX](https://cyclonedx.org/specification/overview/)** — OWASP-backed, security-focused; current spec is 1.7 (Oct 2025), backward compatible with 1.4-1.6, and it also carries VEX, attestations and cryptographic (CBOM) data.
+      2. **[SPDX](https://spdx.dev/use/specifications/)** — ISO/IEC 5962 standardized, licensing/compliance heritage; 3.0 line is current (3.0.1), but a large share of real-world tooling still emits 2.3, so expect to handle both.
+      3. Understand VEX (Vulnerability Exploitability eXchange) alongside SBOM: the SBOM says what is in there, VEX says whether a given CVE is actually exploitable in your product.
+   4. Generation and consumption in a pipeline: generate the SBOM at build time (not by scanning the finished artifact later), attach it to the artifact digest as an attestation, and store it so you can answer "where do we use log4j / xz / this package" in minutes.
+5. Simple practices:
    1. Track which artifact versions are deployed where.
    2. Ensure builds are reproducible and traceable.
+   3. Pin dependencies and third-party CI actions by immutable digest/commit SHA, not by mutable tag.
 
 ## Historical Supply Chain Incidents
 **Duration: 1-2 weeks**
@@ -134,11 +162,21 @@ You will learn a lot by understanding how major incidents happened.
 2. **SHA-1 related attacks** (e.g., SHA-1 collision attacks):
    1. Collision attacks against SHA-1 showed that older hash algorithms may no longer be safe for integrity.
    2. Understand why moving away from weak hashes (like SHA-1) matters in signing and integrity checks.
-3. **SolarWinds-style attacks**:
+3. **[xz-utils backdoor, CVE-2024-3094](https://openssf.org/blog/2024/03/30/xz-backdoor-cve-2024-3094/)** (discovered 29 March 2024 by Andres Freund) — the canonical *maintainer trust* case study, and the one to study first:
+   1. What happened: a contributor ("Jia Tan"/JiaT75) spent roughly two years building credibility on the xz project until they were granted maintainer rights, then shipped a backdoor in xz 5.6.0/5.6.1 that patched liblzma at build time to hijack OpenSSH's authentication path — remote code execution for whoever held a specific Ed448 private key. CVSS 10.0.
+   2. Why it is the better teaching example: the malicious payload was in the **release tarball, not the git repository**, and was activated only by the distro build process — so reading the upstream source would not have found it. It was caught by accident, via a performance anomaly in sshd.
+   3. Controls it stresses: reproducible builds and build-from-source-of-truth (would have exposed the tarball/repo divergence), maintainer succession and social-engineering risk, single-maintainer critical dependencies, and the size of the transitive dependency graph that pulled liblzma into sshd at all.
+   4. It landed in Fedora 40 beta/Rawhide, Debian unstable/testing, Kali and Arch — not in stable Ubuntu or Amazon Linux, largely by timing luck.
+4. **[tj-actions/changed-files GitHub Action compromise, CVE-2025-30066](https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction)** (March 2025) — the canonical *CI/CD and mutable-reference* case study:
+   1. What happened: an attacker used a compromised bot personal access token to retag versions v1 through v45.0.7 of a very widely used GitHub Action to point at a malicious commit. The injected code dumped the CI runner's memory and printed harvested secrets — cloud keys, GitHub PATs, npm tokens, private keys — into the workflow logs, which are public for public repos. Around 23,000 repositories used the action; patched in v46.0.1. Read it together with the related [reviewdog/action-setup compromise, CVE-2025-30154](https://www.cisa.gov/news-events/alerts/2025/03/18/supply-chain-compromise-third-party-tj-actionschanged-files-cve-2025-30066-and-reviewdogaction), which is believed to be how the tj-actions bot token was obtained in the first place — a two-hop compromise through the Action ecosystem. Good technical write-up: [Wiz](https://www.wiz.io/blog/github-action-tj-actions-changed-files-supply-chain-attack-cve-2025-30066).
+   2. Controls it stresses: pinning third-party actions by **full commit SHA instead of a mutable tag**, least-privilege `GITHUB_TOKEN` and workflow permissions, short-lived OIDC credentials instead of long-lived secrets in CI, treating build logs as a secret sink, and monitoring for unexpected outbound network calls from runners.
+   3. Response practice: work out how you would answer "did any of our workflows run this action in that window, and which secrets were exposed?" — then rotate.
+5. **SolarWinds-style attacks** (2020, still the reference *build system compromise*):
    1. Attackers compromised the vendor’s build system.
    2. Malicious code was inserted into legitimate updates.
    3. Customers trusted signed updates, so the backdoor spread widely.
-4. For each incident type, focus on:
+   4. Note that signing alone did not help here — the malicious build was legitimately signed. This is exactly the gap SLSA Build L3 (isolated builds, signing keys unreachable from build steps) and verifiable provenance are meant to close.
+6. For each incident type, focus on:
    1. Where in the supply chain the attacker gained control.
    2. What controls were missing or weak.
    3. What changes were made after the incident (e.g., more signing, better monitoring, stricter access control).

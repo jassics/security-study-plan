@@ -65,15 +65,18 @@ You don't need to memorize everything, but you should know **what exists**, **wh
 1. High-level security architecture frameworks
    1. SABSA (Sherwood Applied Business Security Architecture) – concept of business-driven security architecture
    2. TOGAF and how security fits into enterprise architecture
-   3. NIST Cybersecurity Framework (CSF) at a high level
+   3. [NIST Cybersecurity Framework (CSF) 2.0](https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf) (Feb 2024) – note the version: CSF 2.0 added **Govern** as a sixth function alongside Identify, Protect, Detect, Respond, Recover, and widened scope beyond critical infrastructure to organizations of all sizes. If a doc still says "the five CSF functions", it predates 2.0. See also the [NIST CSF hub](https://www.nist.gov/cyberframework).
 2. Technical standards and guidelines that influence architecture
    1. NIST 800-53 / NIST 800-171 basics
-   2. ISO 27001 controls at a high level
-   3. CIS Controls v8 (mapped to architecture capabilities)
+   2. ISO/IEC 27001:2022 controls at a high level
+   3. [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1) (June 2024) – 18 Controls / 153 Safeguards, mapped to architecture capabilities. v8.1 adds a **Governance** security function and realigns the mappings to NIST CSF 2.0 ([CIS Controls v8.1 → NIST CSF 2.0 mapping](https://www.cisecurity.org/insights/white-papers/cis-controls-v8-1-mapping-to-nist-csf-2-0)).
 3. Application- and cloud-focused standards
-   1. [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/)
+   1. [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) – now at **v5.0** (May 2025): ~350 requirements across 17 reorganized chapters, restructured L1/L2/L3 definitions (L1 = entry point, L2 = standard practice, L3 = high assurance), versioned requirement IDs (e.g. `v5.0.0-3.2.1`), and a two-way v4.0 ↔ v5.0 mapping for migration. Use ASVS levels to state *how much* verification a given system needs.
    2. [OWASP SAMM](https://owaspsamm.org/)
    3. CSP-specific well-architected frameworks (AWS, Azure, GCP)
+4. Zero Trust maturity
+   1. [NIST SP 800-207 Zero Trust Architecture](https://csrc.nist.gov/pubs/sp/800/207/final) for the conceptual model (policy engine, policy administrator, policy enforcement point).
+   2. [CISA Zero Trust Maturity Model v2.0](https://www.cisa.gov/zero-trust-maturity-model) (April 2023) for the *maturity* view: five pillars — Identity, Devices, Networks, Data, Applications & Workloads — plus three cross-cutting capabilities (Visibility & Analytics, Automation & Orchestration, Governance), each scored Traditional → Initial → Advanced → Optimal. This is what turns "we are doing zero trust" into a per-pillar current/target state you can actually roadmap.
 
 Try to understand how these frameworks translate into **concrete architecture requirements** (e.g. logging, segmentation, encryption, IAM, backups, resilience).
 
@@ -86,6 +89,7 @@ Focus on how you design secure solutions from the start.
 1. Network and segmentation concepts
    1. DMZs, zero trust network concepts, micro‑segmentation
    2. North-south vs east-west traffic
+   3. Score a real environment against the [CISA Zero Trust Maturity Model v2.0](https://www.cisa.gov/zero-trust-maturity-model) pillars and pick the two lowest-maturity pillars as your design targets
 2. Identity and access architecture
    1. Central IdP, SSO, SAML/OIDC, MFA
    2. RBAC/ABAC, least privilege, just‑in‑time access
@@ -99,6 +103,12 @@ Focus on how you design secure solutions from the start.
 5. Resilience and availability
    1. Redundancy, failover, backups and restore
    2. Designing for DDoS and capacity
+6. AI / agentic system architecture
+   1. Where the new trust boundaries sit in an LLM system: prompt/context assembly, retrieval (RAG) sources, model provider, tool-use layer, memory/vector store, and the output consumer. Any content the model reads is untrusted input, so the boundary is *around the context window*, not just around the network.
+   2. Tool-use trust boundaries: an agent's effective privilege is the union of the tools it can call. Design per-tool scoped credentials, human-in-the-loop gates for irreversible actions, and a bounded blast radius per agent — not one broad token shared across an agent fleet.
+   3. [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) as an architectural component: MCP servers typically run with delegated user permissions and expose dynamic, chainable tool surfaces, so a single flawed or poisoned tool definition compounds. Review one against a minimum-bar checklist before it ships.
+   4. Non-human/agent identity is an architecture concern, not an afterthought — see the [IAM Security Study Plan](iam-security-study-plan.md).
+   5. Depth lives elsewhere: read the **AI Agents**, **Agentic AI** and **MCP** sections of the [GenAI Security Study Plan](genai-security-study-plan.md) rather than duplicating them here.
 
 Try to pick one or two small systems (side project, home lab, or existing app at work) and **draw** the "as‑is" and "to‑be" secure architecture.
 
@@ -122,6 +132,7 @@ Repeat this for at least 3–4 different architectures:
 - Simple 3‑tier web app
 - Public APIs with mobile/SPA client
 - Internal line-of-business application
+- An LLM/agent-backed feature with tool access and a retrieval source
 
 ## Secure SDLC and Architecture Governance
 **Duration: 3-4 weeks**
@@ -153,9 +164,10 @@ Look for and collect **reference architectures** for typical environments:
    2. Internet‑facing vs private services
    3. Centralized logging, monitoring, and alerting
 3. Common patterns
-   1. Zero Trust style access to internal apps
+   1. Zero Trust style access to internal apps (map the design back to the [CISA ZTMM v2.0](https://www.cisa.gov/zero-trust-maturity-model) pillars)
    2. Secure API gateway pattern
    3. Secure data pipeline / analytics architecture
+   4. LLM / RAG / agentic reference architecture: gateway in front of model providers, retrieval source allow-listing and provenance, guardrails on input and output, an MCP/tool broker enforcing per-tool authorization, isolated execution for agent-generated code, and full audit of "which agent did what, on whose behalf" (depth in the [GenAI Security Study Plan](genai-security-study-plan.md))
 
 Try to map each reference diagram to:
 - which controls are enforced where, and
@@ -193,3 +205,5 @@ You can use the [Application Security interview questions](https://github.com/ja
 1. How would you design a secure architecture for a public web application with APIs and mobile clients?
 2. How would you design logging and monitoring for a critical payments system?
 3. How would you approach threat modeling for a new microservices-based product?
+4. Where would you place trust boundaries in an agentic AI system that reads internal documents and calls internal APIs?
+5. How would you use the CISA Zero Trust Maturity Model to turn "we want zero trust" into a two-year architecture roadmap?

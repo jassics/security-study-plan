@@ -66,6 +66,21 @@ Learn the structured approaches to finding threats.
 2. **PASTA:** Process for Attack Simulation and Threat Analysis (Risk-centric).
 3. **Attack Trees:** Visualizing attack paths.
 4. **Other models:** CVSS (scoring), DREAD (scoring), LINDUNN (privacy).
+5. **MAESTRO (agentic AI):** *Multi-Agent Environment, Security, Threat, Risk, and Outcome* — the Cloud Security Alliance's layered threat modeling framework for agentic AI, published [6 February 2025](https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro).
+    - STRIDE, PASTA and LINDDUN assume deterministic software logic. MAESTRO instead decomposes an agentic system into **seven layers** and enumerates threats per layer *and* across layers:
+        1. Foundation Models
+        2. Data Operations
+        3. Agent Frameworks
+        4. Deployment and Infrastructure
+        5. Evaluation and Observability
+        6. Security and Compliance (a cross-cutting/vertical layer)
+        7. Agent Ecosystem
+    - Use it when agent-to-agent trust, orchestration logic and delegated tool use matter more than a single data flow. It is complementary to STRIDE, not a replacement — many teams run STRIDE on the conventional application and MAESTRO on the agentic layer.
+    - It has become the de-facto shared vocabulary for agentic threat modeling: OWASP's [Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/) work maps to MAESTRO layers (for example, [OWASP AIVSS](https://aivss.owasp.org/) scores agentic findings against the OWASP Agentic AI Top 10 *and* CSA MAESTRO layers).
+    - Further reading: [MAESTRO on GitHub (CSA)](https://github.com/CloudSecurityAlliance/MAESTRO) and [Applying MAESTRO to Real-World Agentic AI Threat Models: From Framework to CI/CD Pipeline (CSA, Feb 2026)](https://cloudsecurityalliance.org/blog/2026/02/11/applying-maestro-to-real-world-agentic-ai-threat-models-from-framework-to-ci-cd-pipeline).
+
+> [!TIP]
+> Threat modeling GenAI, LLM and agentic systems is deep enough to be its own track. This plan deliberately does not duplicate it — see the [GenAI Security Study Plan](genai-security-study-plan.md), specifically its *Threat Modeling & Risk Assessment* week (OWASP Agentic AI — Threats and Mitigations, Microsoft AI/ML threat modeling, NIST AI 100-2e2025) and its *Agentic AI* section (OWASP Top 10 for Agentic Applications 2026, AIVSS scoring).
 
 ## Process and Tools
 **Duration: 2 weeks**
@@ -95,6 +110,7 @@ Scaling and integrating into SDLC.
     - Model a simple web app.
     - Model a cloud infrastructure (e.g., S3 bucket setup).
     - Model a CI/CD pipeline.
+    - Model an agentic AI feature (an LLM agent with tools and memory) using MAESTRO, then compare what a plain STRIDE pass would have missed.
 
 ### Threat Modeling tools to explore
 1. [OWASP Threat Dragon](https://www.threatdragon.com/#/)
@@ -122,6 +138,9 @@ Scaling and integrating into SDLC.
 15. [Certified Threat Modeling Professional by Practical DevSecOps](https://www.practical-devsecops.com/certified-threat-modeling-professional/)
 16. [Kubernetes Threat Modeling](https://www.trendmicro.com/vinfo/in/security/news/security-technology/a-deep-dive-into-kubernetes-threat-modeling)
 17. [AWS S3 Threat Modeling - One you think you are ready for real time projects](https://controlcatalog.trustoncloud.com/dashboard/aws/s3)
+18. [MAESTRO: Agentic AI Threat Modeling Framework (Cloud Security Alliance, Feb 2025)](https://cloudsecurityalliance.org/blog/2025/02/06/agentic-ai-threat-modeling-framework-maestro) and the [MAESTRO repo](https://github.com/CloudSecurityAlliance/MAESTRO)
+19. [OWASP Agentic Security Initiative](https://genai.owasp.org/initiatives/agentic-security-initiative/) - agentic threat taxonomies, Top 10 for Agentic Applications, and AIVSS scoring
+20. [Microsoft: Threat Modeling AI/ML Systems and Dependencies](https://learn.microsoft.com/en-us/security/engineering/threat-modeling-aiml)
 
 ### Video Resources :bulb:
 1. https://youtu.be/h_BC6QMWDbA
@@ -130,10 +149,12 @@ Scaling and integrating into SDLC.
 4. https://youtu.be/lnvYlg4HOX4
 5. https://youtu.be/GuhIefIGeuA
 6. https://youtu.be/CjzdC0Eerfw
-7. [Paid Course on Udemy: Threat Modeling using STRIDE by Taimur](https://www.udemy.com/course/threat-modeling-using-stride-masterclass/?couponCode=IND21PM)
+7. [Paid Course on Udemy: Threat Modeling using STRIDE by Taimur](https://www.udemy.com/course/threat-modeling-using-stride-masterclass/)
 
 ### Books :books:
 1. [Threat Modeling: Design for Security by Adam Shostack](https://amzn.to/3zfKefb)
 2. [Threat Modeling by Izar Tarandach](https://amzn.to/4gEgbif)
 
 After learning Threat Modeling, you can connect it with monitoring and incident response by exploring the [Blue Team, Detection & Response Study Plan](blue-team-detection-response-study-plan.md).
+
+For threat modeling of GenAI, LLM and agentic systems in depth - OWASP Agentic AI Threats and Mitigations, the OWASP Top 10 for Agentic Applications 2026, AIVSS scoring and MAESTRO-adjacent material - go to the [GenAI Security Study Plan](genai-security-study-plan.md) instead of repeating it here.

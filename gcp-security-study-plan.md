@@ -85,11 +85,26 @@ What I mean to say here is:
 **Below are GCP Core Security services that you should know and try hands-on as much as possible:**
 1. IAM Policy Analyzer
 2. IAM Organization Policies
+3. [Security Command Center (SCC)](https://cloud.google.com/security/products/security-command-center) - Google Cloud's CSPM/CNAPP layer. Beyond basic misconfiguration findings, learn:
+   - **Attack path simulation**, enabled by default in the Premium tier, which scores findings by how exploitable they actually are toward high-value resources instead of by raw severity.
+   - **Gemini-assisted investigation** - natural-language summaries of findings and attack paths, so you can ask what a finding means and what to do next rather than reading raw JSON. See [Gemini in Google SecOps](https://docs.cloud.google.com/chronicle/docs/secops/gemini-chronicle).
+   - **[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview)** - inventory and risk posture for AI workloads: models, data sources, endpoints, agents and **MCP servers**, plus detection of over-privileged agents. Very relevant if your org is shipping GenAI on Google Cloud.
+   - Track new capabilities in the [SCC release notes](https://docs.cloud.google.com/security-command-center/docs/release-notes).
+4. **[Google Security Operations (Google SecOps)](https://cloud.google.com/security/products/security-operations)** - this is the SIEM/SOAR/threat-intel platform **formerly called Chronicle**. Chronicle Security Operations was rebranded to Google Security Operations on 25 April 2024, so older blogs, courses and job descriptions still say "Chronicle" - know that they mean the same platform. Note that documentation URLs are still under `/chronicle/`.
+   - Learn UDM (Unified Data Model), ingestion and parsers, YARA-L 2.0 detection rules, and retrohunts.
+   - Learn the [Gemini integration in SecOps](https://docs.cloud.google.com/chronicle/docs/secops/gemini-chronicle): natural-language search over your telemetry, AI-generated case/investigation summaries, and assisted detection-rule authoring.
+5. **[Google Cloud Armor](https://cloud.google.com/security/products/armor)** - the edge WAF and DDoS layer. Cover:
+   - Preconfigured WAF rules (OWASP ModSecurity CRS-based), custom rules in **CEL**, and rule tuning/sensitivity levels.
+   - **Adaptive Protection** - ML-based detection of L7 volumetric attacks with suggested rules.
+   - Rate limiting and throttling, bot management with reCAPTCHA integration, and edge security policies for Cloud CDN/Cloud Storage.
+   - Cloud Armor is now packaged as part of **Global Front End Enterprise** alongside global Cloud Load Balancing, Cloud CDN and Service Extensions - be aware of the packaging when reading current Google Cloud docs.
+6. [Sensitive Data Protection](https://cloud.google.com/security/products/sensitive-data-protection) (formerly Cloud DLP) - another rebrand to be aware of.
+7. [Assured Workloads](https://cloud.google.com/security/products/assured-workloads) and VPC Service Controls - data-boundary and exfiltration controls.
 
 ## GCP Security Whitepapers
 **Duration: 2 weeks**
 
-GCP has awesome lists of whitepapers related to GCP Security. We are adding few important one here. You can anytime check more for updated or new security whitepapers [here](https://aws.amazon.com/security/security-learning/?whitepapers-main.sort-by=item.additionalFields.sortDate&whitepapers-main.sort-order=desc)
+GCP has awesome lists of whitepapers related to GCP Security. We are adding few important one here. You can anytime check more for updated or new security whitepapers at the [Cloud Security Best Practices Center](https://cloud.google.com/security/best-practices)
 
 ### Week 10-11: Reading & Analysis
 1. [GCP Overview](https://cloud.google.com/docs/overview) - One of the important whitepapers to understand an overview of GCP
@@ -97,7 +112,7 @@ GCP has awesome lists of whitepapers related to GCP Security. We are adding few 
 3. [Google Cloud Security Foundation Guide](https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf)
 4. [GCP Well-Architected Security Pillar](https://cloud.google.com/architecture/framework/security)
 5. [Risk Governance of Digital Transformation](https://services.google.com/fh/files/misc/risk-governance-of-digital-transformation.pdf)
-6. [GCP Security Checklist](https://medium.com/@hassene/google-cloud-platform-security-checklist-5f57fe8eb761)
+6. [Google Cloud recommended security checklist](https://cloud.google.com/blog/products/identity-security/introducing-the-google-cloud-recommended-security-checklist) - official tiered checklist of 60 controls across six domains (authentication/authorization, organization resource management, infrastructure resource management, data protection, network security, and monitoring/logging/alerting), grouped Basic / Intermediate / Advanced. Pair it with the [Google Cloud security best practices catalog](https://cloud.google.com/docs/security/security-best-practices-catalog) and the [Cloud Security Best Practices Center](https://cloud.google.com/security/best-practices)
 7. [Google Infrastructure Security Design Overview](https://cloud.google.com/static/docs/security/infrastructure/design/resources/google_infrastructure_whitepaper_fa.pdf)
 8. [NIST Cybersecurity Framework in the GCP cloud](https://services.google.com/fh/files/misc/gcp_nist_cybersecurity_framework.pdf)
 9. [NIST 800-144 Security and Privacy in Public Cloud Computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-144.pdf)
@@ -112,10 +127,10 @@ GCP has awesome lists of whitepapers related to GCP Security. We are adding few 
 4. [GCP Pentesting](https://cloud.hacktricks.xyz/pentesting-cloud/gcp-security)
 
 ## Check your Knowledge against common security benchmark and frameworks.
-1. CIS Benchmark for Google Cloud. You can download pdf version from [here](https://www.cisecurity.org/benchmark/google_cloud_computing_platform)
+1. **CIS Google Cloud Platform Foundation Benchmark v5.0.0** (published May 2026). You can download the pdf version from [here](https://www.cisecurity.org/benchmark/google_cloud_computing_platform). Note that CIS also publishes separate **CIS GKE Benchmark v2.0.0** and **CIS GKE Autopilot Benchmark v2.0.0** - if you run GKE, the Foundation benchmark alone is not enough.
 2. [CSA Cloud Matrix and STAR Framework](https://cloudsecurityalliance.org/download/artifacts/cloud-controls-matrix-v4/)
-3. [NIST CSF for GCP](https://services.google.com/fh/files/misc/gcp_nist_cybersecurity_framework.pdf)
-4. [ISO 27017](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027017-2015.pdf)
+3. [NIST CSF for GCP](https://services.google.com/fh/files/misc/gcp_nist_cybersecurity_framework.pdf) - NIST CSF 2.0 (February 2024) is the current framework version, so cross-check anything in this mapping that predates it
+4. [ISO/IEC 27017](https://www.iso.org/standard/82878.html) - cloud-specific controls built on ISO/IEC 27002, for both cloud customers and providers. Current edition is ISO/IEC 27017:2026 (revising the 2015 edition); it is a paid standard, so use the official ISO page rather than a random mirror
 
 ## GCP Security Videos and Courses
 1. [GCP Cloud Security Features](https://www.youtube.com/watch?v=83IwaIaBRRU)

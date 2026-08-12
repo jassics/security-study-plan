@@ -165,7 +165,7 @@ There are separate plans for Cloud Security Study Plan as listed below:
 2. [AWS in Action](https://www.manning.com/books/amazon-web-services-in-action)
 
 **Videos**
-1. [Cloud Computing Playlist by Fkexmind](https://www.youtube.com/playlist?list=PLRTsCutScZnyfH0NLaOJxDEn2ZWZuBlup)
+1. [Cloud Computing Playlist by Flexmind](https://www.youtube.com/playlist?list=PLRTsCutScZnyfH0NLaOJxDEn2ZWZuBlup)
 2. [What is Cloud Computing by AWS](https://www.youtube.com/watch?v=mxT233EdY5c)
 3. [Inside a Cloud Data Center](https://www.youtube.com/watch?v=XZmGGAbHqa0)
 

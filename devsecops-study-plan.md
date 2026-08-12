@@ -111,6 +111,8 @@ Here you focus on what kinds of security checks you can automate and where.
 
 You do not need to be an expert in every tool, but you should understand **which type of test** fits which risk and where in the pipeline it makes sense.
 
+4. **AI-in-pipeline risk (emerging):** review AI-generated code merged via Copilot-style tools with the same SAST/SCA gates as human-written code, treat agentic CI/CD tooling (bots that open PRs, auto-merge, or run pipeline steps) as a privileged identity to scope and audit, and vet MCP servers/plugins used by AI dev tools for supply-chain risk before granting them repo or pipeline access. See [Software Supply Chain Security Study Plan](software-supply-chain-security-study-plan.md) for the SCA/provenance side of this.
+
 ## Cloud, Containers and IaC Security
 **Duration: 4-6 weeks**
 

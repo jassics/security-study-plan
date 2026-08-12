@@ -226,7 +226,7 @@ crAPI uses a microservices architecture and is composed of several services whic
 
 ## Videos
 1. [API Security: Everythign you need to know to protect your APIs](https://www.youtube.com/watch?v=SrOxtGXg4DA)
-2. [The 2022Guide to API Security](https://www.youtube.com/watch?v=6TojWjr4oOQ)
+2. [The Guide to API Security (SANS/Wallarm, 2022 — concepts still hold)](https://www.youtube.com/watch?v=6TojWjr4oOQ)
 3. [Analysing the OWASP API Security Top 10 for Pen Testers](https://www.youtube.com/watch?v=5UTHUZ3NGfw)
 
 ## Courses

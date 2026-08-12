@@ -66,6 +66,7 @@ Here you focus on building **secure images** and understanding supply chain risk
 2. Dependency and base image risk:
    1. Understand how vulnerabilities in base images affect you.
    2. Learn to track and update base images regularly.
+   3. Consider **Docker Hardened Images (DHI)** or **Wolfi**-based minimal/distroless images — rootless by default, stripped of unnecessary packages, rebuilt frequently, and shipped with SLSA Build Level 3 provenance.
 3. Basic supply chain concepts:
    1. Image registries and access controls.
    2. Image signing and provenance (high level).
@@ -89,7 +90,8 @@ Even with secure images, runtime and host configuration matter a lot.
 3. Host hardening:
    1. Keep Docker engine and OS patched.
    2. Limit who can run Docker (docker group is effectively root).
-   3. Logging and monitoring of Docker daemon and containers.
+   3. Consider **rootless Docker/containerd** so the daemon and containers run without root privileges on the host.
+   4. Logging and monitoring of Docker daemon and containers.
 4. Integration with orchestration:
    1. How these concepts later map into Kubernetes or other orchestrators (see [Kubernetes Security Study Plan](kubernetes-security-study-plan.md)).
 
@@ -103,6 +105,7 @@ This is where Docker Security meets DevSecOps.
    1. Understand what image scanners usually check (OS packages, app libs).
    2. Severity, fix availability, and risk-based triage.
    3. Where to scan: in CI, in registry, and/or in runtime.
+   4. Tools: e.g. **Docker Scout** (SBOM generation + policy evaluation, integrated with Docker CLI/Hub), Trivy, Grype.
 2. Policies and baselines:
    1. Define basic rules (no latest tags, specific allowed registries, minimal base images, no root user by default).
    2. Enforce through CI checks and registry policies.

@@ -8,12 +8,13 @@ Also, I assume you have already checked and comfortable with [Common Security Sk
 ## ToC
 1. [AWS Fundamentals](#aws-fundamentals) - 2-3 weeks
 2. [AWS Native Security core skills](#aws-native-security-core-skills) - 4-6 weeks
-3. [AWS Security Whitepapers](#aws-security-whitepapers) - 2 weeks
-4. [Check your AWS Pentesting Skills](#check-your-aws-pentesting-skills) - 2-3 weeks
-5. [Check your Knowledge against common security benchmark and frameworks](#check-your-knowledge-against-common-security-benchmark-and-frameworks)
-6. [AWS Security Videos and Courses](#aws-security-videos-and-courses)
-7. [AWS Security Interview Questions](#aws-security-interview-questions)
-8. [People to follow on twitter](#people-to-follow-on-twitter)
+3. [Current AWS Security Landscape (2025-2026)](#current-aws-security-landscape-2025-2026) - 1 week
+4. [AWS Security Whitepapers](#aws-security-whitepapers) - 2 weeks
+5. [Check your AWS Pentesting Skills](#check-your-aws-pentesting-skills) - 2-3 weeks
+6. [Check your Knowledge against common security benchmark and frameworks](#check-your-knowledge-against-common-security-benchmark-and-frameworks)
+7. [AWS Security Videos and Courses](#aws-security-videos-and-courses)
+8. [AWS Security Interview Questions](#aws-security-interview-questions)
+9. [People to follow on twitter](#people-to-follow-on-twitter)
 
 ## AWS Fundamentals
 **Duration: 2-3 weeks**
@@ -88,6 +89,24 @@ What I mean to say here is:
 11. AWS KMS
 12. Secrets Manager
 13. Cognito
+14. [IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) (successor to AWS SSO) - workforce identity, permission sets and short-lived credentials instead of long-lived IAM users
+
+## Current AWS Security Landscape (2025-2026)
+**Duration: 1 week**
+
+The AWS security service surface changed a lot in 2025. Don't study only the older service list - interviewers increasingly ask about these.
+
+1. **Security Hub as a CNAPP-style layer:** [AWS Security Hub became generally available in December 2025](https://aws.amazon.com/about-aws/whats-new/2025/12/security-hub-near-real-time-risk-analytics/) with near real-time risk analytics. It aggregates and correlates findings from GuardDuty, Inspector, Macie and Security Hub CSPM, and organizes signals by threats, exposures, resources and coverage. Note the naming split: the older posture-management capability is now **Security Hub CSPM** (this is what runs your CIS/AWS FSBP standards), while **Security Hub** is the unified risk/correlation layer on top.
+2. **GuardDuty Extended Threat Detection (ETD):** correlates multiple signals over time into a single multi-stage attack sequence finding instead of isolated alerts.
+   - [Launched Dec 2024](https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-guardduty-extended-threat-detection/) for IAM and S3.
+   - [Amazon EKS support added June 2025](https://aws.amazon.com/about-aws/whats-new/2025/06/amazon-guardduty-threat-detection-eks/).
+   - [Amazon EC2 and ECS support added Dec 2025](https://aws.amazon.com/about-aws/whats-new/2025/12/guardduty-extended-threat-detection-ec2-ecs/).
+3. **[IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/) - go beyond external access findings:**
+   - **Custom policy checks** - automated-reasoning checks you can run in CI/CD to fail a build when a policy change is more permissive than the previous version, or when it grants public access. Start with [Introducing IAM Access Analyzer custom policy checks](https://aws.amazon.com/blogs/security/introducing-iam-access-analyzer-custom-policy-checks/).
+   - **Internal access findings** - who *inside* your organization can reach an S3, DynamoDB or RDS resource, evaluated across identity policies, resource policies, SCPs and RCPs.
+   - **Unused access findings** - unused roles, users, access keys and permissions.
+4. **[EKS Pod Identity](https://docs.aws.amazon.com/eks/latest/userguide/pod-identity.html):** the current recommended way to give pods AWS permissions, replacing most IRSA (IAM Roles for Service Accounts) use. Know both, and be able to explain the trade-off: Pod Identity drops the per-cluster OIDC trust-policy sprawl and supports [cross-account access via `targetRoleArn`](https://aws.amazon.com/about-aws/whats-new/2025/06/amazon-eks-pod-identity-cross-account-access) - IRSA is still valid and is not deprecated.
+5. **[IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html):** federated workforce access with permission sets across accounts. Practise mapping IdP groups to permission sets, and understand why this beats per-account IAM users with long-lived access keys.
 
 ## AWS Security Whitepapers
 **Duration: 2 weeks**
@@ -105,18 +124,18 @@ AWS has awesome lists of whitepapers related to AWS Security. We are adding few 
 8. [AWS HIPAA Compliance Whitepaper](https://d0.awsstatic.com/whitepapers/compliance/AWS_HIPAA_Compliance_Whitepaper.pdf)
 9. [AWS Cloud Adoption Framework](https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf)
 10. [AWS Auditing Security Checklist](https://d1.awsstatic.com/whitepapers/compliance/AWS_Auditing_Security_Checklist.pdf)
-11. [AWS CIS Foundation benchmark](https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
+11. CIS AWS Foundations Benchmark - CIS published **v7.0.0** in April 2026; download it from [CIS](https://www.cisecurity.org/benchmark/amazon_web_services). Separately, know what your tooling can actually automate: [Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html) supports **v5.0.0** (its newest supported version, [added October 2025](https://aws.amazon.com/about-aws/whats-new/2025/10/aws-security-hub-cspm-cis-foundations-benchmark-v5) with 40 automated controls) plus v3.0.0, v1.4.0 and v1.2.0, and AWS recommends v5.0.0 over the older ones. Also learn which CIS requirements are *manual only* (for example most of the CloudWatch metric-filter/alarm requirements from the older versions).
 12. [AWS Security Incident Response](https://d1.awsstatic.com/whitepapers/aws_security_incident_response.pdf)
 13. [Overview of AWS Lambda Security](https://d1.awsstatic.com/whitepapers/Overview-AWS-Lambda-Security.pdf)
 14. [AWS KMS Best Practices](https://d1.awsstatic.com/whitepapers/aws-kms-best-practices.pdf)
 15. [Encrypting File Data with Amazon Elastic File System](https://d1.awsstatic.com/whitepapers/Security/amazon-efs-encrypted-filesystems.pdf)
 16. [Security of AWS CloudHSM backups](https://d1.awsstatic.com/whitepapers/Security/security-of-aws-cloudhsm-backups.pdf)
 17. [Security overview of AWS Lambda](https://aws.amazon.com/lambda/security-overview-of-aws-lambda/)
-18. [NIST Cybersecurity Framework in the AWS cloud](https://d0.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf)
+18. [NIST Cybersecurity Framework in the AWS cloud](https://d0.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf) - this whitepaper was updated in January 2025 and is aligned to **NIST CSF 2.0** (released February 2024), so it covers all six Core Functions including the new **Govern** function. If you are reading older CSF 1.1 material elsewhere, note that Govern did not exist there.
 19. [NIST 800-144 Security and Privacy in Public Cloud Computing](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-144.pdf)
 20. [Security at the Edge: Core Principles](https://d1.awsstatic.com/whitepapers/Security/security-at-the-edge.pdf)
 21. [AWS KMS Best Practices](https://d0.awsstatic.com/whitepapers/aws-kms-best-practices.pdf)
-22. [Security Overview of AWS Fargate](https://d1.awsstatic.com/whitepapers/AWS_Fargate_Security_Overview_Whitepaper.pdf)
+22. [Security in Amazon ECS (including AWS Fargate)](https://docs.aws.amazon.com/AmazonECS/latest/bestpracticesguide/security.html) - the old *Security Overview of AWS Fargate* whitepaper PDF is no longer served, so use the maintained ECS Best Practices Guide security chapter instead. It covers the Fargate shared-responsibility split, task/container hardening, network security and FIPS-140 for Fargate.
 
 ## Check your AWS Pentesting Skills
 **Duration: 2-3 weeks**
@@ -131,10 +150,10 @@ AWS has awesome lists of whitepapers related to AWS Security. We are adding few 
 7. Check other good tools like Prowler and ScoutSuite as well.
 
 ## Check your Knowledge against common security benchmark and frameworks.
-1. AWS CIS Benchmark
+1. [CIS AWS Foundations Benchmark](https://www.cisecurity.org/benchmark/amazon_web_services) - current CIS release is v7.0.0 (April 2026); [Security Hub CSPM automates up to v5.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html)
 2. CSA Cloud Matrix and STAR Framework
-3. [NIST CSF for AWS](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf)
-4. ISO 27017
+3. [NIST CSF 2.0 for AWS](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf) - CSF 2.0 was published February 2024; the AWS alignment whitepaper was refreshed for it in January 2025
+4. [ISO/IEC 27017](https://www.iso.org/standard/82878.html) - cloud-specific controls built on ISO/IEC 27002 (the 2015 edition was revised, current edition is ISO/IEC 27017:2026)
 
 ## AWS Security Videos and Courses
 Check [**Awesome AWS Security**](https://github.com/jassics/awesome-aws-security) repo for more details on book, videos, courses etc.

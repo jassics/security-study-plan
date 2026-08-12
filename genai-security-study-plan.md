@@ -34,7 +34,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 ### Governance, Risk & Compliance (GRC)
 - Develop GenAI security policies and procedures aligned with [NIST AI RMF](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) and [ISO/IEC 42001:2023 (AIMS)](https://www.iso.org/standard/42001)
 - Create AI governance frameworks and risk management strategies
-- Implement compliance controls for AI regulations ([EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215), [India AI Governance Guidelines](https://indiaai.gov.in/), etc.)
+- Implement compliance controls for AI regulations ([EU AI Act (Regulation (EU) 2024/1689)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), [India AI Governance Guidelines](https://indiaai.gov.in/), etc.) — note the [Digital Omnibus](https://digital-strategy.ec.europa.eu/) (agreed May-Jun 2026) pushed most high-risk (Annex III) obligations to Dec 2027 and Annex I to Aug 2028; only Article 50 transparency duties and GPAI enforcement land Aug 2026
 - Establish AI ethics and responsible AI practices
 - Design AI security awareness training programs for employees
 - Create incident response plans specifically for AI/ML security incidents
@@ -155,7 +155,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 - [ ] **Regulatory Frameworks & Standards**
   - [NIST AI 600-1: Generative AI Profile (AI RMF companion)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)
   - [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)
-  - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+  - [EU AI Act (Regulation (EU) 2024/1689)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — full high-risk (Annex III) obligations were pushed to Dec 2027 and Annex I to Aug 2028 by the 2026 Digital Omnibus; only Article 50 transparency duties and GPAI enforcement land Aug 2026 as originally scheduled
   - [ISO/IEC 42001:2023 — Artificial Intelligence Management System (AIMS)](https://www.iso.org/standard/42001) — the world's first AI management-system standard (released Dec 2023). It is a *management system* standard, not a technical spec: 10 clauses plus annexes, audited per ISO 19011, and the natural certification target if your org wants an auditable AI governance posture (ISO/IEC 42001:2023 AIMS Internal Auditor course outline)
   - ISO/IEC 23053:2022 (AI/ML system framework)
   - [India AI Governance Guidelines (MeitY, Government of India)](https://indiaai.gov.in/) — India's national framework, built on seven "sutras" (Trust, People First, Innovation over Restraint, Fairness & Equity, Accountability, Understandable by Design, Safety/Resilience/Sustainability) and six pillars across enablement, regulation and oversight; techno-legal and voluntary-measure led rather than prescriptive (India AI Governance Guidelines)
@@ -795,7 +795,7 @@ This section flips the lens: instead of securing GenAI systems, it covers using 
 
 8. **Governance, Standards & Regional Regulation**
    - [ISO/IEC 42001:2023 — AI Management System (AIMS)](https://www.iso.org/standard/42001)
-   - [EU AI Act](https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A32021R0215)
+   - [EU AI Act (Regulation (EU) 2024/1689)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) *(Digital Omnibus 2026 delayed most high-risk obligations to 2027-2028)*
    - [India AI Governance Guidelines (MeitY, Government of India)](https://indiaai.gov.in/)
    - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
    - [Databricks AI Security Framework (DASF) v2.0](https://www.databricks.com/resources/whitepaper/databricks-ai-security-framework-dasf)

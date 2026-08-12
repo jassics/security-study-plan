@@ -43,6 +43,7 @@ Identity is the new perimeter.
    - PIM (Privileged Identity Management).
    - MFA and Passwordless auth.
    - Identity Protection (Risk detection).
+4. **AI Agent Identity (emerging):** Microsoft Entra Agent ID — governs identity/lifecycle for AI agents (agent blueprints, scoped access, Conditional Access for non-human agent principals).
 
 ## Platform Protection
 **Duration: 2 weeks**
@@ -77,6 +78,7 @@ Monitoring and responding to threats.
    - KQL (Kusto Query Language) basics for hunting.
    - Creating Analytics Rules and Incidents.
    - Automation with Playbooks (Logic Apps).
+3. **Microsoft Security Copilot** (GA since April 2024): natural-language assistant embedded in Defender XDR/Sentinel for incident summarization, KQL generation, and guided hunting.
 
 ## Resources
 ### Certifications

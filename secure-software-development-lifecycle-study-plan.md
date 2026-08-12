@@ -49,7 +49,11 @@ Goal here is to understand what SDL is trying to achieve.
    1. Reduce vulnerabilities introduced during development.
    2. Catch issues earlier when they are cheaper to fix.
    3. Provide traceability for security activities.
-3. Read or refresh related plans:
+3. Learn the vocabulary everyone else uses – [NIST SSDF (SP 800-218), Secure Software Development Framework v1.1](https://csrc.nist.gov/pubs/sp/800/218/final):
+   1. Its four practice groups: Prepare the Organization (PO), Protect the Software (PS), Produce Well-Secured Software (PW), Respond to Vulnerabilities (RV).
+   2. SSDF is deliberately process-agnostic – it says *what* outcomes are needed, not which tool or methodology to use, so it maps onto any SDLC model.
+   3. It is the framework US federal software attestation (and increasingly enterprise vendor questionnaires) is written against, so learn the practice IDs, not just the concepts.
+4. Read or refresh related plans:
    1. [Application Security Study Plan](application-security-study-plan.md)
    2. [DevSecOps Study Plan](devsecops-study-plan.md)
    3. [Product Security Study Plan](product-security-study-plan.md)
@@ -89,7 +93,12 @@ Here you focus on day-to-day development activities.
 3. Automation:
    1. Introduce SAST and SCA as part of the build (see Application Security and DevSecOps plans).
    2. Ensure findings are triaged and assigned, not ignored.
-4. Link to [Secure Code Review Study Plan](secure-code-review-study-plan.md) for deeper code review skills.
+4. AI coding assistants change this phase, not just the tooling:
+   1. A large share of new code is now drafted by an assistant, so review volume goes up while the author's own understanding of the code goes down – plan review capacity and PR-size limits accordingly.
+   2. New failure modes to add to your SDL checkpoints: hallucinated packages/APIs (slopsquatting), insecure defaults copied from training data, and plausible-looking logic bugs.
+   3. Decide policy explicitly: where assistants are allowed, whether AI-authored changes are labelled in the PR, and which changes require a human security reviewer regardless.
+   4. Do not duplicate the detail here – see [Secure Code Review Study Plan](secure-code-review-study-plan.md) (reviewing AI-generated code) and [GenAI Security Study Plan](genai-security-study-plan.md) (AI-assisted code as a supply-chain input).
+5. Link to [Secure Code Review Study Plan](secure-code-review-study-plan.md) for deeper code review skills.
 
 ## Security Testing and Verification
 **Duration: 2-3 weeks**
@@ -128,11 +137,19 @@ Security does not end at release.
 Finally, understand how SDL ties into broader frameworks.
 
 ### Week 14-15: Maturity
-1. OWASP SAMM (Software Assurance Maturity Model):
+1. [OWASP SAMM](https://owasp.org/www-project-samm/) (Software Assurance Maturity Model):
    1. High-level understanding of practice areas and maturity levels.
-2. Microsoft SDL concepts (at a summary level).
-3. How SDL relates to standards like ISO 27001, NIST, etc.
-4. Use maturity models to:
+2. [Microsoft SDL](https://www.microsoft.com/en-us/securityengineering/sdl) concepts (at a summary level).
+3. [NIST SSDF – SP 800-218 v1.1](https://csrc.nist.gov/pubs/sp/800/218/final) (Feb 2022) as the reference framework:
+   1. Practise mapping your own SDL activities to SSDF practice IDs (PO/PS/PW/RV) – this is exactly what customer security questionnaires and federal attestation ask for.
+   2. [SP 800-218A](https://csrc.nist.gov/pubs/sp/800/218/a/final) (July 2024) – *Secure Software Development Practices for Generative AI and Dual-Use Foundation Models: An SSDF Community Profile*. An SSDF community profile that adds AI-model-specific practices (training data provenance, model weights as a protected artifact, model/system producer vs. acquirer roles). Read this if your org ships or fine-tunes models, not just software.
+   3. [SSDF v1.2 (SP 800-218r1)](https://csrc.nist.gov/pubs/sp/800/218/r1/ipd) – initial public draft published Dec 2025 under EO 14306; the public comment period closed 30 Jan 2026 and it is still a draft (not final) as of Aug 2026. Worth skimming for direction of travel; keep citing v1.1 as the authoritative version until r1 is finalised.
+4. [CISA Secure by Design](https://www.cisa.gov/resources-tools/resources/secure-by-design) and the [Secure by Design Pledge](https://www.cisa.gov/securebydesign/pledge):
+   1. Core principles: take ownership of customer security outcomes, radical transparency and accountability, and build organisational structure/leadership to achieve both.
+   2. The voluntary pledge has seven goals (MFA, default passwords, reducing entire vulnerability classes, security patches, vulnerability disclosure policy, CVEs/CWEs, intrusion evidence) – it is now used as a supplier due-diligence signal, so expect it in vendor reviews and interviews.
+   3. Good source of concrete, measurable SDL objectives you can lift into your own roadmap.
+5. How SDL relates to standards like ISO 27001, NIST, etc.
+6. Use maturity models to:
    1. Assess current state.
    2. Plan incremental improvements.
 
@@ -164,4 +181,8 @@ You can reuse many questions from the Application Security and Product Security 
 1. How would you introduce security into an existing agile SDLC with minimal disruption?
 2. Which security activities would you recommend at each phase of the SDLC and why?
 3. How would you measure whether your SDL is working and improving over time?
+4. How would you map your current SDL activities to the NIST SSDF practices, and what would you do about the gaps?
+5. What does SP 800-218A add for teams that build or fine-tune AI models, and which of your existing controls would need to change?
+6. A customer asks whether you have signed the CISA Secure by Design pledge. Which of the seven goals would be hardest for your product to evidence, and why?
+7. Developers are now shipping AI-assisted code. Which SDL phases would you change, and what would you *not* change?
 

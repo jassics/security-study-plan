@@ -13,7 +13,8 @@ GRC is an initialism that denotes Governance, Risk, and Compliance, but the real
 ### Key Components:
 - **Governance Frameworks:** COSO, COBIT
 - **Risk Management Frameworks:** ISO 31000, NIST SP 800-30, NIST RMF
-- **Compliance Frameworks:** GDPR, HIPAA, SOX, ISO27K1, SOC
+- **Compliance Frameworks:** GDPR, HIPAA, SOX, PCI-DSS, ISO/IEC 27001:2022, SOC
+- **AI Governance Frameworks:** [NIST AI RMF / AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf), [ISO/IEC 42001:2023 (AIMS)](https://www.iso.org/standard/42001), [EU AI Act](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ### Why GRC
 - Governance & Oversight provides methods to guide, constrain and conscribe the organization to achieve its purpose, mission, vision, and values.
@@ -49,7 +50,8 @@ Understand the core concepts of Governance, Risk, and Compliance and how they in
 - **Key Frameworks Overview:**
     - Governance: COSO, COBIT
     - Risk: ISO 31000, NIST RMF
-    - Compliance: GDPR, HIPAA, SOX, ISO 27001
+    - Compliance: GDPR, HIPAA, SOX, PCI-DSS, ISO/IEC 27001:2022
+    - AI Governance: NIST AI RMF (AI 600-1), ISO/IEC 42001:2023, EU AI Act
 
 ## Governance and Policy
 **Duration: 2 weeks**
@@ -79,9 +81,19 @@ Focus on the "R" in GRC - managing uncertainty.
 Focus on the "C" in GRC - adhering to rules and proving it.
 
 ### Week 7-8: Regulatory Landscape
-- **Regulatory Knowledge:** Deep dive into relevant regulations (GDPR, HIPAA, PCI-DSS).
+- **Regulatory Knowledge:** Deep dive into relevant regulations (GDPR, HIPAA, PCI-DSS, and AI-specific regulation such as the EU AI Act).
 - **Compliance Auditing:** Techniques for auditing and ensuring compliance.
 - **Reporting and Documentation:** Skills for documenting and reporting compliance status.
+
+### AI Governance (GRC for AI systems)
+AI is now a first-class GRC domain: it has its own management-system standard, its own risk framework, and its own regulation with hard deadlines. Treat it as an extension of your existing governance, risk and compliance machinery, not a separate program. For the deep technical/security side, see the [GenAI Security Study Plan](genai-security-study-plan.md).
+
+- **[EU AI Act (Regulation (EU) 2024/1689)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)** — the world's first comprehensive, risk-tiered AI regulation (prohibited / high-risk / limited-risk / minimal-risk). Learn the tiering logic first, then the provider vs deployer obligation split.
+  - Timeline you must get right (it moved): the prohibited-practices and AI-literacy provisions applied from 2 Feb 2025 and the GPAI obligations from 2 Aug 2025. **2 August 2026** was the original date for high-risk obligations, but the EU **Digital Omnibus** (political agreement 7 May 2026, Parliament 16 Jun 2026, Council 29 Jun 2026) postpones Annex III (use-case) high-risk obligations to **2 December 2027** and Annex I (product-embedded) high-risk obligations to **2 August 2028**. What *does* land on 2 Aug 2026 is the Article 50 transparency duties (chatbot disclosure, AI-content marking, deepfake labelling) plus Commission GPAI enforcement powers. Track the current dates at the [AI Act implementation timeline](https://artificialintelligenceact.eu/ai-act-implementation-next-steps/).
+- **[ISO/IEC 42001:2023 — AI Management System (AIMS)](https://www.iso.org/standard/42001)** — the first AI management-system standard (published Dec 2023). Management system, not technical spec: 10 clauses plus annexes, audited per ISO 19011. This is the certifiable target if leadership wants an auditable AI governance posture, and it slots alongside ISO/IEC 27001:2022 the same way ISO 27701 does for privacy.
+- **[NIST AI RMF and NIST AI 600-1 (Generative AI Profile)](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)** — voluntary, outcome-based: the Govern / Map / Measure / Manage functions, with AI 600-1 giving GenAI-specific risks and suggested actions. Use the [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook) to turn functions into actual controls.
+- **What to actually build:** an AI system inventory (including shadow AI), an AI risk register and impact-assessment process, model/data provenance and documentation, human-oversight and escalation rules, third-party/model-vendor due diligence, and non-human/AI-agent identity ownership (see the [IAM Security Study Plan](iam-security-study-plan.md)).
+- **Mapping practice:** take your existing ISO/IEC 27001:2022 control set and map it to ISO/IEC 42001 Annex A and NIST AI 600-1 — most orgs reuse 60-70% of what they already have, and the gaps are where the real AI governance work is.
 
 ### Integration and Technology
 - **GRC Software:** Familiarity with GRC tools and software (e.g., RSA Archer, MetricStream).
@@ -311,6 +323,8 @@ Measuring the effectiveness of a GRC program involves establishing metrics that 
 **For Intermediate/Advanced Professionals:**
 - **Certified Information Systems Security Professional (CISSP):** Provides a broad understanding of security principles, including governance and risk management.
 - **Certified in Governance, Risk, and Compliance (CGRC):** Specialized certification for GRC professionals.
+- **[AIGP: Artificial Intelligence Governance Professional (IAPP)](https://iapp.org/certify/aigp):** AI governance credential covering AI lifecycle risk, responsible-AI practice, and how current/emerging AI laws apply. No formal prerequisites; 100 questions, 3 hours.
+- **[ISO/IEC 42001 Lead Implementer / Lead Auditor](https://pecb.com/en/education-and-certification-for-individuals/iso-iec-42001):** Pick Lead Implementer if you will build the AI management system, Lead Auditor if you will audit it — same split as ISO 27001.
 
 **For Expert Level:**
 - **Certified in Risk Management Assurance (CRMA):** Focuses on risk management and assurance.
@@ -340,6 +354,10 @@ Measuring the effectiveness of a GRC program involves establishing metrics that 
 ### Useful Links
 - [You will get what you need for ISO 27001 here](https://www.iso27001security.com/)
 - [NIST RMF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf)
+- [EU AI Act — official text (Regulation (EU) 2024/1689)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) and the [implementation timeline tracker](https://artificialintelligenceact.eu/ai-act-implementation-next-steps/)
+- [ISO/IEC 42001:2023 — AI Management System (AIMS)](https://www.iso.org/standard/42001)
+- [NIST AI 600-1: Generative AI Profile](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) and the [NIST AI RMF Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook)
+- [GenAI Security Study Plan](genai-security-study-plan.md) — deeper AI governance, agentic AI and MCP security coverage
 
 
 

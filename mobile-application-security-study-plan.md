@@ -15,7 +15,7 @@ It will cover what you need to learn to test and secure mobile apps, including c
 1. Mobile security is not just “web in a smaller screen” – there are **platform-specific risks**.  
 2. You must understand Android and iOS app models and storage.  
 3. You should be comfortable proxying traffic, analyzing APK/IPA, and using common tools.  
-4. You should align with [OWASP MASVS/MSTG](https://mas.owasp.org/) for methodology.  
+4. You should align with [OWASP MASVS/MASTG](https://mas.owasp.org/) for methodology (MASVS v2.1.0, MASTG v2.0.0 as of 2026).  
 5. You must consider both the app and its backend APIs.
 
 ---
@@ -25,7 +25,7 @@ It will cover what you need to learn to test and secure mobile apps, including c
 1. [Mobile Fundamentals](#mobile-fundamentals) - 2 weeks  
 2. [Android Security](#android-security) - 3-4 weeks  
 3. [iOS Security](#ios-security) - 3-4 weeks  
-4. [Mobile Testing Methodology (OWASP MASVS/MSTG)](#mobile-testing-methodology-owasp-masvsmstg) - 3-4 weeks  
+4. [Mobile Testing Methodology (OWASP MASVS/MASTG)](#mobile-testing-methodology-owasp-masvsmastg) - 3-4 weeks  
 5. [Tools & Labs](#tools--labs) - 3-4 weeks  
 6. [Books](#books)  
 7. [Videos](#videos)  
@@ -79,7 +79,7 @@ Goal: understand iOS app model and security controls.
 
 ---
 
-## Mobile Testing Methodology (OWASP MASVS/MSTG)
+## Mobile Testing Methodology (OWASP MASVS/MASTG)
 
 **Duration: 3-4 weeks**
 
@@ -88,7 +88,7 @@ Goal: follow a structured approach for mobile security testing.
 ### Week 11-14: Methodology
 
 1. **OWASP MASVS:** security requirements categories (architecture, storage, crypto, etc.).  
-2. **OWASP MSTG:** test cases and practical guidance.  
+2. **OWASP MASTG** (Mobile Application Security Testing Guide, formerly MSTG): test cases and practical guidance.  
 3. **Testing Focus Areas:**  
    - Local data storage.  
    - Authentication and session management.  
@@ -105,10 +105,11 @@ Goal: get hands-on experience.
 
 ### Week 15-18: Practice
 
-1. **Proxying & Interception:** Burp/ZAP, cert installation, bypassing certificate pinning (at high level).  
-2. **Emulators & Devices:** basic setup for Android and iOS testing.  
-3. **Deliberately Vulnerable Apps:** practice on intentionally vulnerable mobile apps from reputable sources.  
-4. **Backend APIs:** reuse techniques from [API Security Study Plan](api-security-study-plan.md) to test the APIs mobile apps use.
+1. **Proxying & Interception:** Burp/ZAP, cert installation, bypassing certificate pinning (at high level) using tools like **Frida** and **objection**.  
+2. **Static/Dynamic Analysis Tools:** **MobSF** (Mobile Security Framework) for automated static/dynamic scans, **jadx** for decompiling Android APKs to readable Java.  
+3. **Emulators & Devices:** basic setup for Android and iOS testing.  
+4. **Deliberately Vulnerable Apps:** practice on intentionally vulnerable mobile apps from reputable sources.  
+5. **Backend APIs:** reuse techniques from [API Security Study Plan](api-security-study-plan.md) to test the APIs mobile apps use.
 
 ---
 
