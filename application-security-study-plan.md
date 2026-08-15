@@ -158,7 +158,7 @@ Don't learn this from this page — go to the dedicated plans:
 ## AppSec Tools
 1. Checkmarx for SAST or HCL AppSCan (Previously it was IBM AppScan)
 2. Snyk Code for SAST and Snyk Open Source for SCA
-3. [git-secrets](https://git-secret.io/) or [gitleaks](https://github.com/zricethezav/gitleaks) or [trufflehog](https://github.com/trufflesecurity/trufflehog) to find out secrets
+3. [git-secrets](https://git-secret.io/) or [gitleaks](https://github.com/gitleaks/gitleaks) or [trufflehog](https://github.com/trufflesecurity/trufflehog) to find out secrets
 4. [Chef Inspec](https://docs.chef.io/inspec/)
 5. [OWASP Dependency Check](https://github.com/jeremylong/DependencyCheck) is for SCA
 6. [Bandit for python code](https://bandit.readthedocs.io/en/latest/)
@@ -183,3 +183,4 @@ Why? Because you will see lots of security professionals active here and sharing
 9. [Defcon](https://x.com/defcon)
 10. [Nullcon](https://x.com/nullcon)
 11. [OWASP](https://x.com/owasp)
+12. [Xquik](https://github.com/Xquik-dev/x-twitter-scraper) - Independent X (Twitter) data API for search, follower export, monitors, and MCP.
