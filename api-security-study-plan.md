@@ -235,6 +235,7 @@ crAPI uses a microservices architecture and is composed of several services whic
 3. [API Security on Google Cloud's Apigee API Platform](https://www.coursera.org/learn/api-security-apigee-gcp)
 4. [API Fundamentals from Qualys for (free)](https://www.qualys.com/training/course/qualys-api-fundamentals/)
 5. [Introduction to the OWASP API Security Top 10 - Cybrary (free)](https://www.cybrary.it/course/securing-apis-fundamentals)
+6. [RansomLeak API Security Training](https://ransomleak.com/catalogue/api-security/) - Interactive browser-based labs
 
 ## Certifications
 1. [CSSLP](https://www.isc2.org/Certifications/CSSLP)

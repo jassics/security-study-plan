@@ -145,6 +145,7 @@ Don't learn this from this page — go to the dedicated plans:
 3. [Application Security Guide - Udemy](https://www.udemy.com/course/application-security-the-complete-guide/)
 4. [Sec522: Application Security: Securing Web Apps, APIs, and Microservices from SANS](https://www.sans.org/cyber-security-courses/application-security-securing-web-apps-api-microservices/) Really nice one but costly.
 5. [Free OWASP Top 10 practice from Kontra Security](https://application.security/free/owasp-top-10)
+6. [RansomLeak Application Security Training](https://ransomleak.com/catalogue/application-security/) - Interactive browser-based labs
 
 ## Certifications
 1. [CSSLP: Certified Secure Software Lifecycle Professional](https://www.isc2.org/Certifications/CSSLP) Recommended
