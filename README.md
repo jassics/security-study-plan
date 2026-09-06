@@ -84,6 +84,7 @@ Before updating or creating a resume for a job, please check:
 3. Check what skills it is looking for.
 4. Check for job location or is it remote(work from home/anywhere)?
 5. A free and open-source resume builder: [rxresu.me](https://rxresu.me/)
+6. [ResumeAI](https://withresumeai.com/) — AI resume builder + free ATS checker (3/day anonymous, 10/day free account); State of ATS 2026 (738 employers, 704 portal-verified; Workday 37.9%)
 
 Prepare your resume based on the above information and your skill sets. Could you try to be honest here?
 See if you can finish your resume in 1-2 pages. Check the 1-page resume below links:
