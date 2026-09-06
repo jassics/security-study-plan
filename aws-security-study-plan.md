@@ -148,6 +148,7 @@ AWS has awesome lists of whitepapers related to AWS Security. We are adding few 
 5. Try [Well Architected Framework: Security](https://www.wellarchitectedlabs.com/security/) Labs
 6. [AWS Security Workshops](https://awssecworkshops.com/workshops/)
 7. Check other good tools like Prowler and ScoutSuite as well.
+8. [RansomLeak Cloud Security labs](https://ransomleak.com/catalogue/cloud-security/) - browser-based S3, IAM, access-key, and metadata scenarios, no AWS account needed
 
 ## Check your Knowledge against common security benchmark and frameworks.
 1. [CIS AWS Foundations Benchmark](https://www.cisecurity.org/benchmark/amazon_web_services) - current CIS release is v7.0.0 (April 2026); [Security Hub CSPM automates up to v5.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html)
