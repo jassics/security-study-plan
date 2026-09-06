@@ -241,6 +241,7 @@ Goal: connect IAM theory with real-world attacks and defenses.
 1. Cloud security fundamentals courses with strong IAM modules.  
 2. Vendor-specific identity courses (e.g., AWS, Azure, GCP IAM).  
 3. Courses focused on OAuth 2.0 / OIDC and modern auth patterns.
+4. [RansomLeak Cloud Security: IAM exercises](https://ransomleak.com/catalogue/cloud-security/) - over-permissive IAM, long-lived keys, and multi-account boundaries, hands-on
 
 ---
 
