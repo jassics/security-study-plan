@@ -345,6 +345,7 @@ Measuring the effectiveness of a GRC program involves establishing metrics that 
 - **LinkedIn Learning:** Offers courses on risk management, governance, and compliance.
 - **Pluralsight:** Provides courses on GRC concepts and frameworks.
 - **Coursera/Udemy/Udacity/EdX:** Look for courses on GRC fundamentals, risk management, and compliance.
+- **RansomLeak:** [Interactive compliance training](https://ransomleak.com/catalogue/privacy-compliance/) mapped to GDPR, EU AI Act, NIS2, ISO 27001, HIPAA, and SOC 2 awareness clauses.
 
 ### Communities
 - **ISACA:** Offers resources, forums, and events for GRC professionals.

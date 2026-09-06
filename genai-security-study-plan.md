@@ -731,6 +731,7 @@ This section flips the lens: instead of securing GenAI systems, it covers using 
    - [Coursera: Generative AI for Cybersecurity Professionals (IBM)](https://www.coursera.org/specializations/generative-ai-for-cybersecurity-professionals)
    - [Coursera: AI for Cybersecurity Specialization (Johns Hopkins)](https://www.coursera.org/specializations/ai-for-cybersecurity)
    - [AttackIQ: Foundations of AI Security](https://www.academy.attackiq.com/courses/foundations-of-ai-security)
+   - [RansomLeak: OWASP LLM, Agentic, and MCP Top 10 exercises](https://ransomleak.com/catalogue/ai-security/)
 
 2. **Security Guides & Checklists**
    - [OWASP Top 10 for LLM Applications 2026](https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/) *(current)*
