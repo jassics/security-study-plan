@@ -133,3 +133,4 @@ Enhancing manual review with tools.
 ### Practice
 - [Secure Code Warrior](https://www.securecodewarrior.com/) (Free trial/community)
 - [SonarQube Rules documentation](https://docs.sonarsource.com/sonarqube-server/quality-standards-administration/managing-rules/rules) (Learn by seeing bad vs good code – the old `rules.sonarsource.com` explorer has been retired; browse the rules catalog from a SonarQube Server/Cloud instance)
+- [RansomLeak Application Security](https://ransomleak.com/catalogue/application-security/) (Free, exploit-then-fix OWASP Top 10 labs)

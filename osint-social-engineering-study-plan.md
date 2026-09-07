@@ -157,6 +157,7 @@ Goal: use OSINT and SE knowledge to improve defenses.
 1. Intro OSINT courses that emphasize legality and ethics.  
 2. Social engineering awareness and simulation courses.  
 3. Red team or phishing simulation courses if relevant to your job.
+4. [RansomLeak Social Engineering simulations](https://ransomleak.com/catalogue/security-awareness/) - phishing, vishing, smishing, deepfake, and pretexting exercises, free for individuals
 
 ---
 
