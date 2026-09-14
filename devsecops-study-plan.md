@@ -192,6 +192,7 @@ DevSecOps is as much about **people and feedback** as it is about tools.
 1. DevSecOps-focused courses that cover CI/CD, automation, and security tooling.
 2. Cloud-native security courses that include pipeline and platform topics.
 3. Container and Kubernetes security courses that show how to integrate checks into pipelines.
+4. [RansomLeak developer track](https://ransomleak.com/catalogue/git-security/) - Git, CI/CD, container, and cloud security labs in the browser
 
 ## Certifications
 
