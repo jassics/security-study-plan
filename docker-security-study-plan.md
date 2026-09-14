@@ -129,6 +129,7 @@ This is where Docker Security meets DevSecOps.
 
 1. Docker/Container security courses that cover image hardening and runtime security.
 2. DevSecOps courses that include container image scanning and CI/CD integration.
+3. [RansomLeak Container Security](https://ransomleak.com/catalogue/cloud-security/) - free hands-on labs: secrets in image layers, privileged containers, exposed daemon, base images
 
 ## Certifications
 

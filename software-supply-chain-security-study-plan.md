@@ -216,6 +216,7 @@ Finally, focus on how to detect and respond to supply chain issues and how to go
 1. Courses specifically focused on software supply chain security, if available.
 2. DevSecOps courses with strong coverage of CI/CD and dependency scanning.
 3. Cloud-native security courses that include supply chain topics.
+4. [RansomLeak Git & Repository Security](https://ransomleak.com/catalogue/git-security/) - CI/CD secret exposure, malicious PRs, branch-protection bypass, commit spoofing
 
 ## Certifications
 
