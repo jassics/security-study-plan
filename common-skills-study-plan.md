@@ -52,6 +52,7 @@ But for that, you would need to know the basic workings of Linux and commands.
 **Courses**
 1. [Introduction to Linux Commands and Scripting](https://www.coursera.org/learn/hands-on-introduction-to-linux-commands-and-shell-scripting)
 2. [Linux Fundamentals for Security Practitioners: Recommended](https://www.cybrary.it/course/linux-fundamentals-for-security-practitioners/)
+3. [WebTerm Learn: Linux command line courses](https://learn.webterm.app/en/courses) - Hands-on exercises in a simulated terminal in the browser, free
 
 **Videos**
 1. [Linux for Ethical Hackers: Recommended](https://www.youtube.com/watch?v=lZAoFs75_cs)
