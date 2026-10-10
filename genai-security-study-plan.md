@@ -94,6 +94,7 @@ Note: I am not writing anything that would require core AI/ML skills. It's all a
 11. [GenAI Security Tools](#genai-security-tools)
 
 ---
+![GenAI Security Study Plan for quick save](images/ai-security-study-roadmap.png)
 
 ## GenAI Fundamental Concepts
 **Duration: 4 weeks**
