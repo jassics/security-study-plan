@@ -794,6 +794,7 @@ This section flips the lens: instead of securing GenAI systems, it covers using 
    - Design Principles for LLM-based Systems with Zero Trust: Foundation for Secure Agentic Systems (BSI, Germany + ANSSI, France)
    - [Agentic JWT: A Secure Delegation Protocol for Autonomous AI Agents (arXiv:2509.13597)](https://arxiv.org/abs/2509.13597)
    - [Red Teaming LLM Multi-agent Systems via Communication Attacks (arXiv:2502.14847)](https://arxiv.org/abs/2502.14847)
+   - [Orca AI Incident Archive](https://github.com/Continuum-AI-Corp/Orca-AI-Incident-Archive) — open, source-linked dataset of AI agent security events (incidents, vulnerabilities, research), each labelled for whether harm was confirmed or only demonstrated; a source of case studies for the "Analyze case studies of agentic AI failures" exercise above
 
 8. **Governance, Standards & Regional Regulation**
    - [ISO/IEC 42001:2023 — AI Management System (AIMS)](https://www.iso.org/standard/42001)
