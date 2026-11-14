@@ -191,9 +191,10 @@ Goal: understand detection & response in cloud, SaaS, and modern stacks.
 
 ## Certifications
 
-1. Entry-level SOC / Blue Team certs if available from reputable providers.  
+1. Entry-level SOC / Blue Team certs from reputable providers, for example [CompTIA CySA+](https://www.comptia.org/certifications/cybersecurity-analyst), [Microsoft SC-200](https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/) or [Blue Team Level 1 (BTL1)](https://www.securityblue.team/certifications/blue-team-level-1).  
 2. IR/DFIR-oriented certifications if you want to specialize.  
-3. General security certs (like Security+) to support foundational knowledge.
+3. General security certs (like Security+) to support foundational knowledge.  
+4. Practice before booking the exam: [CertSprint](https://getcertsprint.com/certifications/cysa-plus/practice-test) has scenario-based practice questions and performance-based questions for CySA+, SC-200 and BTL1, with a free set for each certification and no account needed.
 
 ---
 
