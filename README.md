@@ -116,6 +116,7 @@ Now search or subscribe to the job portal below:
 7. [Null Jobs Community](https://jobs.null.community/)
 8. [Cybersecurity Jobs](https://www.cybersecurityjobs.com/)
 9. [Interactive way to find jobs, skills, salary, etc.](https://www.cyberseek.org/pathway.html)
+10. [infosecjobs.io](https://infosecjobs.io) - Security jobs with posted pay, and counts of the skills and certifications employers ask for.
 
 ## Interview Preparation
 You can start preparing for the job interview once you have solid knowledge according to the checklist for the given role(s). There are a few common security questions that you should have a look at:
